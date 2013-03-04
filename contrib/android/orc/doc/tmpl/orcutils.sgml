@@ -1,0 +1,117 @@
+<!-- ##### SECTION Title ##### -->
+orcutils
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### TYPEDEF orc_bool ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO ORC_ASSERT ##### -->
+<para>
+
+</para>
+
+@test: 
+
+
+<!-- ##### MACRO ORC_BEGIN_DECLS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO ORC_CLAMP ##### -->
+<para>
+
+</para>
+
+@x: 
+@a: 
+@b: 
+
+
+<!-- ##### MACRO ORC_END_DECLS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO ORC_EXPORT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO ORC_GNUC_PREREQ ##### -->
+<para>
+
+</para>
+
+@maj: 
+@min: 
+
+
+<!-- ##### MACRO ORC_GNU_PRINTF ##### -->
+<para>
+
+</para>
+
+@a: 
+@b: 
+
+
+<!-- ##### MACRO ORC_INTERNAL ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO ORC_PTR_TO_INT ##### -->
+<para>
+
+</para>
+
+@x: 
+
+
+<!-- ##### MACRO ORC_READ_UINT32_LE ##### -->
+<para>
+
+</para>
+
+@ptr: 
+
+
+<!-- ##### MACRO ORC_WRITE_UINT32_LE ##### -->
+<para>
+
+</para>
+
+@ptr: 
+@val: 
+
+

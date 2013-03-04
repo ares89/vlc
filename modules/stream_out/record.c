@@ -110,6 +110,7 @@ struct sout_stream_sys_t
     int              i_id;
     sout_stream_id_t **id;
     mtime_t     i_dts_start;
+    char *psz_record_file;
 };
 
 static void OutputStart( sout_stream_t *p_stream );
@@ -157,7 +158,7 @@ static int Open( vlc_object_t *p_this )
     p_sys->b_drop = false;
     p_sys->i_dts_start = 0;
     TAB_INIT( p_sys->i_id, p_sys->id );
-
+    p_sys->psz_record_file = NULL;
     return VLC_SUCCESS;
 }
 
@@ -171,6 +172,20 @@ static void Close( vlc_object_t * p_this )
 
     if( p_sys->p_out )
         sout_StreamChainDelete( p_sys->p_out, p_sys->p_out );
+
+  if( p_sys->psz_record_file ) {
+        for( vlc_object_t *p_mp = p_stream->p_parent; p_mp; p_mp = p_mp->p_parent )
+        {
+            if( var_Type( p_mp, "recording-finished" ) )
+            {
+                var_SetString( p_mp, "recording-finished", p_sys->psz_record_file );
+                break;
+            }
+        }
+
+        free( p_sys->psz_record_file );
+    }
+
 
     TAB_CLEAN( p_sys->i_id, p_sys->id );
     free( p_sys->psz_prefix );
@@ -357,7 +372,10 @@ static int OutputNew( sout_stream_t *p_stream,
     }
 
     if( psz_file && psz_extension )
+    {
+	p_sys->psz_record_file = strdup( psz_file );
         var_SetString( p_stream->p_libvlc, "record-file", psz_file );
+    }
 
     free( psz_file );
     free( psz_output );

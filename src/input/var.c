@@ -210,6 +210,9 @@ void input_ControlVarInit ( input_thread_t *p_input )
     text.psz_string = _("Subtitles Track");
     var_Change( p_input, "spu-es", VLC_VAR_SETTEXT, &text, NULL );
 
+    /* ES Out */
+    var_Create( p_input, "input-record-path", VLC_VAR_STRING | VLC_VAR_DOINHERIT );
+
     /* Special read only objects variables for intf */
     var_Create( p_input, "bookmarks", VLC_VAR_STRING | VLC_VAR_DOINHERIT );
 

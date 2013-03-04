@@ -3,11 +3,11 @@
 DCA_VERSION := 0.0.5
 DCA_URL := $(VIDEOLAN)/libdca/$(DCA_VERSION)/libdca-$(DCA_VERSION).tar.bz2
 
-ifdef HAVE_FPU
-ifdef GPL
+#ifdef HAVE_FPU
+#ifdef GPL
 PKGS += dca
-endif
-endif
+#endif
+#endif
 ifeq ($(call need_pkg,"libdca"),)
 PKGS_FOUND += dca
 endif

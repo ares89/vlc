@@ -6,7 +6,6 @@ FFMPEG_SNAPURL := http://git.libav.org/?p=libav.git;a=snapshot;h=HEAD;sf=tgz
 FFMPEGCONF = \
 	--cc="$(CC)" \
 	--disable-doc \
-	--disable-decoder=bink \
 	--disable-encoder=vorbis \
 	--enable-libgsm \
 	--enable-libopenjpeg \
@@ -29,7 +28,7 @@ ifdef BUILD_ENCODERS
 FFMPEGCONF += --enable-libmp3lame --enable-libvpx --disable-decoder=libvpx
 DEPS_ffmpeg += lame $(DEPS_lame) vpx $(DEPS_vpx)
 else
-FFMPEGCONF += --disable-encoders --disable-muxers
+FFMPEGCONF += --disable-encoders --disable-muxers --enable-encoder=png  
 endif
 
 # Small size
