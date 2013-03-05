@@ -57,7 +57,7 @@
 #ifdef HAVE_DYNAMIC_PLUGINS
 /* Sub-version number
  * (only used to avoid breakage in dev version when cache structure changes) */
-#define CACHE_SUBVERSION_NUM 20
+#define CACHE_SUBVERSION_NUM 21
 
 /* Cache filename */
 #define CACHE_NAME "plugins.dat"
@@ -96,7 +96,7 @@ error:
 
     if (size > 0)
     {
-        psz = malloc (size);
+        psz = malloc (size+1);
         if (unlikely(psz == NULL))
             goto error;
         if (fread (psz, 1, size, file) != size)
@@ -104,7 +104,7 @@ error:
             free (psz);
             goto error;
         }
-        psz[size - 1] = '\0';
+        psz[size] = '\0';
     }
     *p = psz;
     return 0;
@@ -132,10 +132,15 @@ static int CacheLoadConfig (module_config_t *cfg, FILE *file)
 
         if (cfg->list_count)
             cfg->list.psz = xmalloc (cfg->list_count * sizeof (char *));
-        else
-            cfg->list.psz_cb = NULL;
+        else /* TODO: fix config_GetPszChoices() instead of this hack: */
+            LOAD_IMMEDIATE(cfg->list.psz_cb);
         for (unsigned i = 0; i < cfg->list_count; i++)
+        {
             LOAD_STRING (cfg->list.psz[i]);
+            if (cfg->list.psz[i] == NULL /* NULL -> empty string */
+             && (cfg->list.psz[i] = calloc (1, 1)) == NULL)
+                goto error;
+        }
     }
     else
     {
@@ -146,14 +151,19 @@ static int CacheLoadConfig (module_config_t *cfg, FILE *file)
 
         if (cfg->list_count)
             cfg->list.i = xmalloc (cfg->list_count * sizeof (int));
-        else
-            cfg->list.i_cb = NULL;
+        else /* TODO: fix config_GetPszChoices() instead of this hack: */
+            LOAD_IMMEDIATE(cfg->list.i_cb);
         for (unsigned i = 0; i < cfg->list_count; i++)
              LOAD_IMMEDIATE (cfg->list.i[i]);
     }
     cfg->list_text = xmalloc (cfg->list_count * sizeof (char *));
     for (unsigned i = 0; i < cfg->list_count; i++)
+    {
         LOAD_STRING (cfg->list_text[i]);
+        if (cfg->list_text[i] == NULL /* NULL -> empty string */
+         && (cfg->list_text[i] = calloc (1, 1)) == NULL)
+            goto error;
+    }
 
     return 0;
 error:
@@ -403,6 +413,8 @@ static int CacheSaveConfig (FILE *file, const module_config_t *cfg)
     if (IsConfigStringType (cfg->i_type))
     {
         SAVE_STRING (cfg->orig.psz);
+        if (cfg->list_count == 0)
+            SAVE_IMMEDIATE (cfg->list.psz_cb); /* XXX: see CacheLoadConfig() */
         for (unsigned i = 0; i < cfg->list_count; i++)
             SAVE_STRING (cfg->list.psz[i]);
     }
@@ -411,6 +423,8 @@ static int CacheSaveConfig (FILE *file, const module_config_t *cfg)
         SAVE_IMMEDIATE (cfg->orig);
         SAVE_IMMEDIATE (cfg->min);
         SAVE_IMMEDIATE (cfg->max);
+        if (cfg->list_count == 0)
+            SAVE_IMMEDIATE (cfg->list.i_cb); /* XXX: see CacheLoadConfig() */
         for (unsigned i = 0; i < cfg->list_count; i++)
              SAVE_IMMEDIATE (cfg->list.i[i]);
     }

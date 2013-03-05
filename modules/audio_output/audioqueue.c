@@ -1,7 +1,7 @@
 /*****************************************************************************
  * audioqueue.c : AudioQueue audio output plugin for vlc
  *****************************************************************************
- * Copyright (C) 2010-2012 VLC authors and VideoLAN
+ * Copyright (C) 2010-2013 VLC authors and VideoLAN
  * $Id$
  *
  * Authors: Romain Goyet <romain.goyet@likid.org>
@@ -34,8 +34,6 @@
 #include <vlc_aout.h>
 
 #include <AudioToolBox/AudioToolBox.h>
-
-#define FRAME_SIZE 2048
 
 /*****************************************************************************
  * aout_sys_t: AudioQueue audio output method descriptor
@@ -85,38 +83,36 @@ static int Start(audio_output_t *p_aout, audio_sample_format_t *restrict fmt)
 
     // Setup the audio device.
     AudioStreamBasicDescription deviceFormat;
-    deviceFormat.mSampleRate = 44100;
+    deviceFormat.mSampleRate = fmt->i_rate;
     deviceFormat.mFormatID = kAudioFormatLinearPCM;
-    deviceFormat.mFormatFlags = kLinearPCMFormatFlagIsSignedInteger; // Signed integer, little endian
-    deviceFormat.mBytesPerPacket = 4;
+    deviceFormat.mFormatFlags = kAudioFormatFlagsNativeFloatPacked; // FL32
     deviceFormat.mFramesPerPacket = 1;
-    deviceFormat.mBytesPerFrame = 4;
     deviceFormat.mChannelsPerFrame = 2;
-    deviceFormat.mBitsPerChannel = 16;
-    deviceFormat.mReserved = 0;
+    deviceFormat.mBitsPerChannel = 32;
+    deviceFormat.mBytesPerFrame = deviceFormat.mBitsPerChannel * deviceFormat.mChannelsPerFrame / 8;
+    deviceFormat.mBytesPerPacket = deviceFormat.mBytesPerFrame * deviceFormat.mFramesPerPacket;
 
     // Create a new output AudioQueue for the device.
     status = AudioQueueNewOutput(&deviceFormat,         // Format
                                  AudioQueueCallback,    // Callback
                                  NULL,                  // User data, passed to the callback
-                                 CFRunLoopGetMain(),    // RunLoop
+                                 NULL,                  // RunLoop
                                  kCFRunLoopCommonModes, // RunLoop mode
                                  0,                     // Flags ; must be zero (per documentation)...
                                  &(p_sys->audioQueue)); // Output
 
-    msg_Dbg(p_aout, "New AudioQueue output created (status = %i)", status);
+    msg_Dbg(p_aout, "New AudioQueue output created (status = %li)", status);
     if (status != noErr)
         return VLC_EGENERIC;
 
-    fmt->i_format = VLC_CODEC_S16N;
+    fmt->i_format = VLC_CODEC_FL32;
     fmt->i_physical_channels = AOUT_CHANS_STEREO;
-    fmt->i_rate = 44100;
     aout_FormatPrepare(fmt);
 
     p_aout->sys->b_stopped = false;
 
     status = AudioQueueStart(p_sys->audioQueue, NULL);
-    msg_Dbg(p_aout, "Starting AudioQueue (status = %i)", status);
+    msg_Dbg(p_aout, "Starting AudioQueue (status = %li)", status);
 
     p_aout->time_get = TimeGet;
     p_aout->play = Play;
@@ -153,9 +149,9 @@ static void Play (audio_output_t *p_aout, block_t *p_block)
         AudioQueueBufferRef inBuffer = NULL;
         OSStatus status;
 
-        status = AudioQueueAllocateBuffer(p_aout->sys->audioQueue, FRAME_SIZE * 2, &inBuffer);
+        status = AudioQueueAllocateBuffer(p_aout->sys->audioQueue, p_block->i_buffer, &inBuffer);
         if (status != noErr) {
-            msg_Err(p_aout, "buffer alloction failed (%i)", status);
+            msg_Err(p_aout, "buffer alloction failed (%li)", status);
             return;
         }
 
@@ -165,7 +161,7 @@ static void Play (audio_output_t *p_aout, block_t *p_block)
 
         status = AudioQueueEnqueueBuffer(p_aout->sys->audioQueue, inBuffer, 0, NULL);
         if (status != noErr)
-            msg_Err(p_aout, "enqueuing buffer failed (%i)", status);
+            msg_Err(p_aout, "enqueuing buffer failed (%li)", status);
     }
 }
 
