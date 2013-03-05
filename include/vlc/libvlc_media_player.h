@@ -1187,6 +1187,12 @@ int libvlc_video_take_snapshot( libvlc_media_player_t *p_mi, unsigned num,
                                 const char *psz_filepath, unsigned int i_width,
                                 unsigned int i_height );
 
+LIBVLC_API int libvlc_video_toggle_record( libvlc_media_player_t *p_mi,const char *psz_filepath, const char *psz_filename, const bool set);
+LIBVLC_API int libvlc_media_player_record_start( libvlc_media_player_t *p_mi, const char* psz_filename );
+LIBVLC_API int libvlc_media_player_record_stop( libvlc_media_player_t *p_mi );
+LIBVLC_API bool libvlc_media_player_is_recordable( libvlc_media_player_t *p_mi );
+LIBVLC_API bool libvlc_media_player_is_recording( libvlc_media_player_t *p_mi );
+
 /**
  * Enable or disable deinterlace filter
  *
