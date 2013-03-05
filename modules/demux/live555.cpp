@@ -183,6 +183,7 @@ struct demux_sys_t
 {
     char            *p_sdp;    /* XXX mallocated */
     char            *psz_path; /* URL-encoded path */
+    int                 udp_port;
     vlc_url_t       url;
 
     MediaSession     *ms;
@@ -547,6 +548,10 @@ static int Connect( demux_t *p_demux )
     int  i_ret        = VLC_SUCCESS;
     const int i_timeout = var_InheritInteger( p_demux, "ipv4-timeout" );
 
+    int rtpUDPPort=0;
+    bool isUDP=false;
+    char* index=0;
+
     /* Get the user name and password */
     if( p_sys->url.psz_username || p_sys->url.psz_password )
     {
@@ -580,6 +585,31 @@ createnew:
 
     if( var_CreateGetBool( p_demux, "rtsp-http" ) )
         i_http_port = var_InheritInteger( p_demux, "rtsp-http-port" );
+
+
+        if((index=strstr(strdup(psz_url),"udpport"))!=NULL)
+        {
+            index+=7;
+            if(*index=='=')
+            {
+                sscanf(++index,"%d",&rtpUDPPort);
+                if (rtpUDPPort < 1 || rtpUDPPort > 65535)
+                {
+                     msg_Err( p_demux, "RTSPClient::createNew failed with rtp udp port(%d)",
+                 rtpUDPPort);
+                }
+                else
+                {
+                    isUDP=true;
+                }
+            }
+        }
+    p_sys->udp_port=0;
+    if(isUDP){
+        var_SetInteger(p_demux, "rtp-client-port",rtpUDPPort);
+        p_sys->udp_port=rtpUDPPort;
+        msg_Dbg( p_demux, "rtp-client-port = %d", rtpUDPPort );
+    }
 
     p_sys->rtsp = new RTSPClientVlc( *p_sys->env, psz_url,
 				     1,
@@ -712,7 +742,8 @@ static int SessionsSetup( demux_t *p_demux )
             ;
         else continue;
 
- 
+        if(p_sys->udp_port!=0)
+            i_client_port=p_sys->udp_port;
         if( i_client_port != -1 )
         {
             sub->setClientPortNum( i_client_port );
