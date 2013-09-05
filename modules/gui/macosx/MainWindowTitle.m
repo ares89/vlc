@@ -71,23 +71,6 @@
 
     [self loadButtonIcons];
     [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(controlTintChanged:) name: NSControlTintDidChangeNotification object: nil];
-
-    [o_red_btn setImage: o_red_img];
-    [o_red_btn setAlternateImage: o_red_on_img];
-    [[o_red_btn cell] setShowsBorderOnlyWhileMouseInside: YES];
-    [[o_red_btn cell] setTag: 0];
-    [o_yellow_btn setImage: o_yellow_img];
-    [o_yellow_btn setAlternateImage: o_yellow_on_img];
-    [[o_yellow_btn cell] setShowsBorderOnlyWhileMouseInside: YES];
-    [[o_yellow_btn cell] setTag: 1];
-    [o_green_btn setImage: o_green_img];
-    [o_green_btn setAlternateImage: o_green_on_img];
-    [[o_green_btn cell] setShowsBorderOnlyWhileMouseInside: YES];
-    [[o_green_btn cell] setTag: 2];
-    [o_fullscreen_btn setImage: [NSImage imageNamed:@"window-fullscreen"]];
-    [o_fullscreen_btn setAlternateImage: [NSImage imageNamed:@"window-fullscreen-on"]];
-    [[o_fullscreen_btn cell] setShowsBorderOnlyWhileMouseInside: YES];
-    [[o_fullscreen_btn cell] setTag: 3];
 }
 
 - (void)controlTintChanged:(NSNotification *)notification
@@ -158,6 +141,23 @@
             o_green_on_img = [[NSImage imageNamed:@"snowleo-window-zoom-on-graphite"] retain];
         }
     }
+
+    [o_red_btn setImage: o_red_img];
+    [o_red_btn setAlternateImage: o_red_on_img];
+    [[o_red_btn cell] setShowsBorderOnlyWhileMouseInside: YES];
+    [[o_red_btn cell] setTag: 0];
+    [o_yellow_btn setImage: o_yellow_img];
+    [o_yellow_btn setAlternateImage: o_yellow_on_img];
+    [[o_yellow_btn cell] setShowsBorderOnlyWhileMouseInside: YES];
+    [[o_yellow_btn cell] setTag: 1];
+    [o_green_btn setImage: o_green_img];
+    [o_green_btn setAlternateImage: o_green_on_img];
+    [[o_green_btn cell] setShowsBorderOnlyWhileMouseInside: YES];
+    [[o_green_btn cell] setTag: 2];
+    [o_fullscreen_btn setImage: [NSImage imageNamed:@"window-fullscreen"]];
+    [o_fullscreen_btn setAlternateImage: [NSImage imageNamed:@"window-fullscreen-on"]];
+    [[o_fullscreen_btn cell] setShowsBorderOnlyWhileMouseInside: YES];
+    [[o_fullscreen_btn cell] setTag: 3];
 }
 
 - (BOOL)mouseDownCanMoveWindow
@@ -493,7 +493,7 @@
     for (NSUInteger i = count - 1; i > 0; i--) {
         currentPath = [NSMutableString stringWithCapacity:1024];
         for (NSUInteger y = 0; y < i; y++)
-            [currentPath appendFormat: @"/%@", pathComponents[y + 1]];
+            [currentPath appendFormat: @"/%@", [pathComponents objectAtIndex:y + 1]];
 
         [contextMenu addItemWithTitle: [[NSFileManager defaultManager] displayNameAtPath: currentPath] action:@selector(revealInFinder:) keyEquivalent:@""];
         currentItem = [contextMenu itemAtIndex:[contextMenu numberOfItems] - 1];
@@ -504,7 +504,7 @@
         [currentItem setImage: icon];
     }
 
-    if ([pathComponents[1] isEqualToString:@"Volumes"]) {
+    if ([[pathComponents objectAtIndex:1] isEqualToString:@"Volumes"]) {
         /* we don't want to show the Volumes item, since the Cocoa does it neither */
         currentItem = [contextMenu itemWithTitle:[[NSFileManager defaultManager] displayNameAtPath: @"/Volumes"]];
         if (currentItem)
@@ -559,11 +559,11 @@
     selectedItem = count - selectedItem;
 
     /* fix for non-startup volumes */
-    if ([pathComponents[1] isEqualToString:@"Volumes"])
+    if ([[pathComponents objectAtIndex:1] isEqualToString:@"Volumes"])
         selectedItem += 1;
 
     for (NSUInteger y = 1; y < selectedItem; y++)
-        [currentPath appendFormat: @"/%@", pathComponents[y]];
+        [currentPath appendFormat: @"/%@", [pathComponents objectAtIndex:y]];
 
     [[NSWorkspace sharedWorkspace] selectFile: currentPath inFileViewerRootedAtPath: currentPath];
 }

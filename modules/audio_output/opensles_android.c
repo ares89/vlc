@@ -202,6 +202,9 @@ static void Flush(audio_output_t *aout, bool drain)
 
 static int VolumeSet(audio_output_t *aout, float vol)
 {
+    if (!aout->sys->volumeItf)
+        return -1;
+
     /* Convert UI volume to linear factor (cube) */
     vol = vol * vol * vol;
 
@@ -218,6 +221,9 @@ static int VolumeSet(audio_output_t *aout, float vol)
 
 static int MuteSet(audio_output_t *aout, bool mute)
 {
+    if (!aout->sys->volumeItf)
+        return -1;
+
     SLresult r = SetMute(aout->sys->volumeItf, mute);
     return (r == SL_RESULT_SUCCESS) ? 0 : -1;
 }
@@ -346,16 +352,6 @@ static void PlayedCallback (SLAndroidSimpleBufferQueueItf caller, void *pContext
 /*****************************************************************************
  *
  *****************************************************************************/
-static void Clean(aout_sys_t *sys)
-{
-    if (sys->playerObject)
-        Destroy(sys->playerObject);
-    if (sys->outputMixObject)
-        Destroy(sys->outputMixObject);
-    if (sys->engineObject)
-        Destroy(sys->engineObject);
-}
-
 static int Start(audio_output_t *aout, audio_sample_format_t *restrict fmt)
 {
     SLresult       result;
@@ -440,7 +436,11 @@ static int Start(audio_output_t *aout, audio_sample_format_t *restrict fmt)
     return VLC_SUCCESS;
 
 error:
-    Clean(sys);
+    if (sys->playerObject) {
+        Destroy(sys->playerObject);
+        sys->playerObject = NULL;
+    }
+
     return VLC_EGENERIC;
 }
 
@@ -454,6 +454,9 @@ static void Stop(audio_output_t *aout)
 
     free(sys->buf);
     block_ChainRelease(sys->p_buffer_chain);
+
+    Destroy(sys->playerObject);
+    sys->playerObject = NULL;
 }
 
 /*****************************************************************************
@@ -464,7 +467,8 @@ static void Close(vlc_object_t *obj)
     audio_output_t *aout = (audio_output_t *)obj;
     aout_sys_t *sys = aout->sys;
 
-    Clean(sys);
+    Destroy(sys->outputMixObject);
+    Destroy(sys->engineObject);
     dlclose(sys->p_so_handle);
     vlc_mutex_destroy(&sys->lock);
     free(sys);
@@ -547,7 +551,10 @@ static int Open (vlc_object_t *obj)
     return VLC_SUCCESS;
 
 error:
-    Clean(sys);
+    if (sys->outputMixObject)
+        Destroy(sys->outputMixObject);
+    if (sys->engineObject)
+        Destroy(sys->engineObject);
     if (sys->p_so_handle)
         dlclose(sys->p_so_handle);
     free(sys);

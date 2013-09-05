@@ -266,7 +266,7 @@ static int Start_LuaIntf( vlc_object_t *p_this, const char *name )
     luaopen_gettext( L );
     luaopen_xml( L );
     luaopen_equalizer( L );
-#if defined(WIN32) && !VLC_WINSTORE_APP
+#if defined(_WIN32) && !VLC_WINSTORE_APP
     luaopen_win( L );
 #endif
 
@@ -381,7 +381,6 @@ void Close_LuaIntf( vlc_object_t *p_this )
     intf_thread_t *p_intf = (intf_thread_t*)p_this;
     intf_sys_t *p_sys = p_intf->p_sys;
 
-    vlc_cancel( p_sys->thread );
     vlc_join( p_sys->thread, NULL );
     lua_close( p_sys->L );
 

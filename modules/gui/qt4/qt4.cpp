@@ -35,6 +35,7 @@
 #include "input_manager.hpp"    /* THEMIM destruction */
 #include "dialogs_provider.hpp" /* THEDP creation */
 #include "main_interface.hpp"   /* MainInterface creation */
+#include "extensions_manager.hpp" /* Extensions manager */
 #include "dialogs/help.hpp"     /* Launch Update */
 #include "recents.hpp"          /* Recents Item destruction */
 #include "util/qvlcapp.hpp"     /* QVLCApplication definition */
@@ -49,7 +50,7 @@
 #include <vlc_plugin.h>
 #include <vlc_vout_window.h>
 
-#ifdef WIN32 /* For static builds */
+#ifdef _WIN32 /* For static builds */
  #include <QtPlugin>
  Q_IMPORT_PLUGIN(qjpeg)
  Q_IMPORT_PLUGIN(qtaccessiblewidgets)
@@ -234,7 +235,7 @@ vlc_module_begin ()
               UPDATER_DAYS_TEXT, UPDATER_DAYS_TEXT, false )
 #endif
 
-#ifdef WIN32
+#ifdef _WIN32
     add_bool( "qt-disable-volume-keys"             /* name */,
               true                                 /* default value */,
               QT_DISABLE_VOLUME_KEYS_TEXT          /* text */,
@@ -293,7 +294,7 @@ vlc_module_begin ()
         set_capability( "vout window xid", 0 )
         set_callbacks( WindowOpen, WindowClose )
 #endif
-#if defined (Q_WS_WIN) || (defined (Q_WS_QPA) && defined (WIN32)) \
+#if defined (Q_WS_WIN) || (defined (Q_WS_QPA) && defined (_WIN32)) \
  || defined (Q_WS_PM)  || (defined (Q_WS_QPA) && defined (__OS2__))
     add_submodule ()
         set_capability( "vout window hwnd", 0 )
@@ -458,7 +459,7 @@ static void *Thread( void *obj )
 
     /* All the settings are in the .conf/.ini style */
     p_intf->p_sys->mainSettings = new QSettings(
-#ifdef WIN32
+#ifdef _WIN32
             QSettings::IniFormat,
 #else
             QSettings::NativeFormat,
@@ -562,6 +563,9 @@ static void *Thread( void *obj )
            slots in the MainInputManager */
         delete p_mi;
     }
+
+    /* */
+    ExtensionsManager::killInstance();
 
     /* Destroy all remaining windows,
        because some are connected to some slots

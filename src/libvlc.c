@@ -80,7 +80,7 @@
  * The evil global variables. We handle them with care, don't worry.
  *****************************************************************************/
 
-#if !defined(WIN32) && !defined(__OS2__)
+#if !defined(_WIN32) && !defined(__OS2__)
 static bool b_daemon = false;
 #endif
 
@@ -385,8 +385,22 @@ dbus_out:
 
     /* some default internal settings */
     var_Create( p_libvlc, "window", VLC_VAR_STRING );
+    /* NOTE: Because the playlist and interfaces start before this function
+     * returns control to the application (DESIGN BUG!), all these variables
+     * must be created (in place of libvlc_new()) and set to VLC defaults
+     * (in place of VLC main()) *here*. */
     var_Create( p_libvlc, "user-agent", VLC_VAR_STRING );
-    var_SetString( p_libvlc, "user-agent", "(LibVLC "VERSION")" );
+    var_SetString( p_libvlc, "user-agent",
+                   "VLC media player (LibVLC "VERSION")" );
+    var_Create( p_libvlc, "http-user-agent", VLC_VAR_STRING );
+    var_SetString( p_libvlc, "http-user-agent",
+                   "VLC/"PACKAGE_VERSION" LibVLC/"PACKAGE_VERSION );
+    var_Create( p_libvlc, "app-icon-name", VLC_VAR_STRING );
+    var_SetString( p_libvlc, "app-icon-name", PACKAGE_NAME );
+    var_Create( p_libvlc, "app-id", VLC_VAR_STRING );
+    var_SetString( p_libvlc, "app-id", "org.VideoLAN.VLC" );
+    var_Create( p_libvlc, "app-version", VLC_VAR_STRING );
+    var_SetString( p_libvlc, "app-version", PACKAGE_VERSION );
 
     /* System specific configuration */
     system_Configure( p_libvlc, i_argc - vlc_optind, ppsz_argv + vlc_optind );
@@ -484,7 +498,7 @@ dbus_out:
     var_Create( p_libvlc, "drawable-clip-right", VLC_VAR_INTEGER );
     var_Create( p_libvlc, "drawable-nsobject", VLC_VAR_ADDRESS );
 #endif
-#if defined (WIN32) || defined (__OS2__)
+#if defined (_WIN32) || defined (__OS2__)
     var_Create( p_libvlc, "drawable-hwnd", VLC_VAR_INTEGER );
 #endif
 
@@ -537,7 +551,7 @@ void libvlc_InternalCleanup( libvlc_int_t *p_libvlc )
 
     msg_Dbg( p_libvlc, "removing stats" );
 
-#if !defined( WIN32 ) && !defined( __OS2__ )
+#if !defined( _WIN32 ) && !defined( __OS2__ )
     char* psz_pidfile = NULL;
 
     if( b_daemon )
@@ -565,7 +579,7 @@ void libvlc_InternalCleanup( libvlc_int_t *p_libvlc )
     /* Free module bank. It is refcounted, so we call this each time  */
     module_EndBank (true);
     vlc_LogDeinit (p_libvlc);
-#if defined(WIN32) || defined(__OS2__)
+#if defined(_WIN32) || defined(__OS2__)
     system_End( );
 #endif
 }
@@ -600,7 +614,7 @@ int libvlc_InternalAddIntf( libvlc_int_t *p_libvlc, char const *psz_module )
         char *psz_interface = var_CreateGetNonEmptyString( p_libvlc, "intf" );
         if( !psz_interface ) /* "intf" has not been set */
         {
-#if !defined( WIN32 ) && !defined( __OS2__ )
+#if !defined( _WIN32 ) && !defined( __OS2__ )
             if( b_daemon )
                  /* Daemon mode hack.
                   * We prefer the dummy interface if none is specified. */

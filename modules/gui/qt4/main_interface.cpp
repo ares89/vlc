@@ -32,7 +32,6 @@
 #include "main_interface.hpp"
 #include "input_manager.hpp"                    // Creation
 #include "actions_manager.hpp"                  // killInstance
-#include "extensions_manager.hpp"               // killInstance
 
 #include "util/customwidgets.hpp"               // qtEventToVLCKey, QVLCStackedWidget
 #include "util/qt_dirs.hpp"                     // toNativeSeparators
@@ -135,7 +134,7 @@ MainInterface::MainInterface( intf_thread_t *_p_intf ) : QVLCMW( _p_intf )
     /* Set the other interface settings */
     settings = getSettings();
 
-#ifdef WIN32
+#ifdef _WIN32
     /* Volume keys */
     p_intf->p_sys->disable_volume_keys = var_InheritBool( p_intf, "qt-disable-volume-keys" );
 #endif
@@ -169,7 +168,7 @@ MainInterface::MainInterface( intf_thread_t *_p_intf ) : QVLCMW( _p_intf )
      ********************/
     MainInputManager::getInstance( p_intf );
 
-#ifdef WIN32
+#ifdef _WIN32
     himl = NULL;
     p_taskbl = NULL;
     taskbar_wmsg = RegisterWindowMessage(TEXT("TaskbarButtonCreated"));
@@ -270,7 +269,7 @@ MainInterface::~MainInterface()
     if( videoWidget )
         releaseVideoSlot();
 
-#ifdef WIN32
+#ifdef _WIN32
     if( himl )
         ImageList_Destroy( himl );
     if(p_taskbl)
@@ -280,9 +279,6 @@ MainInterface::~MainInterface()
 
     /* Be sure to kill the actionsManager... Only used in the MI and control */
     ActionsManager::killInstance();
-
-    /* Idem */
-    ExtensionsManager::killInstance();
 
     /* Delete the FSC controller */
     delete fullscreenControls;
@@ -359,7 +355,7 @@ void MainInterface::reloadPrefs()
 {
     i_notificationSetting = var_InheritInteger( p_intf, "qt-notification" );
     b_pauseOnMinimize = var_InheritBool( p_intf, "qt-pause-minimized" );
-#ifdef WIN32
+#ifdef _WIN32
     p_intf->p_sys->disable_volume_keys = var_InheritBool( p_intf, "qt-disable-volume-keys" );
 #endif
     if( !var_InheritBool( p_intf, "qt-fs-controller" ) && fullscreenControls )
@@ -1096,7 +1092,7 @@ void MainInterface::toggleUpdateSystrayMenu()
     else
     {
         /* Visible (possibly under other windows) */
-#ifdef WIN32
+#ifdef _WIN32
         /* check if any visible window is above vlc in the z-order,
          * but ignore the ones always on top
          * and the ones which can't be activated */

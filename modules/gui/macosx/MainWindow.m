@@ -326,7 +326,7 @@ static VLCMainWindow *_o_sharedInstance = nil;
 
         NSUInteger i_sidebaritem_count = [o_sidebaritems count];
         for (NSUInteger x = 0; x < i_sidebaritem_count; x++)
-            [o_sidebar_view expandItem: o_sidebaritems[x] expandChildren: YES];
+            [o_sidebar_view expandItem: [o_sidebaritems objectAtIndex:x] expandChildren: YES];
 
         [o_fspanel center];
     }
@@ -461,7 +461,7 @@ static VLCMainWindow *_o_sharedInstance = nil;
     }
 
     if ([[o_video_view subviews] count] > 0)
-        [self makeFirstResponder: [o_video_view subviews][0]];
+        [self makeFirstResponder: [[o_video_view subviews] objectAtIndex:0]];
 }
 
 // only exception for an controls bar button action
@@ -745,7 +745,7 @@ static VLCMainWindow *_o_sharedInstance = nil;
         if (!b_fullscreen)
             frameBeforePlayback = [self frame];
     } else {
-        if (!b_nonembedded && !b_fullscreen && frameBeforePlayback.size.width > 0 && frameBeforePlayback.size.height > 0)
+        if (!b_nonembedded && (!b_nativeFullscreenMode || (b_nativeFullscreenMode && !b_fullscreen)) && frameBeforePlayback.size.width > 0 && frameBeforePlayback.size.height > 0)
             [[self animator] setFrame:frameBeforePlayback display:YES];
 
         // update fs button to reflect state for next startup
@@ -802,7 +802,6 @@ static VLCMainWindow *_o_sharedInstance = nil;
 
 - (void)showFullscreenController
 {
-
     id currentWindow = [NSApp keyWindow];
     if ([currentWindow respondsToSelector:@selector(hasActiveVideo)] && [currentWindow hasActiveVideo]) {
         if ([currentWindow respondsToSelector:@selector(fullscreen)] && [currentWindow fullscreen] && ![[currentWindow videoView] isHidden]) {
@@ -810,44 +809,8 @@ static VLCMainWindow *_o_sharedInstance = nil;
             if ([[VLCMain sharedInstance] activeVideoPlayback])
                 [o_fspanel fadeIn];
         }
-
     }
 
-
-}
-
-- (void)makeKeyAndOrderFront: (id)sender
-{
-    /* Hack
-     * when we exit fullscreen and fade out, we may endup in
-     * having a window that is faded. We can't have it fade in unless we
-     * animate again. */
-
-    if (!b_window_is_invisible) {
-        /* Make sure we don't do it too much */
-        [super makeKeyAndOrderFront: sender];
-        return;
-    }
-
-    [super setAlphaValue:0.0f];
-    [super makeKeyAndOrderFront: sender];
-
-    NSMutableDictionary * dict = [[NSMutableDictionary alloc] initWithCapacity:2];
-    [dict setObject:self forKey:NSViewAnimationTargetKey];
-    [dict setObject:NSViewAnimationFadeInEffect forKey:NSViewAnimationEffectKey];
-
-    o_makekey_anim = [[NSViewAnimation alloc] initWithViewAnimations:@[dict]];
-    [dict release];
-
-    [o_makekey_anim setAnimationBlockingMode: NSAnimationNonblocking];
-    [o_makekey_anim setDuration: 0.1];
-    [o_makekey_anim setFrameRate: 30];
-    [o_makekey_anim setDelegate: self];
-
-    [o_makekey_anim startAnimation];
-    b_window_is_invisible = NO;
-
-    /* fullscreenAnimation will be unlocked when animation ends */
 }
 
 #pragma mark -
@@ -914,9 +877,9 @@ static VLCMainWindow *_o_sharedInstance = nil;
 {
     //Works the same way as the NSOutlineView data source: `nil` means a parent item
     if (item==nil)
-        return o_sidebaritems[index];
+        return [o_sidebaritems objectAtIndex:index];
     else
-        return [item children][index];
+        return [[item children] objectAtIndex:index];
 }
 
 
@@ -1103,7 +1066,7 @@ static VLCMainWindow *_o_sharedInstance = nil;
 
         for(NSUInteger i = 0; i < count; i++) {
             NSDictionary *o_dic;
-            char *psz_uri = vlc_path2uri([o_values[i] UTF8String], NULL);
+            char *psz_uri = vlc_path2uri([[o_values objectAtIndex:i] UTF8String], NULL);
             if (!psz_uri)
                 continue;
 
@@ -1125,7 +1088,7 @@ static VLCMainWindow *_o_sharedInstance = nil;
 
         PL_LOCK;
         for(NSUInteger i = 0; i < count; i++) {
-            p_item = [array[i] pointerValue];
+            p_item = [[array objectAtIndex:i] pointerValue];
             if (!p_item) continue;
             playlist_NodeAddCopy(p_playlist, p_item, p_node, PLAYLIST_END);
         }
@@ -1152,7 +1115,7 @@ static VLCMainWindow *_o_sharedInstance = nil;
         return nil;
 
     for (NSUInteger x = 0; x < count; x++) {
-        id item = array[x]; // save one objc selector call
+        id item = [array objectAtIndex:x]; // save one objc selector call
         if ([[item identifier] isEqualToString:object])
             return item;
     }

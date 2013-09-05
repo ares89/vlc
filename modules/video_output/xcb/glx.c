@@ -39,7 +39,7 @@
 #include <vlc_opengl.h>
 #include "../opengl.h"
 
-#include "xcb_vlc.h"
+#include "events.h"
 
 static int  Open (vlc_object_t *);
 static void Close (vlc_object_t *);
@@ -121,25 +121,37 @@ static bool CheckGLX (vout_display_t *vd, Display *dpy)
 }
 
 static int CreateWindow (vout_display_t *vd, xcb_connection_t *conn,
-                         uint_fast8_t depth, xcb_visualid_t vid,
+                         const xcb_screen_t *screen,
                          uint_fast16_t width, uint_fast16_t height)
 {
     vout_display_sys_t *sys = vd->sys;
-    const uint32_t mask = XCB_CW_EVENT_MASK;
+    xcb_pixmap_t pixmap = xcb_generate_id (conn);
+    const uint32_t mask =
+        XCB_CW_BACK_PIXMAP |
+        XCB_CW_BACK_PIXEL |
+        XCB_CW_BORDER_PIXMAP |
+        XCB_CW_BORDER_PIXEL |
+        XCB_CW_EVENT_MASK |
+        XCB_CW_COLORMAP;
     const uint32_t values[] = {
-        /* XCB_CW_EVENT_MASK */
+        pixmap,
+        screen->black_pixel,
+        pixmap,
+        screen->black_pixel,
         XCB_EVENT_MASK_VISIBILITY_CHANGE,
+        screen->default_colormap,
     };
     xcb_void_cookie_t cc, cm;
 
-    cc = xcb_create_window_checked (conn, depth, sys->window,
+    xcb_create_pixmap (conn, screen->root_depth, pixmap, screen->root, 1, 1);
+    cc = xcb_create_window_checked (conn, screen->root_depth, sys->window,
                                     sys->embed->handle.xid, 0, 0,
                                     width, height, 0,
                                     XCB_WINDOW_CLASS_INPUT_OUTPUT,
-                                    vid, mask, values);
+                                    screen->root_visual, mask, values);
     cm = xcb_map_window_checked (conn, sys->window);
-    if (CheckError (vd, conn, "cannot create X11 window", cc)
-     || CheckError (vd, conn, "cannot map X11 window", cm))
+    if (XCB_error_Check (vd, conn, "cannot create X11 window", cc)
+     || XCB_error_Check (vd, conn, "cannot map X11 window", cm))
         return VLC_EGENERIC;
 
     msg_Dbg (vd, "using X11 window %08"PRIx32, sys->window);
@@ -168,8 +180,7 @@ static int Open (vlc_object_t *obj)
     xcb_connection_t *conn;
     const xcb_screen_t *scr;
     uint16_t width, height;
-    uint8_t depth;
-    sys->embed = GetWindow (vd, &conn, &scr, &depth, &width, &height);
+    sys->embed = XCB_parent_Create (vd, &conn, &scr, &width, &height);
     if (sys->embed == NULL)
     {
         free (sys);
@@ -246,7 +257,7 @@ static int Open (vlc_object_t *obj)
     }
 
     sys->glwin = None;
-    if (!CreateWindow (vd, conn, depth, 0 /* ??? */, width, height))
+    if (!CreateWindow (vd, conn, scr, width, height))
         sys->glwin = glXCreateWindow (dpy, conf, sys->window, NULL );
     if (sys->glwin == None)
     {
@@ -305,7 +316,7 @@ static int Open (vlc_object_t *obj)
         goto error;
     }
 
-    sys->cursor = CreateBlankCursor (conn, scr);
+    sys->cursor = XCB_cursor_Create (conn, scr);
     sys->visible = false;
 
     /* Setup vout_display_t once everything is fine */
@@ -433,7 +444,6 @@ static int Control (vout_display_t *vd, int query, va_list ap)
     {
         const vout_display_cfg_t *cfg;
         const video_format_t *source;
-        bool is_forced = false;
 
         if (query == VOUT_DISPLAY_CHANGE_SOURCE_ASPECT
          || query == VOUT_DISPLAY_CHANGE_SOURCE_CROP)
@@ -445,18 +455,15 @@ static int Control (vout_display_t *vd, int query, va_list ap)
         {
             source = &vd->source;
             cfg = (const vout_display_cfg_t*)va_arg (ap, const vout_display_cfg_t *);
-            if (query == VOUT_DISPLAY_CHANGE_DISPLAY_SIZE)
-                is_forced = (bool)va_arg (ap, int);
         }
 
         /* */
-        if (query == VOUT_DISPLAY_CHANGE_DISPLAY_SIZE
-         && is_forced
-         && (cfg->display.width  != vd->cfg->display.width
-           ||cfg->display.height != vd->cfg->display.height)
-         && vout_window_SetSize (sys->embed,
-                                 cfg->display.width, cfg->display.height))
-            return VLC_EGENERIC;
+        if (query == VOUT_DISPLAY_CHANGE_DISPLAY_SIZE && va_arg (ap, int))
+        {
+            vout_window_SetSize (sys->embed,
+                                 cfg->display.width, cfg->display.height);
+            return VLC_EGENERIC; /* Always fail. See x11.c for rationale. */
+        }
 
         vout_display_place_t place;
         vout_display_PlacePicture (&place, source, cfg, false);
@@ -469,7 +476,7 @@ static int Control (vout_display_t *vd, int query, va_list ap)
                             XCB_CONFIG_WINDOW_X | XCB_CONFIG_WINDOW_Y
                           | XCB_CONFIG_WINDOW_WIDTH | XCB_CONFIG_WINDOW_HEIGHT,
                               values);
-        if (CheckError (vd, sys->conn, "cannot resize X11 window", ck))
+        if (XCB_error_Check (vd, sys->conn, "cannot resize X11 window", ck))
             return VLC_EGENERIC;
 
         glViewport (0, 0, place.width, place.height);
@@ -503,5 +510,5 @@ static void Manage (vout_display_t *vd)
 {
     vout_display_sys_t *sys = vd->sys;
 
-    ManageEvent (vd, sys->conn, &sys->visible);
+    XCB_Manage (vd, sys->conn, &sys->visible);
 }

@@ -38,7 +38,7 @@
 #ifndef VLC_LIBVLC_H
 #define VLC_LIBVLC_H 1
 
-#if defined (WIN32) && defined (DLL_EXPORT)
+#if defined (_WIN32) && defined (DLL_EXPORT)
 # define LIBVLC_API __declspec(dllexport)
 #elif defined (__GNUC__) && (__GNUC__ >= 4)
 # define LIBVLC_API __attribute__((visibility("default")))
@@ -213,6 +213,20 @@ void libvlc_wait( libvlc_instance_t *p_instance );
 LIBVLC_API
 void libvlc_set_user_agent( libvlc_instance_t *p_instance,
                             const char *name, const char *http );
+
+/**
+ * Sets some meta-informations about the application.
+ * See also libvlc_set_user_agent().
+ *
+ * \param p_instance LibVLC instance
+ * \param id Java-style application identifier, e.g. "com.acme.foobar"
+ * \param version application version numbers, e.g. "1.2.3"
+ * \param icon application icon name, e.g. "foobar"
+ * \version LibVLC 2.1.0 or later.
+ */
+LIBVLC_API
+void libvlc_set_app_id( libvlc_instance_t *p_instance, const char *id,
+                        const char *version, const char *icon );
 
 /**
  * Retrieve libvlc version.

@@ -38,7 +38,8 @@
 #include <vlc_picture_pool.h>
 #include <vlc_dialog.h>
 
-#include "xcb_vlc.h"
+#include "pictures.h"
+#include "events.h"
 
 #define ADAPTOR_TEXT N_("XVideo adaptor number")
 #define ADAPTOR_LONGTEXT N_( \
@@ -387,8 +388,7 @@ static int Open (vlc_object_t *obj)
     xcb_connection_t *conn;
     const xcb_screen_t *screen;
     uint16_t width, height;
-    uint8_t depth;
-    p_sys->embed = GetWindow (vd, &conn, &screen, &depth, &width, &height);
+    p_sys->embed = XCB_parent_Create (vd, &conn, &screen, &width, &height);
     if (p_sys->embed == NULL)
     {
         free (p_sys);
@@ -420,7 +420,12 @@ static int Open (vlc_object_t *obj)
 
     /* */
     video_format_t fmt;
+    vout_display_place_t place;
+
     p_sys->port = 0;
+    vout_display_PlacePicture (&place, &vd->source, vd->cfg, false);
+    p_sys->width  = place.width;
+    p_sys->height = place.height;
 
     xcb_xv_adaptor_info_iterator_t it;
     for (it = xcb_xv_query_adaptors_info_iterator (adaptors);
@@ -498,15 +503,16 @@ static int Open (vlc_object_t *obj)
                 /* XCB_CW_COLORMAP */
                 screen->default_colormap,
             };
-
             xcb_void_cookie_t c;
 
             xcb_create_pixmap (conn, f->depth, pixmap, screen->root, 1, 1);
             c = xcb_create_window_checked (conn, f->depth, p_sys->window,
-                 p_sys->embed->handle.xid, 0, 0, 1, 1, 0,
-                 XCB_WINDOW_CLASS_INPUT_OUTPUT, f->visual, mask, list);
+                 p_sys->embed->handle.xid, place.x, place.y,
+                 place.width, place.height, 0, XCB_WINDOW_CLASS_INPUT_OUTPUT,
+                 f->visual, mask, list);
+            xcb_map_window (conn, p_sys->window);
 
-            if (!CheckError (vd, conn, "cannot create X11 window", c))
+            if (!XCB_error_Check (vd, conn, "cannot create X11 window", c))
             {
                 msg_Dbg (vd, "using X11 visual ID 0x%"PRIx32
                          " (depth: %"PRIu8")", f->visual, f->depth);
@@ -528,26 +534,6 @@ static int Open (vlc_object_t *obj)
         msg_Err (vd, "no available XVideo adaptor");
         goto error;
     }
-    /* Compute video (window) placement within the parent window */
-    {
-        xcb_map_window (conn, p_sys->window);
-
-        vout_display_place_t place;
-
-        vout_display_PlacePicture (&place, &vd->source, vd->cfg, false);
-        p_sys->width  = place.width;
-        p_sys->height = place.height;
-
-        /* */
-        const uint32_t values[] = {
-            place.x, place.y, place.width, place.height };
-        xcb_configure_window (conn, p_sys->window,
-                              XCB_CONFIG_WINDOW_X | XCB_CONFIG_WINDOW_Y |
-                              XCB_CONFIG_WINDOW_WIDTH |
-                              XCB_CONFIG_WINDOW_HEIGHT,
-                              values);
-    }
-    p_sys->visible = false;
 
     /* Create graphic context */
     p_sys->gc = xcb_generate_id (conn);
@@ -565,9 +551,10 @@ static int Open (vlc_object_t *obj)
     }
 
     /* Create cursor */
-    p_sys->cursor = CreateBlankCursor (conn, screen);
+    p_sys->cursor = XCB_cursor_Create (conn, screen);
 
-    p_sys->shm = CheckSHM (obj, conn);
+    p_sys->shm = XCB_shm_Check (obj, conn);
+    p_sys->visible = false;
 
     /* */
     vout_display_info_t info = vd->info;
@@ -619,7 +606,7 @@ static void Close (vlc_object_t *obj)
 
             if (!res->p->p_pixels)
                 break;
-            PictureResourceFree (res, NULL);
+            XCB_pictures_Free (res, NULL);
         }
         picture_pool_Delete (p_sys->pool);
     }
@@ -663,8 +650,8 @@ static void PoolAlloc (vout_display_t *vd, unsigned requested_count)
             res->p[i].i_pitch = pitches[i];
         }
 
-        if (PictureResourceAlloc (vd, res, p_sys->att->data_size,
-                                  p_sys->conn, p_sys->shm))
+        if (XCB_pictures_Alloc (vd, res, p_sys->att->data_size,
+                                p_sys->conn, p_sys->shm))
             break;
 
         /* Allocate further planes as specified by XVideo */
@@ -682,7 +669,7 @@ static void PoolAlloc (vout_display_t *vd, unsigned requested_count)
         pic_array[count] = picture_NewFromResource (&vd->fmt, res);
         if (!pic_array[count])
         {
-            PictureResourceFree (res, p_sys->conn);
+            XCB_pictures_Free (res, p_sys->conn);
             memset (res, 0, sizeof(*res));
             break;
         }
@@ -774,7 +761,6 @@ static int Control (vout_display_t *vd, int query, va_list ap)
     {
         const vout_display_cfg_t *cfg;
         const video_format_t *source;
-        bool is_forced = false;
 
         if (query == VOUT_DISPLAY_CHANGE_SOURCE_ASPECT
          || query == VOUT_DISPLAY_CHANGE_SOURCE_CROP)
@@ -786,19 +772,14 @@ static int Control (vout_display_t *vd, int query, va_list ap)
         {
             source = &vd->source;
             cfg = (const vout_display_cfg_t*)va_arg (ap, const vout_display_cfg_t *);
-            if (query == VOUT_DISPLAY_CHANGE_DISPLAY_SIZE)
-                is_forced = (bool)va_arg (ap, int);
         }
 
-        /* */
-        if (query == VOUT_DISPLAY_CHANGE_DISPLAY_SIZE
-         && is_forced
-         && (cfg->display.width  != vd->cfg->display.width
-           ||cfg->display.height != vd->cfg->display.height)
-         && vout_window_SetSize (p_sys->embed,
-                                  cfg->display.width,
-                                  cfg->display.height))
-            return VLC_EGENERIC;
+        if (query == VOUT_DISPLAY_CHANGE_DISPLAY_SIZE && va_arg (ap, int))
+        {
+            vout_window_SetSize (p_sys->embed,
+                                 cfg->display.width, cfg->display.height);
+            return VLC_EGENERIC; /* Always fail. See x11.c for rationale. */
+        }
 
         vout_display_place_t place;
         vout_display_PlacePicture (&place, source, cfg, false);
@@ -840,7 +821,7 @@ static void Manage (vout_display_t *vd)
 {
     vout_display_sys_t *p_sys = vd->sys;
 
-    ManageEvent (vd, p_sys->conn, &p_sys->visible);
+    XCB_Manage (vd, p_sys->conn, &p_sys->visible);
 }
 
 static int EnumAdaptors (vlc_object_t *obj, const char *var,

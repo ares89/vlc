@@ -148,9 +148,15 @@ static CGEventRef tapEventCallback(CGEventTapProxy proxy, CGEventType type, CGEv
              @"com.bitcartel.pandorajam",
              @"org.clementine-player.clementine",
              @"fm.last.Last.fm",
+             @"fm.last.Scrobbler",
              @"com.beatport.BeatportPro",
              @"com.Timenut.SongKey",
              @"com.macromedia.fireworks", // the tap messes up their mouse input
+             @"at.justp.Theremin",
+             @"ru.ya.themblsha.YandexMusic",
+             @"com.jriver.MediaCenter18",
+             @"com.jriver.MediaCenter19",
+             @"com.jriver.MediaCenter20",
     ];
 }
 
@@ -276,7 +282,7 @@ NSString *kIgnoreMediaKeysDefaultsKey = @"SPIgnoreMediaKeys";
 
     ProcessSerialNumber mySerial, topSerial;
     GetCurrentProcess(&mySerial);
-    [_mediaKeyAppList[0] getValue:&topSerial];
+    [[_mediaKeyAppList objectAtIndex:0] getValue:&topSerial];
 
     Boolean same;
     OSErr err = SameProcess(&mySerial, &topSerial, &same);

@@ -16,7 +16,6 @@ SUBDIRS += test
 EXTRA_DIST = \
 	extras/package/win32/vlc.exe.manifest \
 	extras/package/win32/libvlc.dll.manifest \
-	extras/package/win32/peflags.pl \
 	extras/package/win32/change-contribs-directory.sh \
 	extras/package/win32/configure.sh \
 	extras/package/symbian/configure.sh \
@@ -675,10 +674,6 @@ install-exec-hook:
 
 uninstall-hook:
 	rm -f -- "$(DESTDIR)$(vlclibdir)/plugins/plugins.dat"
-
-silentstd = $(silentstd_$(V))
-silentstd_ = $(silentstd_$(AM_DEFAULT_VERBOSITY))
-silentstd_0 = 2>&1 >/dev/null
 
 ###############################################################################
 # PO translation files update

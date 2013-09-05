@@ -109,8 +109,6 @@ BUILDDIR="${VLCROOT}/build-ios-${PLATFORM}/${ARCH}"
 
 PREFIX="${VLCROOT}/install-ios-${PLATFORM}/${ARCH}"
 
-IOS_GAS_PREPROCESSOR="${VLCROOT}/extras/tools/gas/gas-preprocessor.pl"
-
 export PATH="${VLCROOT}/extras/tools/build/bin:${VLCROOT}/contrib/${TARGET}/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
 
 # contains gas-processor.pl
@@ -178,24 +176,20 @@ mkdir -p "${VLCROOT}/contrib/iPhone${PLATFORM}-${ARCH}"
 cd "${VLCROOT}/contrib/iPhone${PLATFORM}-${ARCH}"
 
 if [ "$PLATFORM" = "OS" ]; then
-      export AS="${IOS_GAS_PREPROCESSOR} ${CC}"
-      export ASCPP="${IOS_GAS_PREPROCESSOR} ${CC}"
-      export CCAS="${IOS_GAS_PREPROCESSOR} ${CC}"
+      export AS="gas-preprocessor.pl ${CC}"
+      export ASCPP="gas-preprocessor.pl ${CC}"
+      export CCAS="gas-preprocessor.pl ${CC}"
 else
   export AS="xcrun as"
   export ASCPP="xcrun as"
 fi
 
-../bootstrap --host=${TARGET} --build="i686-apple-darwin10" --disable-gpl \
+../bootstrap --host=${TARGET} --build="i686-apple-darwin10" --prefix=${VLCROOT}/contrib/${TARGET}-${ARCH} --disable-gpl \
     --disable-disc --disable-sout \
     --enable-small \
     --disable-sdl \
     --disable-SDL_image \
-    --disable-fontconfig \
-    --disable-ass \
-    --disable-freetype2 \
     --disable-iconv \
-    --disable-fribidi \
     --disable-zvbi \
     --disable-kate \
     --disable-caca \
@@ -215,6 +209,11 @@ fi
     --disable-libmpeg2 \
     --disable-chromaprint \
     --disable-mad \
+    --enable-fribidi \
+    --enable-libxml2 \
+    --enable-freetype2 \
+    --enable-ass \
+    --disable-fontconfig \
     --disable-taglib > ${out}
 
 echo "EXTRA_CFLAGS += ${EXTRA_CFLAGS}" >> config.mak
@@ -239,12 +238,6 @@ if [ ".$PLATFORM" != ".Simulator" ]; then
     export AVFORMAT_LIBS="-L${PREFIX}/lib -lavcodec -lz -lavutil -lavformat"
 fi
 
-export DVBPSI_CFLAGS="-I${VLCROOT}/contrib-ios-${TARGET}/include "
-export DVBPSI_LIBS="-L${VLCROOT}/contrib-ios-${TARGET}/lib "
-
-export SWSCALE_CFLAGS="-I${VLCROOT}/contrib-ios-${TARGET}/include "
-export SWSCALE_LIBS="-L${VLCROOT}/contrib-ios-${TARGET}/lib "
-
 mkdir -p ${BUILDDIR}
 spushd ${BUILDDIR}
 
@@ -253,10 +246,10 @@ info ">> --prefix=${PREFIX} --host=${TARGET}"
 # Run configure only upon changes.
 if [ "${VLCROOT}/configure" -nt config.log -o \
      "${THIS_SCRIPT_PATH}" -nt config.log ]; then
-CONTRIB_DIR=${VLCROOT}/contrib-ios-${TARGET} \
 ${VLCROOT}/configure \
     --prefix="${PREFIX}" \
     --host="${TARGET}" \
+    --with-contrib="${VLCROOT}/contrib/${TARGET}-${ARCH}" \
     --disable-debug \
     --enable-static \
     --disable-macosx \
@@ -279,7 +272,7 @@ ${VLCROOT}/configure \
     --disable-faad \
     --disable-lua \
     --disable-a52 \
-    --disable-fribidi \
+    --enable-fribidi \
     --disable-macosx-audio \
     --disable-qt --disable-skins2 \
     --disable-libgcrypt \
@@ -297,8 +290,8 @@ ${VLCROOT}/configure \
     --enable-dvbpsi \
     --enable-swscale \
     --disable-projectm \
-    --disable-libass \
-    --disable-libxml2 \
+    --enable-libass \
+    --enable-libxml2 \
     --disable-goom \
     --disable-dvdread \
     --disable-dvdnav \
@@ -317,7 +310,7 @@ ${VLCROOT}/configure \
     --enable-theora \
     --enable-flac \
     --disable-screen \
-    --disable-freetype \
+    --enable-freetype \
     --disable-taglib \
     --disable-mmx \
     --disable-mad > ${out} # MMX and SSE support requires llvm which is broken on Simulator
@@ -333,7 +326,7 @@ info "Installing libvlc"
 make install > ${out}
 
 find ${PREFIX}/lib/vlc/plugins -name *.a -type f -exec cp '{}' ${PREFIX}/lib/vlc/plugins \;
-cp -R "${VLCROOT}/contrib/${TARGET}" "${PREFIX}/contribs"
+cp -R "${VLCROOT}/contrib/${TARGET}-${ARCH}" "${PREFIX}/contribs"
 
 info "Removing unneeded modules"
 blacklist="

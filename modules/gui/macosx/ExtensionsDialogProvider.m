@@ -1,10 +1,11 @@
 /*****************************************************************************
  * ExtensionsDialogProvider.m: Mac OS X Extensions Dialogs
  *****************************************************************************
- * Copyright (C) 2005-2012 VLC authors and VideoLAN
+ * Copyright (C) 2010-2013 VLC authors and VideoLAN
  * $Id$
  *
- * Authors: Brendon Justin <brendonjustin@gmail.com>,
+ * Authors: Pierre d'Herbemont <pdherbemont # videolan org>
+ *          Brendon Justin <brendonjustin@gmail.com>,
  *          Derk-Jan Hartman <hartman@videolan dot org>,
  *          Felix Paul Kühne <fkuehne@videolan dot org>
  *
@@ -72,6 +73,17 @@ static NSView *createControlFromWidget(extension_widget_t *widget, id self)
             [[field cell] setControlSize:NSRegularControlSize];
             [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(syncTextField:)  name:NSControlTextDidChangeNotification object:field];
             return field;
+        }
+        case EXTENSION_WIDGET_CHECK_BOX:
+        {
+            VLCDialogButton *button = [[VLCDialogButton alloc] init];
+            [button setButtonType:NSSwitchButton];
+            [button setWidget:widget];
+            [button setAction:@selector(triggerClick:)];
+            [button setTarget:self];
+            [[button cell] setControlSize:NSRegularControlSize];
+            [button setAutoresizingMask:NSViewWidthSizable];
+            return button;
         }
         case EXTENSION_WIDGET_BUTTON:
         {
@@ -486,10 +498,14 @@ static ExtensionsDialogProvider *_o_sharedInstance = nil;
     assert(p_dialog);
 
     VLCDialogWindow *dialogWindow = (VLCDialogWindow*) p_dialog->p_sys_intf;
-    if (!dialogWindow)
+    if (!dialogWindow) {
+        msg_Warn(VLCIntf, "dialog window not found");
         return VLC_EGENERIC;
+    }
 
-    [VLCDialogWindow release];
+    [dialogWindow setDelegate:nil];
+    [dialogWindow close];
+    dialogWindow = nil;
 
     p_dialog->p_sys_intf = NULL;
     vlc_cond_signal(&p_dialog->cond);
@@ -555,6 +571,7 @@ static ExtensionsDialogProvider *_o_sharedInstance = nil;
  **/
 - (void)manageDialog:(extension_dialog_t *)p_dialog
 {
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     assert(p_dialog);
     ExtensionsManager *extMgr = [ExtensionsManager getInstance:p_intf];
     assert(extMgr != NULL);
@@ -563,6 +580,7 @@ static ExtensionsDialogProvider *_o_sharedInstance = nil;
     [self performSelectorOnMainThread:@selector(updateExtensionDialog:)
                            withObject:o_value
                         waitUntilDone:YES];
+    [pool release];
 }
 
 @end

@@ -749,7 +749,7 @@ static const char *const ppsz_prefres[] = {
 #define VCD_DEV_TEXT N_("VCD device")
 #define CDAUDIO_DEV_TEXT N_("Audio CD device")
 
-#if defined( WIN32 ) || defined( __OS2__ )
+#if defined( _WIN32 ) || defined( __OS2__ )
 # define DVD_DEV_LONGTEXT N_( \
     "This is the default DVD drive (or file) to use. Don't forget the colon " \
     "after the drive letter (e.g. D:)")
@@ -1059,7 +1059,7 @@ static const char *const ppsz_prefres[] = {
     "Log all VLC messages to syslog (UNIX systems)." )
 
 #define ONEINSTANCE_TEXT N_("Allow only one running instance")
-#if defined( WIN32 ) || defined( __OS2__ )
+#if defined( _WIN32 ) || defined( __OS2__ )
 #define ONEINSTANCE_LONGTEXT N_( \
     "Allowing only one running instance of VLC can sometimes be useful, " \
     "for example if you associated VLC with some media types and you " \
@@ -1462,7 +1462,7 @@ vlc_module_begin ()
     add_obsolete_integer( "volume" ) /* since 2.1.0 */
     add_float( "volume-step", AOUT_VOLUME_STEP, VOLUME_STEP_TEXT,
                  VOLUME_STEP_LONGTEXT, true )
-        change_integer_range( 1, AOUT_VOLUME_DEFAULT )
+        change_float_range( 1., AOUT_VOLUME_DEFAULT )
     add_bool( "volume-save", true, VOLUME_SAVE_TEXT, VOLUME_SAVE_TEXT, true )
     add_obsolete_integer( "aout-rate" ) /* since 2.0.0 */
     add_obsolete_bool( "hq-resampling" ) /* since 1.1.8 */
@@ -1490,7 +1490,7 @@ vlc_module_begin ()
     add_bool( "audio-replay-gain-peak-protection", true,
               AUDIO_REPLAY_GAIN_PEAK_PROTECTION_TEXT, AUDIO_REPLAY_GAIN_PEAK_PROTECTION_LONGTEXT, true )
 
-    add_bool( "audio-time-stretch", HAVE_FPU,
+    add_bool( "audio-time-stretch", true,
               AUDIO_TIME_STRETCH_TEXT, AUDIO_TIME_STRETCH_LONGTEXT, false )
 
     set_subcategory( SUBCAT_AUDIO_AOUT )
@@ -1605,7 +1605,7 @@ vlc_module_begin ()
                  VIDEO_TITLE_LONGTEXT, true )
     add_integer( "align", 0, ALIGN_TEXT, ALIGN_LONGTEXT, true )
         change_integer_list( pi_align_values, ppsz_align_descriptions )
-    add_float( "zoom", 1, ZOOM_TEXT, ZOOM_LONGTEXT, true )
+    add_float( "zoom", 1., ZOOM_TEXT, ZOOM_LONGTEXT, true )
     add_integer( "deinterlace", 0,
                  DEINTERLACE_TEXT, DEINTERLACE_LONGTEXT, false )
         change_integer_list( pi_deinterlace, ppsz_deinterlace_text )
@@ -1648,7 +1648,7 @@ vlc_module_begin ()
                  SUB_AUTO_TEXT, SUB_AUTO_LONGTEXT, false )
     add_integer( "sub-autodetect-fuzzy", 3,
                  SUB_FUZZY_TEXT, SUB_FUZZY_LONGTEXT, true )
-#if defined( WIN32 ) || defined( __OS2__ )
+#if defined( _WIN32 ) || defined( __OS2__ )
 #   define SUB_PATH ".\\subtitles, .\\subs"
 #else
 #   define SUB_PATH "./Subtitles, ./subtitles, ./Subs, ./subs"
@@ -1985,13 +1985,13 @@ vlc_module_begin ()
               INHIBIT_LONGTEXT, true )
 #endif
 
-#if defined(WIN32) || defined(__OS2__)
+#if defined(_WIN32) || defined(__OS2__)
     add_bool( "high-priority", 0, HPRIORITY_TEXT,
               HPRIORITY_LONGTEXT, false )
 #endif
 
 #define CLOCK_SOURCE_TEXT N_("Clock source")
-#ifdef WIN32
+#ifdef _WIN32
     add_string( "clock-source", NULL, CLOCK_SOURCE_TEXT, CLOCK_SOURCE_TEXT, true )
         change_string_cb( EnumClockSource )
 #endif
@@ -2017,7 +2017,7 @@ vlc_module_begin ()
     add_bool( "playlist-autostart", true,
               AUTOSTART_TEXT, AUTOSTART_LONGTEXT, false )
     add_bool( "playlist-cork", true, CORK_TEXT, CORK_LONGTEXT, false )
-#if defined(WIN32) || defined(HAVE_DBUS) || defined(__OS2__)
+#if defined(_WIN32) || defined(HAVE_DBUS) || defined(__OS2__)
     add_bool( "one-instance", 0, ONEINSTANCE_TEXT,
               ONEINSTANCE_LONGTEXT, true )
     add_bool( "started-from-file", 0, STARTEDFROMFILE_TEXT,
@@ -2058,7 +2058,7 @@ vlc_module_begin ()
         change_short('q')
         change_volatile ()
 
-#if !defined(WIN32) && !defined(__OS2__)
+#if !defined(_WIN32) && !defined(__OS2__)
     add_bool( "daemon", 0, DAEMON_TEXT, DAEMON_LONGTEXT, true )
         change_short('d')
 
@@ -2073,7 +2073,7 @@ vlc_module_begin ()
                true )
 #endif
 
-#if defined (WIN32) || defined (__APPLE__)
+#if defined (_WIN32) || defined (__APPLE__)
     add_obsolete_string( "language" ) /* since 2.1.0 */
 #endif
 

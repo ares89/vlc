@@ -69,7 +69,7 @@
     if (b_multiple_vout_windows && b_video_wallpaper)
         b_video_wallpaper = false;
 
-    // TODO: make lion fullscreen compatible with video-wallpaper and !embedded-video
+    // TODO: make lion fullscreen compatible with video-wallpaper
     if ((b_video_wallpaper || !b_video_deco) && !b_nativeFullscreenMode) {
         // b_video_wallpaper is priorized over !b_video_deco
 
@@ -165,7 +165,7 @@
         // cascade windows if we have more than one vout
         if (b_multiple_vout_windows) {
             if ([o_vout_dict count] == 1) {
-                NSWindow * o_first_window = [o_vout_dict objectForKey: [o_vout_dict allKeys][0]];
+                NSWindow * o_first_window = [o_vout_dict objectForKey: [[o_vout_dict allKeys] objectAtIndex:0]];
 
                 NSPoint topleftbase = NSMakePoint(0, [o_first_window frame].size.height);
                 top_left_point = [o_first_window convertBaseToScreen: topleftbase];

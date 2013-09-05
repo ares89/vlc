@@ -146,6 +146,8 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance,
     vlc = libvlc_new (argc, (const char **)argv);
     if (vlc != NULL)
     {
+        libvlc_set_app_id (vlc, "org.VideoLAN.VLC", PACKAGE_VERSION,
+                           PACKAGE_NAME);
         libvlc_set_user_agent (vlc, "VLC media player", "VLC/"PACKAGE_VERSION);
         libvlc_add_intf (vlc, "hotkeys,none");
         libvlc_add_intf (vlc, "globalhotkeys,none");
@@ -275,7 +277,7 @@ LONG WINAPI vlc_exception_filter(struct _EXCEPTION_POINTERS *lpExceptionInfo)
         for( unsigned int i = 0; i < pException->NumberParameters; i++ )
             fwprintf( fd, L" | %p", pException->ExceptionInformation[i] );
 
-#ifdef WIN64
+#ifdef _WIN64
         fwprintf( fd, L"\n\n[context]\nRDI:%px\nRSI:%px\n" \
                     "RBX:%px\nRDX:%px\nRCX:%px\nRAX:%px\n" \
                     "RBP:%px\nRIP:%px\nRSP:%px\nR8:%px\n" \
@@ -298,7 +300,7 @@ LONG WINAPI vlc_exception_filter(struct _EXCEPTION_POINTERS *lpExceptionInfo)
 
         fwprintf( fd, L"\n[stacktrace]\n#EIP|base|module\n" );
 
-#ifdef WIN64
+#ifdef _WIN64
         LPCVOID caller = (LPCVOID)pContext->Rip;
         LPVOID *pBase  = (LPVOID*)pContext->Rbp;
 #else

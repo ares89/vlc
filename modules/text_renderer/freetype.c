@@ -51,7 +51,7 @@
 # define SYSTEM_DEFAULT_FAMILY "Arial Unicode MS"
 # define SYSTEM_DEFAULT_MONOSPACE_FONT_FILE "/System/Library/Fonts/Monaco.dfont"
 # define SYSTEM_DEFAULT_MONOSPACE_FAMILY "Monaco"
-#elif defined( WIN32 )
+#elif defined( _WIN32 )
 # define SYSTEM_DEFAULT_FONT_FILE "arial.ttf" /* Default path font found at run-time */
 # define SYSTEM_DEFAULT_FAMILY "Arial"
 # define SYSTEM_DEFAULT_MONOSPACE_FONT_FILE "cour.ttf"
@@ -103,7 +103,10 @@
 
 /* apple stuff */
 #ifdef __APPLE__
+#include <TargetConditionals.h>
+#if !TARGET_OS_IPHONE
 #include <Carbon/Carbon.h>
+#endif
 #include <sys/param.h>                         /* for MAXPATHLEN */
 #undef HAVE_FONTCONFIG
 #define HAVE_STYLES
@@ -115,7 +118,7 @@
 #endif
 
 /* Win32 GDI */
-#ifdef WIN32
+#ifdef _WIN32
 # include <windows.h>
 # include <shlobj.h>
 # define HAVE_STYLES
@@ -147,7 +150,6 @@ typedef uint32_t uni_char_t;
  *****************************************************************************/
 static int  Create ( vlc_object_t * );
 static void Destroy( vlc_object_t * );
-static int OptionCallback( vlc_object_t *, char const *, vlc_value_t, vlc_value_t, void *);
 
 #define FONT_TEXT N_("Font")
 #define MONOSPACE_FONT_TEXT N_("Monospace Font")
@@ -343,14 +345,9 @@ struct filter_sys_t
     FT_Face        p_face;      /* handle to face object */
     FT_Stroker     p_stroker;
     uint8_t        i_font_opacity;
-    int            i_font_color;
     int            i_font_size;
     bool           b_font_bold;
 
-    uint8_t        i_background_opacity;
-    int            i_background_color;
-
-    double         f_outline_thickness;
     uint8_t        i_outline_opacity;
     int            i_outline_color;
 
@@ -364,14 +361,12 @@ struct filter_sys_t
     char*          psz_fontfamily;
     char*          psz_monofontfamily;
     xml_reader_t  *p_xml;
-#ifdef WIN32
+#ifdef _WIN32
     char*          psz_win_fonts_path;
 #endif
 
     input_attachment_t **pp_font_attachments;
     int                  i_font_attachments;
-
-    vlc_mutex_t    lock;
 };
 
 /* */
@@ -439,16 +434,13 @@ static int GetFontSize( filter_t *p_filter )
     filter_sys_t *p_sys = p_filter->p_sys;
     int           i_size = 0;
 
-    vlc_mutex_lock( &p_filter->p_sys->lock );
     if( p_sys->i_default_font_size )
     {
         i_size = p_sys->i_default_font_size;
-        vlc_mutex_unlock( &p_filter->p_sys->lock );
     }
     else
     {
-        vlc_mutex_unlock( &p_filter->p_sys->lock );
-        int i_ratio = var_GetInteger( p_filter, "freetype-rel-fontsize" );
+        int i_ratio = var_InheritInteger( p_filter, "freetype-rel-fontsize" );
         if( i_ratio > 0 )
         {
             i_size = (int)p_filter->fmt_out.video.i_height / i_ratio;
@@ -498,7 +490,7 @@ static void FontConfig_BuildCache( filter_t *p_filter )
     FcInit();
 #endif
 
-#if defined( WIN32 ) || defined( __APPLE__ )
+#if defined( _WIN32 ) || defined( __APPLE__ )
     dialog_progress_bar_t *p_dialog = NULL;
     FcConfig *fcConfig = FcInitLoadConfig();
 
@@ -606,7 +598,7 @@ static char* FontConfig_Select( FcConfig* config, const char* family,
 }
 #endif
 
-#ifdef WIN32
+#ifdef _WIN32
 #define FONT_DIR_NT _T("SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts")
 
 static int GetFileFontByName( LPCTSTR font_name, char **psz_filename )
@@ -733,9 +725,10 @@ fail:
             return psz_tmp;
     }
 }
-#endif /* HAVE_WIN32 */
+#endif /* _WIN32 */
 
 #ifdef __APPLE__
+#if !TARGET_OS_IPHONE
 static char* MacLegacy_Select( filter_t *p_filter, const char* psz_fontname,
                           bool b_bold, bool b_italic, int i_size, int *i_idx )
 {
@@ -814,6 +807,7 @@ static char* MacLegacy_Select( filter_t *p_filter, const char* psz_fontname,
 
     return psz_path;
 }
+#endif
 #endif
 
 #endif /* HAVE_STYLES */
@@ -1190,14 +1184,8 @@ static inline int RenderAXYZ( filter_t *p_filter,
     p_region->fmt = fmt;
 
     /* Initialize the picture background */
-    vlc_mutex_lock( &p_sys->lock );
-    uint8_t i_opacity = p_sys->i_background_opacity;
-    uint32_t i_background_color = p_sys->i_background_color;
-    uint8_t i_shadow_opacity = p_sys->i_shadow_opacity;
-    uint8_t i_outline_opacity = p_sys->i_outline_opacity;
-    uint32_t i_shadow_color = p_sys->i_shadow_color;
-    uint32_t i_outline_color = p_sys->i_outline_color;
-    vlc_mutex_unlock( &p_sys->lock );
+    uint8_t i_a = var_InheritInteger( p_filter, "freetype-background-opacity" );
+    i_a = VLC_CLIP( i_a, 0, 255 );
     uint8_t i_x, i_y, i_z;
 
     if (p_region->b_renderbg) {
@@ -1207,8 +1195,10 @@ static inline int RenderAXYZ( filter_t *p_filter,
                          ExtractComponents, BlendPixel);
     } else {
         /* Render background under entire subpicture block */
+        int i_background_color = var_InheritInteger( p_filter, "freetype-background-color" );
+        i_background_color = VLC_CLIP( i_background_color, 0, 0xFFFFFF );
         ExtractComponents( i_background_color, &i_x, &i_y, &i_z );
-        FillPicture( p_picture, i_opacity, i_x, i_y, i_z );
+        FillPicture( p_picture, i_a, i_x, i_y, i_z );
     }
 
     /* Render shadow then outline and then normal glyphs */
@@ -1238,16 +1228,16 @@ static inline int RenderAXYZ( filter_t *p_filter,
                 if( !p_glyph )
                     continue;
 
-                i_opacity = (ch->i_color >> 24) & 0xff;
+                i_a = (ch->i_color >> 24) & 0xff;
                 uint32_t i_color;
                 switch (g) {
                 case 0:
-                    i_opacity = i_opacity * i_shadow_opacity / 255;
-                    i_color = i_shadow_color;
+                    i_a     = i_a * p_sys->i_shadow_opacity / 255;
+                    i_color = p_sys->i_shadow_color;
                     break;
                 case 1:
-                    i_opacity = i_opacity * i_outline_opacity / 255;
-                    i_color = i_outline_color;
+                    i_a     = i_a * p_sys->i_outline_opacity / 255;
+                    i_color = p_sys->i_outline_color;
                     break;
                 default:
                     i_color = ch->i_color;
@@ -1260,7 +1250,7 @@ static inline int RenderAXYZ( filter_t *p_filter,
 
                 BlendAXYZGlyph( p_picture,
                                 i_glyph_x, i_glyph_y,
-                                i_opacity, i_x, i_y, i_z,
+                                i_a, i_x, i_y, i_z,
                                 p_glyph,
                                 BlendPixel );
 
@@ -1268,7 +1258,7 @@ static inline int RenderAXYZ( filter_t *p_filter,
                 if( g == 2 && ch->i_line_thickness > 0 )
                     BlendAXYZLine( p_picture,
                                    i_glyph_x, i_glyph_y + p_glyph->top,
-                                   i_opacity, i_x, i_y, i_z,
+                                   i_a, i_x, i_y, i_z,
                                    &ch[0],
                                    i + 1 < p_line->i_character_count ? &ch[1] : NULL,
                                    BlendPixel );
@@ -1689,15 +1679,15 @@ static void HandleWhiteSpace( char *psz_node )
 }
 
 
-static text_style_t *GetStyleFromFontStack( filter_sys_t *p_sys,
+static text_style_t *GetStyleFromFontStack( filter_t *p_filter,
                                             font_stack_t **p_fonts,
                                             int i_style_flags )
 {
     char       *psz_fontname = NULL;
-    vlc_mutex_lock(&p_sys->lock);
-    uint32_t    i_font_color = p_sys->i_font_color & 0x00ffffff;
-    int         i_font_size  = p_sys->i_font_size;
-    vlc_mutex_unlock(&p_sys->lock);
+    uint32_t    i_font_color = var_InheritInteger( p_filter, "freetype-color" );
+    i_font_color = VLC_CLIP( i_font_color, 0, 0xFFFFFF );
+    i_font_color = i_font_color & 0x00ffffff;
+    int         i_font_size  = p_filter->p_sys->i_font_size;
     uint32_t    i_karaoke_bg_color = i_font_color;
 
     if( PeekFont( p_fonts, &psz_fontname, &i_font_size,
@@ -1789,11 +1779,10 @@ static int ProcessNodes( filter_t *p_filter,
     }
     else
     {
-        vlc_mutex_lock(&p_sys->lock);
         uint32_t i_font_size = p_sys->i_font_size;
-        uint32_t i_font_color = p_sys->i_font_color;
+        uint32_t i_font_color = var_InheritInteger( p_filter, "freetype-color" );
+        i_font_color = VLC_CLIP( i_font_color, 0, 0xFFFFFF );
         uint32_t i_font_opacity = p_sys->i_font_opacity;
-        vlc_mutex_unlock(&p_sys->lock);
         rv = PushFont( &p_fonts,
                        p_sys->psz_fontfamily,
                        i_font_size,
@@ -1849,7 +1838,7 @@ static int ProcessNodes( filter_t *p_filter,
                                                 &pp_styles[i_text_length],
                                                 pi_k_dates ? &pi_k_dates[i_text_length] : NULL,
                                                 "\n",
-                                                GetStyleFromFontStack( p_sys,
+                                                GetStyleFromFontStack( p_filter,
                                                                        &p_fonts,
                                                                        i_style_flags ),
                                                 i_k_date );
@@ -1880,7 +1869,7 @@ static int ProcessNodes( filter_t *p_filter,
                                             &pp_styles[i_text_length],
                                             pi_k_dates ? &pi_k_dates[i_text_length] : NULL,
                                             psz_node,
-                                            GetStyleFromFontStack( p_sys,
+                                            GetStyleFromFontStack( p_filter,
                                                                    &p_fonts,
                                                                    i_style_flags ),
                                             i_k_date );
@@ -1997,8 +1986,10 @@ static FT_Face LoadFace( filter_t *p_filter,
                                           -1,
                                           &i_idx );
 #elif defined( __APPLE__ )
+#if !TARGET_OS_IPHONE
         psz_fontfile = MacLegacy_Select( p_filter, p_style->psz_fontname, false, false, -1, &i_idx );
-#elif defined( WIN32 )
+#endif
+#elif defined( _WIN32 )
         psz_fontfile = Win32_Select( p_filter,
                                     p_style->psz_fontname,
                                     (p_style->i_style_flags & STYLE_BOLD) != 0,
@@ -2348,9 +2339,8 @@ static int ProcessLines( filter_t *p_filter,
                     msg_Err( p_filter, "Failed to set font size to %d", p_current_style->i_font_size );
                 if( p_sys->p_stroker )
                 {
-                    vlc_mutex_lock( &p_sys->lock );
-                    double f_outline_thickness = p_sys->f_outline_thickness;
-                    vlc_mutex_unlock( &p_sys->lock );
+                    double f_outline_thickness = var_InheritInteger( p_filter, "freetype-outline-thickness" ) / 100.0;
+                    f_outline_thickness = VLC_CLIP( f_outline_thickness, 0.0, 0.5 );
                     int i_radius = (p_current_style->i_font_size << 6) * f_outline_thickness;
                     FT_Stroker_Set( p_sys->p_stroker,
                                     i_radius,
@@ -2694,16 +2684,14 @@ static int RenderCommon( filter_t *p_filter, subpicture_region_t *p_region_out,
                                                                           STYLE_ITALIC |
                                                                           STYLE_UNDERLINE |
                                                                           STYLE_STRIKEOUT) );
-        else {
-            vlc_mutex_lock( &p_sys->lock );
-            uint8_t i_font_size = p_sys->i_font_size;
-            uint32_t i_font_color = p_sys->i_font_color;
-            uint8_t i_font_opacity = p_sys->i_font_opacity;
-            vlc_mutex_unlock( &p_sys->lock );
+        else
+        {
+            uint32_t i_font_color = var_InheritInteger( p_filter, "freetype-color" );
+            i_font_color = VLC_CLIP( i_font_color, 0, 0xFFFFFF );
             p_style = CreateStyle( p_sys->psz_fontfamily,
-                                   i_font_size,
+                                   p_sys->i_font_size,
                                    (i_font_color & 0xffffff) |
-                                   ((i_font_opacity & 0xff) << 24),
+                                   ((p_sys->i_font_opacity & 0xff) << 24),
                                    0x00ffffff, 0);
         }
         if( p_sys->b_font_bold )
@@ -2738,10 +2726,8 @@ static int RenderCommon( filter_t *p_filter, subpicture_region_t *p_region_out,
         else if( !p_chroma_list || *p_chroma_list == 0 )
             p_chroma_list = p_chroma_list_rgba;
 
-        vlc_mutex_lock( &p_sys->lock );
-        uint8_t i_background_opacity = p_sys->i_background_opacity;
-        vlc_mutex_unlock( &p_sys->lock );
-
+        uint8_t i_background_opacity = var_InheritInteger( p_filter, "freetype-background-opacity" );
+        i_background_opacity = VLC_CLIP( i_background_opacity, 0, 255 );
         const int i_margin = i_background_opacity > 0 ? i_max_face_height / 4 : 0;
         for( const vlc_fourcc_t *p_chroma = p_chroma_list; *p_chroma != 0; p_chroma++ )
         {
@@ -2826,35 +2812,22 @@ static int Create( vlc_object_t *p_this )
     p_sys->i_font_size      = 0;
     p_sys->i_display_height = 0;
 
-    vlc_mutex_init( &p_sys->lock );
-
-    var_Create( p_filter, "freetype-rel-fontsize",
-                VLC_VAR_INTEGER | VLC_VAR_DOINHERIT );
-    var_Create( p_filter, "freetype-background-opacity",
-                VLC_VAR_INTEGER | VLC_VAR_DOINHERIT );
-    var_Create( p_filter, "freetype-background-color",
-                VLC_VAR_INTEGER | VLC_VAR_DOINHERIT );
-    var_Create( p_filter, "freetype-outline-thickness",
-                VLC_VAR_INTEGER | VLC_VAR_DOINHERIT );
-    var_Create( p_filter, "freetype-color",
-               VLC_VAR_INTEGER | VLC_VAR_DOINHERIT );
+    /*
+     * The following variables should not be cached, as they might be changed on-the-fly:
+     * freetype-rel-fontsize, freetype-background-opacity, freetype-background-color,
+     * freetype-outline-thickness, freetype-color
+     *
+     */
 
     psz_fontfamily = var_InheritString( p_filter, "freetype-font" );
     psz_monofontfamily = var_InheritString( p_filter, "freetype-monofont" );
     p_sys->i_default_font_size = var_InheritInteger( p_filter, "freetype-fontsize" );
     p_sys->i_font_opacity = var_InheritInteger( p_filter,"freetype-opacity" );
     p_sys->i_font_opacity = VLC_CLIP( p_sys->i_font_opacity, 0, 255 );
-    p_sys->i_font_color = var_InheritInteger( p_filter, "freetype-color" );
-    p_sys->i_font_color = VLC_CLIP( p_sys->i_font_color, 0, 0xFFFFFF );
     p_sys->b_font_bold = var_InheritBool( p_filter, "freetype-bold" );
 
-    p_sys->i_background_opacity = var_InheritInteger( p_filter,"freetype-background-opacity" );;
-    p_sys->i_background_opacity = VLC_CLIP( p_sys->i_background_opacity, 0, 255 );
-    p_sys->i_background_color = var_InheritInteger( p_filter, "freetype-background-color" );
-    p_sys->i_background_color = VLC_CLIP( p_sys->i_background_color, 0, 0xFFFFFF );
-
-    p_sys->f_outline_thickness = var_InheritInteger( p_filter, "freetype-outline-thickness" ) / 100.0;
-    p_sys->f_outline_thickness = VLC_CLIP( p_sys->f_outline_thickness, 0.0, 0.5 );
+    double f_outline_thickness = var_InheritInteger( p_filter, "freetype-outline-thickness" ) / 100.0;
+    f_outline_thickness = VLC_CLIP( f_outline_thickness, 0.0, 0.5 );
     p_sys->i_outline_opacity = var_InheritInteger( p_filter, "freetype-outline-opacity" );
     p_sys->i_outline_opacity = VLC_CLIP( p_sys->i_outline_opacity, 0, 255 );
     p_sys->i_outline_color = var_InheritInteger( p_filter, "freetype-outline-color" );
@@ -2870,7 +2843,7 @@ static int Create( vlc_object_t *p_this )
     p_sys->f_shadow_vector_x = f_shadow_distance * cos(2 * M_PI * f_shadow_angle / 360);
     p_sys->f_shadow_vector_y = f_shadow_distance * sin(2 * M_PI * f_shadow_angle / 360);
 
-#ifdef WIN32
+#ifdef _WIN32
     /* Get Windows Font folder */
     wchar_t wdir[MAX_PATH];
     if( S_OK != SHGetFolderPathW( NULL, CSIDL_FONTS, NULL, SHGFP_TYPE_CURRENT, wdir ) )
@@ -2888,9 +2861,12 @@ static int Create( vlc_object_t *p_this )
 #ifdef HAVE_STYLES
         psz_fontfamily = strdup( DEFAULT_FAMILY );
 #else
-# ifdef WIN32
+# ifdef _WIN32
         if( asprintf( &psz_fontfamily, "%s"DEFAULT_FONT_FILE, p_sys->psz_win_fonts_path ) == -1 )
+        {
+            psz_fontfamily = NULL;
             goto error;
+        }
 # else
         psz_fontfamily = strdup( DEFAULT_FONT_FILE );
 # endif
@@ -2911,8 +2887,10 @@ static int Create( vlc_object_t *p_this )
                                           false, p_sys->i_default_font_size,
                                           &monofontindex );
 #elif defined(__APPLE__)
+#if !TARGET_OS_IPHONE
     psz_fontfile = MacLegacy_Select( p_filter, psz_fontfamily, false, false, 0, &fontindex );
-#elif defined(WIN32)
+#endif
+#elif defined(_WIN32)
     psz_fontfile = Win32_Select( p_filter, psz_fontfamily, false, false,
                                  p_sys->i_default_font_size, &fontindex );
 
@@ -2966,7 +2944,7 @@ static int Create( vlc_object_t *p_this )
     if( SetFontSize( p_filter, 0 ) != VLC_SUCCESS ) goto error;
 
     p_sys->p_stroker = NULL;
-    if( p_sys->f_outline_thickness > 0.001 )
+    if( f_outline_thickness > 0.001 )
     {
         i_error = FT_Stroker_New( p_sys->p_library, &p_sys->p_stroker );
         if( i_error )
@@ -2980,12 +2958,6 @@ static int Create( vlc_object_t *p_this )
     p_filter->pf_render_html = RenderHtml;
 
     LoadFontsFromAttachments( p_filter );
-
-    var_AddCallback(p_this, "freetype-rel-fontsize", OptionCallback, p_this);
-    var_AddCallback(p_this, "freetype-background-opacity", OptionCallback, p_this);
-    var_AddCallback(p_this, "freetype-background-color", OptionCallback, p_this);
-    var_AddCallback(p_this, "freetype-outline-thickness", OptionCallback, p_this);
-    var_AddCallback(p_this, "freetype-color", OptionCallback, p_this);
 
 #ifdef HAVE_STYLES
     free( psz_fontfile );
@@ -3017,12 +2989,6 @@ static void Destroy( vlc_object_t *p_this )
     filter_t *p_filter = (filter_t *)p_this;
     filter_sys_t *p_sys = p_filter->p_sys;
 
-    var_DelCallback(p_this, "freetype-rel-fontsize", OptionCallback, p_this);
-    var_DelCallback(p_this, "freetype-background-opacity", OptionCallback, p_this);
-    var_DelCallback(p_this, "freetype-background-color", OptionCallback, p_this);
-    var_DelCallback(p_this, "freetype-outline-thickness", OptionCallback, p_this);
-    var_DelCallback(p_this, "freetype-color", OptionCallback, p_this);
-
     if( p_sys->pp_font_attachments )
     {
         for( int k = 0; k < p_sys->i_font_attachments; k++ )
@@ -3033,8 +2999,9 @@ static void Destroy( vlc_object_t *p_this )
 
     if( p_sys->p_xml ) xml_ReaderDelete( p_sys->p_xml );
     free( p_sys->psz_fontfamily );
+    free( p_sys->psz_monofontfamily );
 
-#ifdef WIN32
+#ifdef _WIN32
     free( p_sys->psz_win_fonts_path );
 #endif
 
@@ -3046,39 +3013,5 @@ static void Destroy( vlc_object_t *p_this )
         FT_Stroker_Done( p_sys->p_stroker );
     FT_Done_Face( p_sys->p_face );
     FT_Done_FreeType( p_sys->p_library );
-    vlc_mutex_destroy( &p_sys->lock );
     free( p_sys );
 }
-
-static int OptionCallback( vlc_object_t *p_this, char const *psz_var,
-                         vlc_value_t oldval, vlc_value_t newval, void *p_data)
-{
-    VLC_UNUSED(oldval);
-    VLC_UNUSED(p_data);
-
-    filter_t *p_filter = (filter_t *)p_this;
-    filter_sys_t *p_sys = p_filter->p_sys;
-
-    vlc_mutex_lock( &p_sys->lock );
-    if( !strcmp(psz_var, "freetype-rel-fontsize") )
-        msg_Dbg( p_this, "changed relative font size to %"PRId64, newval.i_int);
-    else if( !strcmp(psz_var, "freetype-color") ) {
-        p_sys->i_font_color = newval.i_int;
-        p_sys->i_font_color = VLC_CLIP( p_sys->i_font_color, 0, 0xFFFFFF );
-    } else if( !strcmp(psz_var, "freetype-background-opacity") ) {
-        p_sys->i_background_opacity = newval.i_int;
-        msg_Dbg( p_filter, "changed background opacity to %"PRId64, newval.i_int);
-    } else if( !strcmp(psz_var, "freetype-outline-thickness") ) {
-        p_sys->f_outline_thickness = newval.i_int / 100.;
-        p_sys->f_outline_thickness = VLC_CLIP( p_sys->f_outline_thickness, 0.0, 0.5 );
-        msg_Dbg( p_filter, "changed outline thickness to %"PRId64, newval.i_int);
-    } else if( !strcmp(psz_var, "freetype-background-color") ) {
-        p_sys->i_background_color = newval.i_int;
-        p_sys->i_background_color = VLC_CLIP( p_sys->i_background_color, 0, 0xFFFFFF );
-        msg_Dbg( p_filter, "changed background color to %"PRId64, newval.i_int);
-    }
-    vlc_mutex_unlock( &p_sys->lock );
-
-    return VLC_SUCCESS;
-}
-

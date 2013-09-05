@@ -37,7 +37,7 @@
 #include <QString>
 #include <QFont>
 #include <QToolButton>
-#include <QButtonGroup>
+#include <QSignalMapper>
 #include <QVBoxLayout>
 #include <QScrollArea>
 
@@ -48,7 +48,7 @@
 
 #define ICON_HEIGHT 64
 
-#ifdef WIN32
+#ifdef _WIN32
 # include <vlc_windows_interfaces.h>
 #endif
 #include <vlc_modules.h>
@@ -61,10 +61,11 @@ SPrefsCatList::SPrefsCatList( intf_thread_t *_p_intf, QWidget *_parent, bool sma
 {
     QVBoxLayout *layout = new QVBoxLayout();
 
-    QButtonGroup *buttonGroup = new QButtonGroup( this );
-    buttonGroup->setExclusive ( true );
-    CONNECT( buttonGroup, buttonClicked ( int ),
-            this, switchPanel( int ) );
+    /* Use autoExclusive buttons and a mapper as QButtonGroup can't
+       set focus (keys) when it manages the buttons's exclusivity.
+       See QT bugs 131 & 816 and QAbstractButton's source code. */
+    QSignalMapper *mapper = new QSignalMapper( layout );
+    CONNECT( mapper, mapped(int), this, switchPanel(int) );
 
     short icon_height = small ? ICON_HEIGHT /2 : ICON_HEIGHT;
 
@@ -79,7 +80,9 @@ SPrefsCatList::SPrefsCatList( intf_thread_t *_p_intf, QWidget *_parent, bool sma
     button->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding) ;  \
     button->setAutoRaise( true );                                           \
     button->setCheckable( true );                                           \
-    buttonGroup->addButton( button, numb );                                 \
+    button->setAutoExclusive( true );                                       \
+    CONNECT( button, clicked(), mapper, map() );                            \
+    mapper->setMapping( button, numb );                                     \
     layout->addWidget( button );
 
     ADD_CATEGORY( SPrefsInterface, qtr("Interface"), qtr("Interface Settings"),
@@ -225,7 +228,7 @@ SPrefsPanel::SPrefsPanel( intf_thread_t *_p_intf, QWidget *_parent,
             CONFIG_BOOL( "video-deco", windowDecorations );
             CONFIG_GENERIC( "vout", StringList, ui.voutLabel, outputModule );
 
-#ifdef WIN32
+#ifdef _WIN32
             CONFIG_GENERIC( "directx-device", StringList, ui.dxDeviceLabel,
                             dXdisplayDevice );
             CONFIG_BOOL( "directx-hw-yuv", hwYUVBox );
@@ -287,7 +290,7 @@ SPrefsPanel::SPrefsPanel( intf_thread_t *_p_intf, QWidget *_parent,
 
             /* Build if necessary */
             QGridLayout * outputAudioLayout = qobject_cast<QGridLayout *>(ui.outputAudioBox->layout());
-#ifdef WIN32
+#ifdef _WIN32
             audioControl( DirectX );
             optionWidgets["directxL" ] = DirectXLabel;
             optionWidgets["directxW" ] = DirectXDevice;
@@ -439,7 +442,7 @@ SPrefsPanel::SPrefsPanel( intf_thread_t *_p_intf, QWidget *_parent,
                 free( psz_dvddiscpath );
                 free( psz_vcddiscpath );
             }
-#ifndef WIN32
+#ifndef _WIN32
             QStringList DVDDeviceComboBoxStringList = QStringList();
             DVDDeviceComboBoxStringList
                     << "dvd*" << "scd*" << "sr*" << "sg*" << "cd*";
@@ -468,7 +471,7 @@ SPrefsPanel::SPrefsPanel( intf_thread_t *_p_intf, QWidget *_parent,
                 ui.live555TransportLabel->hide();
             }
             CONFIG_GENERIC( "avcodec-hw", StringList, ui.hwAccelLabel, hwAccelModule );
-#ifdef WIN32
+#ifdef _WIN32
             HINSTANCE hdxva2_dll = LoadLibrary(TEXT("DXVA2.DLL") );
             if( !hdxva2_dll )
                 ui.hwAccelModule->setEnabled( false );
@@ -523,7 +526,7 @@ SPrefsPanel::SPrefsPanel( intf_thread_t *_p_intf, QWidget *_parent,
                     + qtr( "VLC skins website" )+ QString( "</a>." ) );
             ui.skinsLabel->setFont( italicFont );
 
-#ifdef WIN32
+#ifdef _WIN32
             BUTTONACT( ui.assoButton, assoDialog() );
 #else
             ui.assoButton->hide();
@@ -549,7 +552,7 @@ SPrefsPanel::SPrefsPanel( intf_thread_t *_p_intf, QWidget *_parent,
 
             optionWidgets["skinRB"] = ui.skins;
             optionWidgets["qtRB"] = ui.qt;
-#if !defined( WIN32)
+#if !defined( _WIN32)
             ui.stylesCombo->addItem( qtr("System's default") );
             ui.stylesCombo->addItems( QStyleFactory::keys() );
             ui.stylesCombo->setCurrentIndex( ui.stylesCombo->findText(
@@ -612,7 +615,7 @@ SPrefsPanel::SPrefsPanel( intf_thread_t *_p_intf, QWidget *_parent,
             ui.updatesDays->hide();
 #endif
             /* ONE INSTANCE options */
-#if !defined( WIN32 ) && !defined(__APPLE__) && !defined(__OS2__)
+#if !defined( _WIN32 ) && !defined(__APPLE__) && !defined(__OS2__)
             if( !module_exists( "dbus" ) )
                 ui.OneInterfaceBox->hide();
             else
@@ -701,7 +704,7 @@ SPrefsPanel::SPrefsPanel( intf_thread_t *_p_intf, QWidget *_parent,
             control->insertIntoExistingGrid( gLayout, line );
             controls.append( control );
 
-#ifdef WIN32
+#ifdef _WIN32
             line++;
 
             p_config = config_FindConfig( VLC_OBJECT(p_intf), "qt-disable-volume-keys" );
@@ -747,7 +750,7 @@ void SPrefsPanel::updateAudioOptions( int number)
 {
     QString value = qobject_cast<QComboBox *>(optionWidgets["audioOutCoB"])
                                             ->itemData( number ).toString();
-#ifdef WIN32
+#ifdef _WIN32
     optionWidgets["directxW"]->setVisible( ( value == "directsound" ) );
     optionWidgets["directxL"]->setVisible( ( value == "directsound" ) );
 #elif defined( __OS2__ )
@@ -914,7 +917,7 @@ void SPrefsPanel::configML()
 #endif
 }
 
-#ifdef WIN32
+#ifdef _WIN32
 #include <QDialogButtonBox>
 #include "util/registry.hpp"
 
@@ -1112,5 +1115,5 @@ void SPrefsPanel::saveAsso()
     delete qvReg;
 }
 
-#endif /* WIN32 */
+#endif /* _WIN32 */
 

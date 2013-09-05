@@ -58,6 +58,7 @@ SOURCES_ddummy = ddummy.c
 SOURCES_edummy = edummy.c
 SOURCES_fdkaac = fdkaac.c
 SOURCES_scte27 = scte27.c
+SOURCES_qsv = qsv.c
 
 libvlc_LTLIBRARIES += \
 	liba52_plugin.la \
@@ -174,6 +175,7 @@ EXTRA_LTLIBRARIES += libxwd_plugin.la
 
 ### OpenMAX ###
 noinst_HEADERS += \
+	omxil/OMX_Broadcom.h \
 	omxil/OMX_Component.h \
 	omxil/OMX_Core.h \
 	omxil/OMX_Image.h \

@@ -204,7 +204,7 @@ case "${host_os}" in
   *mingw32* | *cygwin* | *wince* | *mingwce*)
     AC_CHECK_TOOL(WINDRES, windres, :)
     AC_CHECK_TOOL(OBJCOPY, objcopy, :)
-    AH_TOP([#if defined(WIN32) && !defined(_WIN32_WINNT)])
+    AH_TOP([#if defined(_WIN32) && !defined(_WIN32_WINNT)])
     AH_TOP([# define _WIN32_WINNT 0x0502 /* Windows XP SP2 */])
     AH_TOP([#endif])
     AC_DEFINE([_WIN32_IE], 0x0600, [Define to '0x0600' for IE 6.0 (and shell) APIs.])
@@ -219,7 +219,7 @@ case "${host_os}" in
         dnl Check if we are using the mno-cygwin mode in which case we are
         dnl actually dealing with a mingw32 compiler.
         AC_EGREP_CPP(yes,
-            [#ifdef WIN32
+            [#ifdef _WIN32
              yes
              #endif],
             SYS=mingw32, AC_MSG_ERROR([VLC requires -mno-cygwin]))
@@ -227,6 +227,9 @@ case "${host_os}" in
     esac
 
     if test "${SYS}" = "mingw32"; then
+        # DEP, ASLR, NO SEH
+        LDFLAGS="${LDFLAGS} -Wl,--nxcompat -Wl,--no-seh -Wl,--dynamicbase"
+
         VLC_ADD_LIBS([libvlccore],[-lwinmm])
         VLC_ADD_LDFLAGS([vlc],[-mwindows])
         VLC_ADD_LIBS([win32text],[-lgdi32])
@@ -410,7 +413,7 @@ AS_IF([test "${enable_shared}" = "no" -a "${enable_vlc}" != "no"], [
 dnl
 dnl Gettext stuff
 dnl
-AM_GNU_GETTEXT_VERSION([0.18.1])
+AM_GNU_GETTEXT_VERSION([0.18.2])
 AM_GNU_GETTEXT([external], [need-ngettext])
 
 dnl
@@ -561,7 +564,7 @@ AC_CHECK_TYPES([struct pollfd],,,
 [#include <sys/types.h>
 #if HAVE_POLL
 # include <poll.h>
-#elif defined (WIN32)
+#elif defined (_WIN32)
 # include <winsock2.h>
 #endif
 ])
@@ -587,7 +590,7 @@ AC_SEARCH_LIBS([getaddrinfo], [nsl], [
 
 LIBS="${LIBS} ${SOCKET_LIBS}"
 AC_LINK_IFELSE([
-    AC_LANG_PROGRAM([#ifdef WIN32
+    AC_LANG_PROGRAM([#ifdef _WIN32
         # if _WIN32_WINNT < 0x600
         #  error Needs vista+
         # endif
@@ -613,7 +616,7 @@ AC_CACHE_CHECK([for socklen_t in sys/socket.h], dnl ` (fix VIM syntax highlight
 ac_cv_type_socklen_t,
 [AC_COMPILE_IFELSE([AC_LANG_PROGRAM([
 [#include <sys/types.h>
-#ifdef WIN32
+#ifdef _WIN32
 # include <winsock2.h>
 # include <ws2tcpip.h>
 #else
@@ -630,7 +633,7 @@ AH_TEMPLATE(ss_family, [Define to `sa_family' if <sys/socket.h> does not define.
 AC_CACHE_CHECK([for struct sockaddr_storage], ac_cv_struct_sockaddr_storage,
   [AC_TRY_COMPILE(
     [#include <sys/types.h>
-     #if defined( WIN32 )
+     #if defined( _WIN32 )
      # include <winsock2.h>
      #else
      # include <sys/socket.h>
@@ -652,7 +655,7 @@ AC_CHECK_FUNC(getopt_long,, [
 AC_SUBST(GNUGETOPT_LIBS)
 
 AC_CHECK_LIB(m,cos,[
-  VLC_ADD_LIBS([adjust wave ripple psychedelic gradient a52tofloat32 dtstofloat32 x264 goom panoramix rotate noise grain scene kate lua chorus_flanger freetype avcodec access_avio swscale postproc i420_rgb faad twolame equalizer spatializer param_eq samplerate freetype mpc dmo quicktime qt4 compressor headphone_channel_mixer normvol audiobargraph_a speex opus mono colorthres extract ball access_imem hotkeys mosaic gaussianblur x26410b hqdn3d anaglyph oldrc ncurses],[-lm])
+  VLC_ADD_LIBS([adjust wave ripple psychedelic gradient a52tofloat32 dtstofloat32 x264 goom panoramix rotate noise grain scene kate lua chorus_flanger freetype avcodec access_avio swscale postproc i420_rgb faad twolame equalizer spatializer param_eq samplerate freetype mpc dmo quicktime qt4 compressor headphone_channel_mixer normvol audiobargraph_a audiobargraph_v speex opus mono colorthres extract ball access_imem hotkeys mosaic gaussianblur x26410b hqdn3d anaglyph oldrc ncurses],[-lm])
   LIBM="-lm"
 ], [
   LIBM=""
@@ -1952,7 +1955,6 @@ then
   LIBS="${SAVED_LIBS}"
   if test "${have_avfoundation}" != "no"
   then
-    VLC_ADD_LIBS([macosx],[-Wl,-framework,AVFoundation])
     VLC_ADD_PLUGIN([avcapture])
   fi
 fi
@@ -2835,6 +2837,11 @@ if test "${enable_x264}" != "no"; then
       ])
   fi
 fi
+
+dnl
+dnl Intel QuickSync (aka MediaSDK) H264/H262 encoder
+dnl
+PKG_ENABLE_MODULES_VLC([QUICKSYNC], [qsv], [libmfx], [Intel QuickSync MPEG4-Part10/MPEG2 (aka H.264/H.262) encoder], [auto])
 
 dnl
 dnl libfluidsynth (MIDI synthetizer) plugin
@@ -3755,6 +3762,9 @@ AS_IF([test "${enable_skins2}" != "no"], [
   ], [test "${SYS}" = "darwin"], [
     VLC_ADD_CPPFLAGS([skins2],[ -DMACOSX_SKINS])
     VLC_ADD_LIBS([skins2],[-Wl,-framework,Carbon])
+  dnl OS/2
+  ], [test "${SYS}" = "os2"], [
+    VLC_ADD_CPPFLAGS([skins2],[ -DOS2_SKINS])
   dnl Linux/Unix
   ], [
     PKG_CHECK_MODULES([XPM], [xpm],, [have_skins_deps="no"])
