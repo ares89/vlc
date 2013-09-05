@@ -1,0 +1,357 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/stream_filter/dash/mpd
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+SegmentInfo.cpp
+file
+
+
+
+add
+
+Period.cpp
+file
+
+
+
+add
+
+BasicCMParser.h
+file
+
+
+
+add
+
+ContentDescription.h
+file
+
+
+
+add
+
+MPD.h
+file
+
+
+
+add
+
+SegmentInfoCommon.cpp
+file
+
+
+
+add
+
+SegmentInfoDefault.h
+file
+
+
+
+add
+
+TrickModeType.h
+file
+
+
+
+add
+
+IMPDManager.h
+file
+
+
+
+add
+
+CommonAttributesElements.cpp
+file
+
+
+
+add
+
+IsoffMainParser.h
+file
+
+
+
+add
+
+SegmentList.cpp
+file
+
+
+
+add
+
+SegmentTimeline.h
+file
+
+
+
+add
+
+AdaptationSet.cpp
+file
+
+
+
+add
+
+BasicCMManager.h
+file
+
+
+
+add
+
+BaseUrl.h
+file
+
+
+
+add
+
+SegmentBase.h
+file
+
+
+
+add
+
+Segment.cpp
+file
+
+
+
+add
+
+MPDManagerFactory.cpp
+file
+
+
+
+add
+
+SegmentTemplate.h
+file
+
+
+
+add
+
+Representation.h
+file
+
+
+
+add
+
+IsoffMainManager.h
+file
+
+
+
+add
+
+MPDFactory.h
+file
+
+
+
+add
+
+BasicCMParser.cpp
+file
+
+
+
+add
+
+ContentDescription.cpp
+file
+
+
+
+add
+
+MPD.cpp
+file
+
+
+
+add
+
+ProgramInformation.h
+file
+
+
+
+add
+
+SegmentInfoDefault.cpp
+file
+
+
+
+add
+
+SegmentInfo.h
+file
+
+
+
+add
+
+TrickModeType.cpp
+file
+
+
+
+add
+
+Period.h
+file
+
+
+
+add
+
+IsoffMainParser.cpp
+file
+
+
+
+add
+
+SegmentTimeline.cpp
+file
+
+
+
+add
+
+SegmentInfoCommon.h
+file
+
+
+
+add
+
+BasicCMManager.cpp
+file
+
+
+
+add
+
+SegmentBase.cpp
+file
+
+
+
+add
+
+SegmentTemplate.cpp
+file
+
+
+
+add
+
+CommonAttributesElements.h
+file
+
+
+
+add
+
+Representation.cpp
+file
+
+
+
+add
+
+SegmentList.h
+file
+
+
+
+add
+
+AdaptationSet.h
+file
+
+
+
+add
+
+IsoffMainManager.cpp
+file
+
+
+
+add
+
+Segment.h
+file
+
+
+
+add
+
+MPDManagerFactory.h
+file
+
+
+
+add
+
+MPDFactory.cpp
+file
+
+
+
+add
+
+IMPDParser.h
+file
+
+
+
+add
+
+ProgramInformation.cpp
+file
+
+
+
+add
+

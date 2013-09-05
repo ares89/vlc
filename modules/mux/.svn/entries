@@ -1,0 +1,112 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/mux
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+mpjpeg.c
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+mpeg
+dir
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+asf.c
+file
+
+
+
+add
+
+dummy.c
+file
+
+
+
+add
+
+ogg.c
+file
+
+
+
+add
+
+wav.c
+file
+
+
+
+add
+
+avi.c
+file
+
+
+
+add
+
+mp4.c
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+

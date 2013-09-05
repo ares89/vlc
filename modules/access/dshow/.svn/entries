@@ -1,0 +1,70 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/access/dshow
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+access.h
+file
+
+
+
+add
+
+filter.h
+file
+
+
+
+add
+
+vlc_dshow.h
+file
+
+
+
+add
+
+crossbar.cpp
+file
+
+
+
+add
+
+dshow.cpp
+file
+
+
+
+add
+
+filter.cpp
+file
+
+
+
+add
+

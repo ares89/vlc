@@ -1,0 +1,98 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/share/lua/http/requests
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+playlist.xml
+file
+
+
+
+add
+
+vlm_cmd.xml
+file
+
+
+
+add
+
+browse.xml
+file
+
+
+
+add
+
+status.xml
+file
+
+
+
+add
+
+playlist.json
+file
+
+
+
+add
+
+browse.json
+file
+
+
+
+add
+
+status.json
+file
+
+
+
+add
+
+README.txt
+file
+
+
+
+add
+
+playlist_jstree.xml
+file
+
+
+
+add
+
+vlm.xml
+file
+
+
+
+add
+

@@ -1,0 +1,266 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/src
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+libvlc-module.c
+file
+
+
+
+add
+
+test
+dir
+
+
+
+add
+
+audio_output
+dir
+
+
+
+add
+
+darwin
+dir
+
+
+
+add
+
+vlc-plugin.pc.in
+file
+
+
+
+add
+
+libvlc_win32_rc.rc.in
+file
+
+
+
+add
+
+misc
+dir
+
+
+
+add
+
+libvlccore.sym
+file
+
+
+
+add
+
+interface
+dir
+
+
+
+add
+
+playlist
+dir
+
+
+
+add
+
+symbian
+dir
+
+
+
+add
+
+win32
+dir
+
+
+
+add
+
+posix
+dir
+
+
+
+add
+
+os2
+dir
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+config
+dir
+
+
+
+add
+
+version.c
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+revision.txt
+file
+
+
+
+add
+
+revision.c
+file
+
+
+
+add
+
+android
+dir
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+text
+dir
+
+
+
+add
+
+video_output
+dir
+
+
+
+add
+
+network
+dir
+
+
+
+add
+
+missing.c
+file
+
+
+
+add
+
+libvlc.c
+file
+
+
+
+add
+
+input
+dir
+
+
+
+add
+
+libvlc.h
+file
+
+
+
+add
+
+extras
+dir
+
+
+
+add
+
+modules
+dir
+
+
+
+add
+
+check_headers
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+stream_output
+dir
+
+
+
+add
+

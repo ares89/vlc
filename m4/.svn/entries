@@ -1,0 +1,336 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/m4
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+stdint_h.m4
+file
+
+
+
+add
+
+iconv.m4
+file
+
+
+
+add
+
+po.m4
+file
+
+
+
+add
+
+size_max.m4
+file
+
+
+
+add
+
+intlmacosx.m4
+file
+
+
+
+add
+
+glibc21.m4
+file
+
+
+
+add
+
+vlc.m4
+file
+
+
+
+add
+
+codeset.m4
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+nls.m4
+file
+
+
+
+add
+
+lib-link.m4
+file
+
+
+
+add
+
+xsize.m4
+file
+
+
+
+add
+
+dolt.m4
+file
+
+
+
+add
+
+printf-posix.m4
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+lcmessage.m4
+file
+
+
+
+add
+
+with_pkg.m4
+file
+
+
+
+add
+
+intdiv0.m4
+file
+
+
+
+add
+
+longlong.m4
+file
+
+
+
+add
+
+ltsugar.m4
+file
+
+
+
+add
+
+gettext.m4
+file
+
+
+
+add
+
+ltversion.m4
+file
+
+
+
+add
+
+inttypes_h.m4
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+wchar_t.m4
+file
+
+
+
+add
+
+visibility.m4
+file
+
+
+
+add
+
+lock.m4
+file
+
+
+
+add
+
+ltoptions.m4
+file
+
+
+
+add
+
+flags.m4
+file
+
+
+
+add
+
+threadlib.m4
+file
+
+
+
+add
+
+intmax.m4
+file
+
+
+
+add
+
+lib-prefix.m4
+file
+
+
+
+add
+
+glibc2.m4
+file
+
+
+
+add
+
+fcntl-o.m4
+file
+
+
+
+add
+
+lib-ld.m4
+file
+
+
+
+add
+
+libtool.m4
+file
+
+
+
+add
+
+wint_t.m4
+file
+
+
+
+add
+
+intldir.m4
+file
+
+
+
+add
+
+intl.m4
+file
+
+
+
+add
+
+inttypes-pri.m4
+file
+
+
+
+add
+
+progtest.m4
+file
+
+
+
+add
+
+uintmax_t.m4
+file
+
+
+
+add
+
+lt~obsolete.m4
+file
+
+
+
+add
+
+private.m4
+file
+
+
+
+add
+

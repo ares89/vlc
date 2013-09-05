@@ -1,0 +1,77 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/extras/analyser
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+zsh_completion.sh
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+emacs.init
+file
+
+
+
+add
+
+vlc.vim
+file
+
+
+
+add
+
+valgrind.suppressions
+file
+
+
+
+add
+
+zsh.cpp
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+

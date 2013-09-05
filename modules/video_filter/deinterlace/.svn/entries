@@ -1,0 +1,175 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/video_filter/deinterlace
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+algo_basic.h
+file
+
+
+
+add
+
+yadif_template.h
+file
+
+
+
+add
+
+common.h
+file
+
+
+
+add
+
+algo_yadif.c
+file
+
+
+
+add
+
+merge.c
+file
+
+
+
+add
+
+yadif.h
+file
+
+
+
+add
+
+helpers.c
+file
+
+
+
+add
+
+algo_yadif.h
+file
+
+
+
+add
+
+algo_phosphor.c
+file
+
+
+
+add
+
+merge.h
+file
+
+
+
+add
+
+mmx.h
+file
+
+
+
+add
+
+algo_ivtc.c
+file
+
+
+
+add
+
+helpers.h
+file
+
+
+
+add
+
+algo_x.c
+file
+
+
+
+add
+
+algo_phosphor.h
+file
+
+
+
+add
+
+algo_ivtc.h
+file
+
+
+
+add
+
+algo_x.h
+file
+
+
+
+add
+
+merge_arm.S
+file
+
+
+
+add
+
+deinterlace.c
+file
+
+
+
+add
+
+algo_basic.c
+file
+
+
+
+add
+
+deinterlace.h
+file
+
+
+
+add
+

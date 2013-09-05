@@ -1,0 +1,105 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/share/lua/http/dialogs
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+create_stream.html
+file
+
+
+
+add
+
+error_window.html
+file
+
+
+
+add
+
+stream_window.html
+file
+
+
+
+add
+
+mosaic_window.html
+file
+
+
+
+add
+
+stream_config_window.html
+file
+
+
+
+add
+
+batch_window.html
+file
+
+
+
+add
+
+equalizer_window.html
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+browse_window.html
+file
+
+
+
+add
+
+old
+dir
+
+
+
+add
+
+offset_window.html
+file
+
+
+
+add
+

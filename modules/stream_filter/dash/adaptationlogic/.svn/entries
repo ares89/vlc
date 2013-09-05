@@ -1,0 +1,98 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/stream_filter/dash/adaptationlogic
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+IDownloadRateObserver.h
+file
+
+
+
+add
+
+AdaptationLogicFactory.cpp
+file
+
+
+
+add
+
+AbstractAdaptationLogic.h
+file
+
+
+
+add
+
+RateBasedAdaptationLogic.cpp
+file
+
+
+
+add
+
+AdaptationLogicFactory.h
+file
+
+
+
+add
+
+IAdaptationLogic.h
+file
+
+
+
+add
+
+AlwaysBestAdaptationLogic.cpp
+file
+
+
+
+add
+
+RateBasedAdaptationLogic.h
+file
+
+
+
+add
+
+AbstractAdaptationLogic.cpp
+file
+
+
+
+add
+
+AlwaysBestAdaptationLogic.h
+file
+
+
+
+add
+

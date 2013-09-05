@@ -1,0 +1,84 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/extras/package
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+ipkg
+dir
+
+
+
+add
+
+ios
+dir
+
+
+
+add
+
+macosx
+dir
+
+
+
+add
+
+rpm
+dir
+
+
+
+add
+
+win32
+dir
+
+
+
+add
+
+symbian
+dir
+
+
+
+add
+
+npapi.am
+file
+
+
+
+add
+
+os2
+dir
+
+
+
+add
+

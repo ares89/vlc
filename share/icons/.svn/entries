@@ -1,0 +1,77 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/share/icons
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+16x16
+dir
+
+
+
+add
+
+vlc.ico
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+128x128
+dir
+
+
+
+add
+
+48x48
+dir
+
+
+
+add
+
+256x256
+dir
+
+
+
+add
+
+32x32
+dir
+
+
+
+add
+

@@ -1,0 +1,70 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/audio_filter/converter
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+a52tospdif.c
+file
+
+
+
+add
+
+dtstospdif.c
+file
+
+
+
+add
+
+a52tofloat32.c
+file
+
+
+
+add
+
+dtstofloat32.c
+file
+
+
+
+add
+
+format.c
+file
+
+
+
+add
+
+mpgatofixed32.c
+file
+
+
+
+add
+

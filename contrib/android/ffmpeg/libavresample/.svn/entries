@@ -1,0 +1,252 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/libavresample
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+resample_template.c
+file
+
+
+
+add
+
+x86
+dir
+
+
+
+add
+
+libavresample.pc
+file
+
+
+
+add
+
+avresample-test.c
+file
+
+
+
+add
+
+libavresample-uninstalled.pc
+file
+
+
+
+add
+
+version.h
+file
+
+
+
+add
+
+audio_data.c
+file
+
+
+
+add
+
+options.c
+file
+
+
+
+add
+
+audio_data.d
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+options.d
+file
+
+
+
+add
+
+arm
+dir
+
+
+
+add
+
+audio_data.h
+file
+
+
+
+add
+
+utils.c
+file
+
+
+
+add
+
+audio_convert.c
+file
+
+
+
+add
+
+utils.d
+file
+
+
+
+add
+
+audio_mix_matrix.c
+file
+
+
+
+add
+
+audio_convert.d
+file
+
+
+
+add
+
+audio_mix_matrix.d
+file
+
+
+
+add
+
+avresample.h
+file
+
+
+
+add
+
+audio_convert.h
+file
+
+
+
+add
+
+resample.c
+file
+
+
+
+add
+
+libavresample.v
+file
+
+
+
+add
+
+resample.d
+file
+
+
+
+add
+
+resample.h
+file
+
+
+
+add
+
+audio_mix.c
+file
+
+
+
+add
+
+audio_mix.d
+file
+
+
+
+add
+
+dither.c
+file
+
+
+
+add
+
+dither.d
+file
+
+
+
+add
+
+internal.h
+file
+
+
+
+add
+
+audio_mix.h
+file
+
+
+
+add
+
+dither.h
+file
+
+
+
+add
+

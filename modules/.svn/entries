@@ -1,0 +1,287 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+media_library
+dir
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+text_renderer
+dir
+
+
+
+add
+
+video_filter
+dir
+
+
+
+add
+
+sse2
+dir
+
+
+
+add
+
+access_output
+dir
+
+
+
+add
+
+lua
+dir
+
+
+
+add
+
+demux
+dir
+
+
+
+add
+
+stream_out
+dir
+
+
+
+add
+
+gui
+dir
+
+
+
+add
+
+common.am
+file
+
+
+
+add
+
+video_output
+dir
+
+
+
+add
+
+altivec
+dir
+
+
+
+add
+
+video_chroma
+dir
+
+
+
+add
+
+visualization
+dir
+
+
+
+add
+
+access
+dir
+
+
+
+add
+
+mmx
+dir
+
+
+
+add
+
+audio_mixer
+dir
+
+
+
+add
+
+audio_filter
+dir
+
+
+
+add
+
+notify
+dir
+
+
+
+add
+
+mux
+dir
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+services_discovery
+dir
+
+
+
+add
+
+LIST
+file
+
+
+
+add
+
+meta_engine
+dir
+
+
+
+add
+
+codec
+dir
+
+
+
+add
+
+control
+dir
+
+
+
+add
+
+audio_output
+dir
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+list.sh
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+misc
+dir
+
+
+
+add
+
+genmf
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+arm_neon
+dir
+
+
+
+add
+
+stream_filter
+dir
+
+
+
+add
+
+packetizer
+dir
+
+
+
+add
+

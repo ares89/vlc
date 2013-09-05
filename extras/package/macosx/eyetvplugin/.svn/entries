@@ -1,0 +1,77 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/extras/package/macosx/eyetvplugin
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+Info.plist
+file
+
+
+
+add
+
+eyetvplugin.xcodeproj
+dir
+
+
+
+add
+
+EyeTV_Plugin_Installer.pmdoc
+dir
+
+
+
+add
+
+eyetvplugin.c
+file
+
+
+
+add
+
+English.lproj
+dir
+
+
+
+add
+
+eyetvplugin.h
+file
+
+
+
+add
+
+EyeTVPluginDefs.h
+file
+
+
+
+add
+

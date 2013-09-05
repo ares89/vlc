@@ -1,0 +1,63 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/src/ogg
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+rules.mak
+file
+
+
+
+add
+
+libogg-wince.patch
+file
+
+
+
+add
+
+SHA512SUMS
+file
+
+
+
+add
+
+libogg-disable-check.patch
+file
+
+
+
+add
+
+libogg-1.1.patch
+file
+
+
+
+add
+

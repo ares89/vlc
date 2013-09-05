@@ -1,0 +1,70 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/doc/skins/curve_maker
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+Bezier.frm
+file
+
+
+
+add
+
+Bezier.bas
+file
+
+
+
+add
+
+bezier.vbp
+file
+
+
+
+add
+
+Bezier.vbw
+file
+
+
+
+add
+
+Bezier.frx
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+

@@ -1,0 +1,91 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/video_output/msw
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+common.h
+file
+
+
+
+add
+
+direct2d.c
+file
+
+
+
+add
+
+wingdi.c
+file
+
+
+
+add
+
+direct3d.c
+file
+
+
+
+add
+
+directx.c
+file
+
+
+
+add
+
+events.c
+file
+
+
+
+add
+
+glwin32.c
+file
+
+
+
+add
+
+common.c
+file
+
+
+
+add
+
+events.h
+file
+
+
+
+add
+

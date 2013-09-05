@@ -1,0 +1,154 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/control
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+globalhotkeys
+dir
+
+
+
+add
+
+hotkeys.c
+file
+
+
+
+add
+
+unimotion.h
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+lirc.c
+file
+
+
+
+add
+
+dummy.c
+file
+
+
+
+add
+
+motionlib.c
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+motionlib.h
+file
+
+
+
+add
+
+gestures.c
+file
+
+
+
+add
+
+ntservice.c
+file
+
+
+
+add
+
+rc.c
+file
+
+
+
+add
+
+motion.c
+file
+
+
+
+add
+
+dbus
+dir
+
+
+
+add
+
+unimotion.c
+file
+
+
+
+add
+
+netsync.c
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+

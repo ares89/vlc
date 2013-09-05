@@ -1,0 +1,231 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/stream_out
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+Makefile.am
+file
+
+
+
+add
+
+vod.c
+file
+
+
+
+add
+
+rtsp.c
+file
+
+
+
+add
+
+dummy.c
+file
+
+
+
+add
+
+bridge.c
+file
+
+
+
+add
+
+autodel.c
+file
+
+
+
+add
+
+delay.c
+file
+
+
+
+add
+
+standard.c
+file
+
+
+
+add
+
+raop.c
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+smem.c
+file
+
+
+
+add
+
+transcode
+dir
+
+
+
+add
+
+langfromtelx.c
+file
+
+
+
+add
+
+display.c
+file
+
+
+
+add
+
+rtp.c
+file
+
+
+
+add
+
+es.c
+file
+
+
+
+add
+
+rtcp.c
+file
+
+
+
+add
+
+setid.c
+file
+
+
+
+add
+
+rtp.h
+file
+
+
+
+add
+
+gather.c
+file
+
+
+
+add
+
+duplicate.c
+file
+
+
+
+add
+
+rtpfmt.c
+file
+
+
+
+add
+
+record.c
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+description.c
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+chromaprint_data.h
+file
+
+
+
+add
+
+chromaprint.c
+file
+
+
+
+add
+
+mosaic_bridge.c
+file
+
+
+
+add
+

@@ -1,0 +1,168 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/tests
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+videogen.c
+file
+
+
+
+add
+
+utils.c
+file
+
+
+
+add
+
+fate.sh
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+filtergraphs
+dir
+
+
+
+add
+
+fate-run.sh
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+md5.sh
+file
+
+
+
+add
+
+regression-funcs.sh
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+base64.c
+file
+
+
+
+add
+
+tiny_psnr.c
+file
+
+
+
+add
+
+lena.pnm
+file
+
+
+
+add
+
+rotozoom.c
+file
+
+
+
+add
+
+ref
+dir
+
+
+
+add
+
+audiogen.c
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+lavf-regression.sh
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+fate
+dir
+
+
+
+add
+

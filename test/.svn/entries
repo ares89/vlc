@@ -1,0 +1,112 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/test
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+run_vlc.sh
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+Makefile.in
+file
+
+
+
+add
+
+samples
+dir
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+TODO
+file
+
+
+
+add
+
+native
+dir
+
+
+
+add
+
+dynamicoverlay
+dir
+
+
+
+add
+
+src
+dir
+
+
+
+add
+
+modules
+dir
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+libvlc
+dir
+
+
+
+add
+

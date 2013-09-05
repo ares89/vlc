@@ -1,0 +1,168 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/libavutil/arm
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+float_dsp_neon.d
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+cpu.h
+file
+
+
+
+add
+
+float_dsp_init_arm.c
+file
+
+
+
+add
+
+float_dsp_init_arm.d
+file
+
+
+
+add
+
+asm.S
+file
+
+
+
+add
+
+intreadwrite.h
+file
+
+
+
+add
+
+float_dsp_vfp.S
+file
+
+
+
+add
+
+float_dsp_init_vfp.c
+file
+
+
+
+add
+
+intmath.h
+file
+
+
+
+add
+
+float_dsp_neon.S
+file
+
+
+
+add
+
+float_dsp_init_vfp.d
+file
+
+
+
+add
+
+float_dsp_init_neon.c
+file
+
+
+
+add
+
+float_dsp_init_neon.d
+file
+
+
+
+add
+
+float_dsp_arm.h
+file
+
+
+
+add
+
+bswap.h
+file
+
+
+
+add
+
+timer.h
+file
+
+
+
+add
+
+float_dsp_vfp.d
+file
+
+
+
+add
+
+cpu.c
+file
+
+
+
+add
+
+cpu.d
+file
+
+
+
+add
+

@@ -1,0 +1,546 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/video_filter
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+opencv_wrapper.c
+file
+
+
+
+add
+
+magnify.c
+file
+
+
+
+add
+
+gradfun.h
+file
+
+
+
+add
+
+deinterlace
+dir
+
+
+
+add
+
+wall.c
+file
+
+
+
+add
+
+logo.c
+file
+
+
+
+add
+
+puzzle_mgt.c
+file
+
+
+
+add
+
+sharpen.c
+file
+
+
+
+add
+
+clone.c
+file
+
+
+
+add
+
+remoteosd.c
+file
+
+
+
+add
+
+wave.c
+file
+
+
+
+add
+
+anaglyph.c
+file
+
+
+
+add
+
+puzzle_mgt.h
+file
+
+
+
+add
+
+mirror.c
+file
+
+
+
+add
+
+extract.c
+file
+
+
+
+add
+
+transform.c
+file
+
+
+
+add
+
+mosaic.c
+file
+
+
+
+add
+
+mosaic.h
+file
+
+
+
+add
+
+hqdn3d.c
+file
+
+
+
+add
+
+remoteosd_rfbproto.h
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+blendbench.c
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+hqdn3d.h
+file
+
+
+
+add
+
+scale.c
+file
+
+
+
+add
+
+motionblur.c
+file
+
+
+
+add
+
+antiflicker.c
+file
+
+
+
+add
+
+psychedelic.c
+file
+
+
+
+add
+
+motiondetect.c
+file
+
+
+
+add
+
+erase.c
+file
+
+
+
+add
+
+grain.c
+file
+
+
+
+add
+
+swscale.c
+file
+
+
+
+add
+
+yuvp.c
+file
+
+
+
+add
+
+dynamicoverlay
+dir
+
+
+
+add
+
+canvas.c
+file
+
+
+
+add
+
+puzzle_lib.c
+file
+
+
+
+add
+
+puzzle_pce.c
+file
+
+
+
+add
+
+puzzle_lib.h
+file
+
+
+
+add
+
+filter_picture.h
+file
+
+
+
+add
+
+puzzle_pce.h
+file
+
+
+
+add
+
+adjust.c
+file
+
+
+
+add
+
+subsdelay.c
+file
+
+
+
+add
+
+ripple.c
+file
+
+
+
+add
+
+croppadd.c
+file
+
+
+
+add
+
+audiobargraph_v.c
+file
+
+
+
+add
+
+rotate.c
+file
+
+
+
+add
+
+panoramix.c
+file
+
+
+
+add
+
+marq.c
+file
+
+
+
+add
+
+sepia.c
+file
+
+
+
+add
+
+adjust_sat_hue.c
+file
+
+
+
+add
+
+opencv_example.cpp
+file
+
+
+
+add
+
+filter_event_info.h
+file
+
+
+
+add
+
+adjust_sat_hue.h
+file
+
+
+
+add
+
+ball.c
+file
+
+
+
+add
+
+atmo
+dir
+
+
+
+add
+
+chain.c
+file
+
+
+
+add
+
+blend.cpp
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+puzzle.c
+file
+
+
+
+add
+
+puzzle_bezier.c
+file
+
+
+
+add
+
+gradient.c
+file
+
+
+
+add
+
+scene.c
+file
+
+
+
+add
+
+puzzle.h
+file
+
+
+
+add
+
+puzzle_bezier.h
+file
+
+
+
+add
+
+gaussianblur.c
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+alphamask.c
+file
+
+
+
+add
+
+invert.c
+file
+
+
+
+add
+
+rss.c
+file
+
+
+
+add
+
+postproc.c
+file
+
+
+
+add
+
+colorthres.c
+file
+
+
+
+add
+
+posterize.c
+file
+
+
+
+add
+
+gradfun.c
+file
+
+
+
+add
+
+bluescreen.c
+file
+
+
+
+add
+

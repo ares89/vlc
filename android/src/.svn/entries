@@ -1,0 +1,175 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/android/src
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+stream_output
+dir
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+test
+dir
+
+
+
+add
+
+android
+dir
+
+
+
+add
+
+vlc-plugin.pc
+file
+
+
+
+add
+
+audio_output
+dir
+
+
+
+add
+
+darwin
+dir
+
+
+
+add
+
+text
+dir
+
+
+
+add
+
+video_output
+dir
+
+
+
+add
+
+network
+dir
+
+
+
+add
+
+misc
+dir
+
+
+
+add
+
+input
+dir
+
+
+
+add
+
+interface
+dir
+
+
+
+add
+
+playlist
+dir
+
+
+
+add
+
+win32
+dir
+
+
+
+add
+
+posix
+dir
+
+
+
+add
+
+os2
+dir
+
+
+
+add
+
+config
+dir
+
+
+
+add
+
+extras
+dir
+
+
+
+add
+
+modules
+dir
+
+
+
+add
+
+.deps
+dir
+
+
+
+add
+

@@ -1,0 +1,98 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/extras/package/win32/NSIS/UAC
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+runas.cpp
+file
+
+
+
+add
+
+uac.cpp
+file
+
+
+
+add
+
+resource.rc
+file
+
+
+
+add
+
+resource.h
+file
+
+
+
+add
+
+examples
+dir
+
+
+
+add
+
+uac.h
+file
+
+
+
+add
+
+History.txt
+file
+
+
+
+add
+
+License.txt
+file
+
+
+
+add
+
+Readme.html
+file
+
+
+
+add
+
+nsisutil.h
+file
+
+
+
+add
+

@@ -1,0 +1,385 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/tests/fate
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+vcodec.mak
+file
+
+
+
+add
+
+vorbis.mak
+file
+
+
+
+add
+
+flac.mak
+file
+
+
+
+add
+
+voice.mak
+file
+
+
+
+add
+
+microsoft.mak
+file
+
+
+
+add
+
+ac3.mak
+file
+
+
+
+add
+
+video.mak
+file
+
+
+
+add
+
+monkeysaudio.mak
+file
+
+
+
+add
+
+probe.mak
+file
+
+
+
+add
+
+amrwb.mak
+file
+
+
+
+add
+
+vpx.mak
+file
+
+
+
+add
+
+bmp.mak
+file
+
+
+
+add
+
+acodec.mak
+file
+
+
+
+add
+
+pcm.mak
+file
+
+
+
+add
+
+screen.mak
+file
+
+
+
+add
+
+demux.mak
+file
+
+
+
+add
+
+real.mak
+file
+
+
+
+add
+
+dpcm.mak
+file
+
+
+
+add
+
+h264.mak
+file
+
+
+
+add
+
+adpcm.mak
+file
+
+
+
+add
+
+filter-audio.mak
+file
+
+
+
+add
+
+wma.mak
+file
+
+
+
+add
+
+qt.mak
+file
+
+
+
+add
+
+qtrle.mak
+file
+
+
+
+add
+
+filter-video.mak
+file
+
+
+
+add
+
+dfa.mak
+file
+
+
+
+add
+
+cdxl.mak
+file
+
+
+
+add
+
+atrac.mak
+file
+
+
+
+add
+
+libavcodec.mak
+file
+
+
+
+add
+
+vqf.mak
+file
+
+
+
+add
+
+wavpack.mak
+file
+
+
+
+add
+
+indeo.mak
+file
+
+
+
+add
+
+amrnb.mak
+file
+
+
+
+add
+
+alac.mak
+file
+
+
+
+add
+
+cover-art.mak
+file
+
+
+
+add
+
+libavformat.mak
+file
+
+
+
+add
+
+lossless-audio.mak
+file
+
+
+
+add
+
+prores.mak
+file
+
+
+
+add
+
+lossless-video.mak
+file
+
+
+
+add
+
+utvideo.mak
+file
+
+
+
+add
+
+fft.mak
+file
+
+
+
+add
+
+avformat.mak
+file
+
+
+
+add
+
+mpc.mak
+file
+
+
+
+add
+
+als.mak
+file
+
+
+
+add
+
+image.mak
+file
+
+
+
+add
+
+aac.mak
+file
+
+
+
+add
+
+ea.mak
+file
+
+
+
+add
+
+seek.mak
+file
+
+
+
+add
+
+libavutil.mak
+file
+
+
+
+add
+
+mp3.mak
+file
+
+
+
+add
+
+audio.mak
+file
+
+
+
+add
+

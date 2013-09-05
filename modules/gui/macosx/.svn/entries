@@ -1,0 +1,630 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/macosx
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+playlist.m
+file
+
+
+
+add
+
+VideoEffects.h
+file
+
+
+
+add
+
+CompatibilityFixes.h
+file
+
+
+
+add
+
+PXSourceList.m
+file
+
+
+
+add
+
+SharedDialogs.h
+file
+
+
+
+add
+
+MainMenu.h
+file
+
+
+
+add
+
+VideoEffects.m
+file
+
+
+
+add
+
+SharedDialogs.m
+file
+
+
+
+add
+
+MainMenu.m
+file
+
+
+
+add
+
+prefs.h
+file
+
+
+
+add
+
+PXSourceListDataSource.h
+file
+
+
+
+add
+
+prefs.m
+file
+
+
+
+add
+
+StringUtility.h
+file
+
+
+
+add
+
+Windows.h
+file
+
+
+
+add
+
+Windows.m
+file
+
+
+
+add
+
+StringUtility.m
+file
+
+
+
+add
+
+SPMediaKeyTap.h
+file
+
+
+
+add
+
+intf.h
+file
+
+
+
+add
+
+SPMediaKeyTap.m
+file
+
+
+
+add
+
+intf.m
+file
+
+
+
+add
+
+iTunes.h
+file
+
+
+
+add
+
+SPInvocationGrabbing.h
+file
+
+
+
+add
+
+about.h
+file
+
+
+
+add
+
+SPInvocationGrabbing.m
+file
+
+
+
+add
+
+AppleRemote.h
+file
+
+
+
+add
+
+MainWindowTitle.h
+file
+
+
+
+add
+
+about.m
+file
+
+
+
+add
+
+AppleRemote.m
+file
+
+
+
+add
+
+ConvertAndSave.h
+file
+
+
+
+add
+
+MainWindowTitle.m
+file
+
+
+
+add
+
+applescript.h
+file
+
+
+
+add
+
+TrackSynchronization.h
+file
+
+
+
+add
+
+ConvertAndSave.m
+file
+
+
+
+add
+
+bookmarks.h
+file
+
+
+
+add
+
+SideBarItem.h
+file
+
+
+
+add
+
+coredialogs.h
+file
+
+
+
+add
+
+TrackSynchronization.m
+file
+
+
+
+add
+
+applescript.m
+file
+
+
+
+add
+
+eyetv.h
+file
+
+
+
+add
+
+SideBarItem.m
+file
+
+
+
+add
+
+bookmarks.m
+file
+
+
+
+add
+
+macosx.m
+file
+
+
+
+add
+
+coredialogs.m
+file
+
+
+
+add
+
+open.h
+file
+
+
+
+add
+
+eyetv.m
+file
+
+
+
+add
+
+prefs_widgets.h
+file
+
+
+
+add
+
+open.m
+file
+
+
+
+add
+
+prefs_widgets.m
+file
+
+
+
+add
+
+MainWindow.h
+file
+
+
+
+add
+
+playlistinfo.h
+file
+
+
+
+add
+
+MainWindow.m
+file
+
+
+
+add
+
+playlistinfo.m
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+ControlsBar.h
+file
+
+
+
+add
+
+CoreInteraction.h
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+ControlsBar.m
+file
+
+
+
+add
+
+CoreInteraction.m
+file
+
+
+
+add
+
+AudioEffects.h
+file
+
+
+
+add
+
+VideoView.h
+file
+
+
+
+add
+
+controls.h
+file
+
+
+
+add
+
+AudioEffects.m
+file
+
+
+
+add
+
+VideoView.m
+file
+
+
+
+add
+
+controls.m
+file
+
+
+
+add
+
+VLCUIWidgets.h
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+VLCUIWidgets.m
+file
+
+
+
+add
+
+fspanel.h
+file
+
+
+
+add
+
+simple_prefs.h
+file
+
+
+
+add
+
+ExtensionsDialogProvider.h
+file
+
+
+
+add
+
+ExtensionsManager.h
+file
+
+
+
+add
+
+misc.h
+file
+
+
+
+add
+
+simple_prefs.m
+file
+
+
+
+add
+
+fspanel.m
+file
+
+
+
+add
+
+VLCVoutWindowController.h
+file
+
+
+
+add
+
+ExtensionsDialogProvider.m
+file
+
+
+
+add
+
+PXSourceListDelegate.h
+file
+
+
+
+add
+
+ExtensionsManager.m
+file
+
+
+
+add
+
+misc.m
+file
+
+
+
+add
+
+wizard.h
+file
+
+
+
+add
+
+output.h
+file
+
+
+
+add
+
+playlist.h
+file
+
+
+
+add
+
+VLCVoutWindowController.m
+file
+
+
+
+add
+
+PXSourceList.h
+file
+
+
+
+add
+
+output.m
+file
+
+
+
+add
+
+wizard.m
+file
+
+
+
+add
+

@@ -1,0 +1,623 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/libavfilter
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+vf_drawtext.c
+file
+
+
+
+add
+
+vf_lut.c
+file
+
+
+
+add
+
+vf_interlace.c
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+yadif.h
+file
+
+
+
+add
+
+af_amix.c
+file
+
+
+
+add
+
+video.c
+file
+
+
+
+add
+
+vf_boxblur.c
+file
+
+
+
+add
+
+vf_transpose.c
+file
+
+
+
+add
+
+vsink_nullsink.c
+file
+
+
+
+add
+
+buffer.c
+file
+
+
+
+add
+
+video.h
+file
+
+
+
+add
+
+vf_unsharp.c
+file
+
+
+
+add
+
+vf_settb.c
+file
+
+
+
+add
+
+af_channelmap.c
+file
+
+
+
+add
+
+thread.h
+file
+
+
+
+add
+
+af_volume.c
+file
+
+
+
+add
+
+vsrc_nullsrc.c
+file
+
+
+
+add
+
+vf_gradfun.c
+file
+
+
+
+add
+
+vf_blackframe.c
+file
+
+
+
+add
+
+af_volume.h
+file
+
+
+
+add
+
+asink_anullsink.c
+file
+
+
+
+add
+
+filtfmts.c
+file
+
+
+
+add
+
+version.h
+file
+
+
+
+add
+
+asrc_anullsrc.c
+file
+
+
+
+add
+
+buffersink.c
+file
+
+
+
+add
+
+vf_crop.c
+file
+
+
+
+add
+
+buffersink.h
+file
+
+
+
+add
+
+af_join.c
+file
+
+
+
+add
+
+vf_select.c
+file
+
+
+
+add
+
+formats.c
+file
+
+
+
+add
+
+vf_overlay.c
+file
+
+
+
+add
+
+af_resample.c
+file
+
+
+
+add
+
+graphparser.c
+file
+
+
+
+add
+
+formats.h
+file
+
+
+
+add
+
+setpts.c
+file
+
+
+
+add
+
+libavfilter.v
+file
+
+
+
+add
+
+vf_showinfo.c
+file
+
+
+
+add
+
+vf_cropdetect.c
+file
+
+
+
+add
+
+pthread.c
+file
+
+
+
+add
+
+af_asyncts.c
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+vf_hflip.c
+file
+
+
+
+add
+
+avfiltergraph.c
+file
+
+
+
+add
+
+vf_drawbox.c
+file
+
+
+
+add
+
+audio.c
+file
+
+
+
+add
+
+af_ashowinfo.c
+file
+
+
+
+add
+
+avfiltergraph.h
+file
+
+
+
+add
+
+x86
+dir
+
+
+
+add
+
+vf_delogo.c
+file
+
+
+
+add
+
+vf_copy.c
+file
+
+
+
+add
+
+audio.h
+file
+
+
+
+add
+
+vf_fieldorder.c
+file
+
+
+
+add
+
+trim.c
+file
+
+
+
+add
+
+vsrc_color.c
+file
+
+
+
+add
+
+vf_vflip.c
+file
+
+
+
+add
+
+vf_libopencv.c
+file
+
+
+
+add
+
+avfilter.c
+file
+
+
+
+add
+
+vsrc_movie.c
+file
+
+
+
+add
+
+vf_hqdn3d.c
+file
+
+
+
+add
+
+vf_hqdn3d.h
+file
+
+
+
+add
+
+internal.h
+file
+
+
+
+add
+
+buffersrc.c
+file
+
+
+
+add
+
+avfilter.h
+file
+
+
+
+add
+
+vf_frei0r.c
+file
+
+
+
+add
+
+fifo.c
+file
+
+
+
+add
+
+vf_fps.c
+file
+
+
+
+add
+
+vf_format.c
+file
+
+
+
+add
+
+vsrc_testsrc.c
+file
+
+
+
+add
+
+buffersrc.h
+file
+
+
+
+add
+
+vf_yadif.c
+file
+
+
+
+add
+
+vf_pixdesctest.c
+file
+
+
+
+add
+
+af_aformat.c
+file
+
+
+
+add
+
+vf_pad.c
+file
+
+
+
+add
+
+allfilters.c
+file
+
+
+
+add
+
+vf_null.c
+file
+
+
+
+add
+
+vf_aspect.c
+file
+
+
+
+add
+
+drawutils.c
+file
+
+
+
+add
+
+af_anull.c
+file
+
+
+
+add
+
+vf_scale.c
+file
+
+
+
+add
+
+drawutils.h
+file
+
+
+
+add
+
+vf_fade.c
+file
+
+
+
+add
+
+af_channelsplit.c
+file
+
+
+
+add
+
+gradfun.h
+file
+
+
+
+add
+
+split.c
+file
+
+
+
+add
+

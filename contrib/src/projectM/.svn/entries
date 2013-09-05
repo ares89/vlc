@@ -1,0 +1,56 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/src/projectM
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+win32.patch
+file
+
+
+
+add
+
+rules.mak
+file
+
+
+
+add
+
+win64.patch
+file
+
+
+
+add
+
+SHA512SUMS
+file
+
+
+
+add
+

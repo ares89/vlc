@@ -1,0 +1,133 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/libavutil/x86
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+asm.h
+file
+
+
+
+add
+
+timer.h
+file
+
+
+
+add
+
+cpu.c
+file
+
+
+
+add
+
+cpu.h
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+float_dsp_init.c
+file
+
+
+
+add
+
+emms.asm
+file
+
+
+
+add
+
+cpuid.asm
+file
+
+
+
+add
+
+intreadwrite.h
+file
+
+
+
+add
+
+emms.h
+file
+
+
+
+add
+
+w64xmmtest.h
+file
+
+
+
+add
+
+float_dsp.asm
+file
+
+
+
+add
+
+x86inc.asm
+file
+
+
+
+add
+
+x86util.asm
+file
+
+
+
+add
+
+bswap.h
+file
+
+
+
+add
+

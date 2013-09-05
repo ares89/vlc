@@ -1,0 +1,210 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/lua/libs
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+httpd.c
+file
+
+
+
+add
+
+gettext.c
+file
+
+
+
+add
+
+osd.c
+file
+
+
+
+add
+
+net.c
+file
+
+
+
+add
+
+strings.c
+file
+
+
+
+add
+
+objects.c
+file
+
+
+
+add
+
+misc.c
+file
+
+
+
+add
+
+stream.c
+file
+
+
+
+add
+
+win.c
+file
+
+
+
+add
+
+vlm.c
+file
+
+
+
+add
+
+objects.h
+file
+
+
+
+add
+
+input.c
+file
+
+
+
+add
+
+dialog.c
+file
+
+
+
+add
+
+xml.c
+file
+
+
+
+add
+
+misc.h
+file
+
+
+
+add
+
+playlist.c
+file
+
+
+
+add
+
+equalizer.c
+file
+
+
+
+add
+
+input.h
+file
+
+
+
+add
+
+sd.c
+file
+
+
+
+add
+
+playlist.h
+file
+
+
+
+add
+
+video.c
+file
+
+
+
+add
+
+volume.c
+file
+
+
+
+add
+
+messages.c
+file
+
+
+
+add
+
+configuration.c
+file
+
+
+
+add
+
+variables.c
+file
+
+
+
+add
+
+variables.h
+file
+
+
+
+add
+

@@ -1,0 +1,140 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/skins2/win32
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+win32_loop.cpp
+file
+
+
+
+add
+
+win32_window.hpp
+file
+
+
+
+add
+
+win32_factory.hpp
+file
+
+
+
+add
+
+win32_loop.hpp
+file
+
+
+
+add
+
+win32_timer.cpp
+file
+
+
+
+add
+
+win32_timer.hpp
+file
+
+
+
+add
+
+win32_tooltip.cpp
+file
+
+
+
+add
+
+win32_tooltip.hpp
+file
+
+
+
+add
+
+win32_graphics.cpp
+file
+
+
+
+add
+
+win32_dragdrop.cpp
+file
+
+
+
+add
+
+win32_popup.cpp
+file
+
+
+
+add
+
+win32_graphics.hpp
+file
+
+
+
+add
+
+win32_window.cpp
+file
+
+
+
+add
+
+win32_factory.cpp
+file
+
+
+
+add
+
+win32_dragdrop.hpp
+file
+
+
+
+add
+
+win32_popup.hpp
+file
+
+
+
+add
+

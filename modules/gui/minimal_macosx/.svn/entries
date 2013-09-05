@@ -1,0 +1,98 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/minimal_macosx
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+misc.h
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+intf.h
+file
+
+
+
+add
+
+misc.m
+file
+
+
+
+add
+
+VLCMinimalVoutWindow.h
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+intf.m
+file
+
+
+
+add
+
+macosx.c
+file
+
+
+
+add
+
+VLCMinimalVoutWindow.m
+file
+
+
+
+add
+

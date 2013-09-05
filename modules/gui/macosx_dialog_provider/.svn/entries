@@ -1,0 +1,105 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/macosx_dialog_provider
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+VLCLoginPanel.m
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+VLCProgressPanel.h
+file
+
+
+
+add
+
+VLCUIWidgets.h
+file
+
+
+
+add
+
+dialogProvider.h
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+VLCLoginPanel.h
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+VLCUIWidgets.m
+file
+
+
+
+add
+
+VLCProgressPanel.m
+file
+
+
+
+add
+
+dialogProvider.m
+file
+
+
+
+add
+

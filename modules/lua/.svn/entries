@@ -1,0 +1,133 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/lua
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+extension.h
+file
+
+
+
+add
+
+demux.c
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+vlc.c
+file
+
+
+
+add
+
+meta.c
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+vlc.h
+file
+
+
+
+add
+
+libs.h
+file
+
+
+
+add
+
+intf.c
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+extension_thread.c
+file
+
+
+
+add
+
+libs
+dir
+
+
+
+add
+
+services_discovery.c
+file
+
+
+
+add
+
+extension.c
+file
+
+
+
+add
+

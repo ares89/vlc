@@ -1,0 +1,17 @@
+COMPILE_OPTS =		$(INCLUDES) -I. -DBSD=1 -O -g -mfpu=vfp -mcpu=arm1136jf-s -mfloat-abi=softfp -O2 -I/home/sunlit/android-ndk-r8c/sources/cxx-stl/gnu-libstdc++/4.6/include -I/home/sunlit/android-ndk-r8c/sources/cxx-stl/gnu-libstdc++/4.6/libs/armeabi/include -DNDEBUG  -I/home/sunlit/vlc/android/vlc/contrib/arm-linux-androideabi/include -fexceptions
+C =			c
+C_COMPILER =		cc
+C_FLAGS =		$(COMPILE_OPTS)
+CPP =			cc
+CPLUSPLUS_COMPILER =	c++
+CPLUSPLUS_FLAGS =	$(COMPILE_OPTS) -Wall
+OBJ =			o
+LINK =			c++ -o
+LINK_OPTS =		-L.
+CONSOLE_LINK_OPTS =	$(LINK_OPTS)
+LIBRARY_LINK =		ld -o
+LIBRARY_LINK_OPTS =	$(LINK_OPTS) -r -Bstatic
+LIB_SUFFIX =			a
+LIBS_FOR_CONSOLE_APPLICATION =
+LIBS_FOR_GUI_APPLICATION =
+EXE =

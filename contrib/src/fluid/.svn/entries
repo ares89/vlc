@@ -1,0 +1,63 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/src/fluid
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+fluid-pkg-static.patch
+file
+
+
+
+add
+
+fluid-static-win32.patch
+file
+
+
+
+add
+
+SHA512SUMS
+file
+
+
+
+add
+
+fluid-no-bin.patch
+file
+
+
+
+add
+
+rules.mak
+file
+
+
+
+add
+

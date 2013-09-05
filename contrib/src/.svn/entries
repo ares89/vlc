@@ -1,0 +1,651 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/src
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+sqlite
+dir
+
+
+
+add
+
+goom
+dir
+
+
+
+add
+
+taglib
+dir
+
+
+
+add
+
+bghudappkit
+dir
+
+
+
+add
+
+shout
+dir
+
+
+
+add
+
+gpg-error
+dir
+
+
+
+add
+
+ffmpeg
+dir
+
+
+
+add
+
+vorbis
+dir
+
+
+
+add
+
+flac
+dir
+
+
+
+add
+
+openjpeg
+dir
+
+
+
+add
+
+qt4
+dir
+
+
+
+add
+
+postproc
+dir
+
+
+
+add
+
+pthreads
+dir
+
+
+
+add
+
+change_prefix.sh
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+ogg
+dir
+
+
+
+add
+
+vpx
+dir
+
+
+
+add
+
+lame
+dir
+
+
+
+add
+
+lua
+dir
+
+
+
+add
+
+SDL_image
+dir
+
+
+
+add
+
+kate
+dir
+
+
+
+add
+
+dshow
+dir
+
+
+
+add
+
+jpeg
+dir
+
+
+
+add
+
+gsm
+dir
+
+
+
+add
+
+opus
+dir
+
+
+
+add
+
+ass
+dir
+
+
+
+add
+
+mpcdec
+dir
+
+
+
+add
+
+nettle
+dir
+
+
+
+add
+
+xau
+dir
+
+
+
+add
+
+bluray
+dir
+
+
+
+add
+
+zlib
+dir
+
+
+
+add
+
+freetype2
+dir
+
+
+
+add
+
+gnutls
+dir
+
+
+
+add
+
+iconv
+dir
+
+
+
+add
+
+pkg-static.sh
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+ebml
+dir
+
+
+
+add
+
+ncurses
+dir
+
+
+
+add
+
+sdl
+dir
+
+
+
+add
+
+theora
+dir
+
+
+
+add
+
+png
+dir
+
+
+
+add
+
+dca
+dir
+
+
+
+add
+
+tiff
+dir
+
+
+
+add
+
+harfbuzz
+dir
+
+
+
+add
+
+fontconfig
+dir
+
+
+
+add
+
+cddb
+dir
+
+
+
+add
+
+samplerate
+dir
+
+
+
+add
+
+README
+file
+
+
+
+add
+
+libmpeg2
+dir
+
+
+
+add
+
+mad
+dir
+
+
+
+add
+
+fribidi
+dir
+
+
+
+add
+
+gme
+dir
+
+
+
+add
+
+gcrypt
+dir
+
+
+
+add
+
+libxml2
+dir
+
+
+
+add
+
+tiger
+dir
+
+
+
+add
+
+regex
+dir
+
+
+
+add
+
+zvbi
+dir
+
+
+
+add
+
+xcb
+dir
+
+
+
+add
+
+faad2
+dir
+
+
+
+add
+
+matroska
+dir
+
+
+
+add
+
+gmp
+dir
+
+
+
+add
+
+projectM
+dir
+
+
+
+add
+
+gettext
+dir
+
+
+
+add
+
+chromaprint
+dir
+
+
+
+add
+
+a52
+dir
+
+
+
+add
+
+caca
+dir
+
+
+
+add
+
+live555
+dir
+
+
+
+add
+
+sparkle
+dir
+
+
+
+add
+
+directx
+dir
+
+
+
+add
+
+get-arch.sh
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+fluid
+dir
+
+
+
+add
+
+x264
+dir
+
+
+
+add
+
+modplug
+dir
+
+
+
+add
+
+twolame
+dir
+
+
+
+add
+
+tremor
+dir
+
+
+
+add
+
+dvdread
+dir
+
+
+
+add
+
+schroedinger
+dir
+
+
+
+add
+
+upnp
+dir
+
+
+
+add
+
+dvdnav
+dir
+
+
+
+add
+
+orc
+dir
+
+
+
+add
+
+speex
+dir
+
+
+
+add
+
+dvdcss
+dir
+
+
+
+add
+
+dvbpsi
+dir
+
+
+
+add
+
+sidplay2
+dir
+
+
+
+add
+
+growl
+dir
+
+
+
+add
+
+main.mak
+file
+
+
+
+add
+
+crystalhd
+dir
+
+
+
+add
+
+glew
+dir
+
+
+
+add
+

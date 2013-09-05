@@ -1,0 +1,140 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/services_discovery
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+bonjour.c
+file
+
+
+
+add
+
+upnp.cpp
+file
+
+
+
+add
+
+sap.c
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+upnp.hpp
+file
+
+
+
+add
+
+windrive.c
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+pulse.c
+file
+
+
+
+add
+
+os2drive.c
+file
+
+
+
+add
+
+podcast.c
+file
+
+
+
+add
+
+xcb_apps.c
+file
+
+
+
+add
+
+mtp.c
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+mediadirs.c
+file
+
+
+
+add
+
+udev.c
+file
+
+
+
+add
+

@@ -1,0 +1,105 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/video_output/xcb
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+keysym.c
+file
+
+
+
+add
+
+xcb_keysym.h
+file
+
+
+
+add
+
+events.c
+file
+
+
+
+add
+
+xcb_vlc.h
+file
+
+
+
+add
+
+keysym.h
+file
+
+
+
+add
+
+window.c
+file
+
+
+
+add
+
+common.c
+file
+
+
+
+add
+
+x11.c
+file
+
+
+
+add
+
+glx.c
+file
+
+
+
+add
+
+keys.c
+file
+
+
+
+add
+
+xvideo.c
+file
+
+
+
+add
+

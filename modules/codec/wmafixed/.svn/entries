@@ -1,0 +1,126 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/codec/wmafixed
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+mdct.h
+file
+
+
+
+add
+
+asf.h
+file
+
+
+
+add
+
+fft.c
+file
+
+
+
+add
+
+bitstream.h
+file
+
+
+
+add
+
+bswap.h
+file
+
+
+
+add
+
+wmadata.h
+file
+
+
+
+add
+
+wmafixed.c
+file
+
+
+
+add
+
+fft.h
+file
+
+
+
+add
+
+wma.c
+file
+
+
+
+add
+
+wmadec.h
+file
+
+
+
+add
+
+mdct.c
+file
+
+
+
+add
+
+wmadeci.c
+file
+
+
+
+add
+
+wmafixed.h
+file
+
+
+
+add
+
+bitstream.c
+file
+
+
+
+add
+

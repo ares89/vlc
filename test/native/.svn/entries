@@ -1,0 +1,98 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/test/native
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+init.c
+file
+
+
+
+add
+
+profiles.c
+file
+
+
+
+add
+
+tests.h
+file
+
+
+
+add
+
+gc.c
+file
+
+
+
+add
+
+threads.c
+file
+
+
+
+add
+
+libvlc.c
+file
+
+
+
+add
+
+stats.c
+file
+
+
+
+add
+
+i18n.c
+file
+
+
+
+add
+
+algo.c
+file
+
+
+
+add
+
+url.c
+file
+
+
+
+add
+

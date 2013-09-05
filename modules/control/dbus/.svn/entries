@@ -1,0 +1,91 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/control/dbus
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+dbus.c
+file
+
+
+
+add
+
+dbus_tracklist.c
+file
+
+
+
+add
+
+dbus_player.h
+file
+
+
+
+add
+
+dbus_root.c
+file
+
+
+
+add
+
+dbus_tracklist.h
+file
+
+
+
+add
+
+dbus_root.h
+file
+
+
+
+add
+
+dbus_player.c
+file
+
+
+
+add
+
+dbus_common.h
+file
+
+
+
+add
+
+dbus_introspect.h
+file
+
+
+
+add
+

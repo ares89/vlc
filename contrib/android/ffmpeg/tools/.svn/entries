@@ -1,0 +1,98 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/tools
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+aviocat.c
+file
+
+
+
+add
+
+probetest.c
+file
+
+
+
+add
+
+trasher.c
+file
+
+
+
+add
+
+graph2dot.c
+file
+
+
+
+add
+
+pktdumper.c
+file
+
+
+
+add
+
+qt-faststart.c
+file
+
+
+
+add
+
+cws2fws.c
+file
+
+
+
+add
+
+ismindex.c
+file
+
+
+
+add
+
+patcheck
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+

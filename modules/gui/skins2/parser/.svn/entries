@@ -1,0 +1,126 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/skins2/parser
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+skin_parser.hpp
+file
+
+
+
+add
+
+expr_evaluator.hpp
+file
+
+
+
+add
+
+gen_builder.py
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+builder.cpp
+file
+
+
+
+add
+
+interpreter.hpp
+file
+
+
+
+add
+
+builder.hpp
+file
+
+
+
+add
+
+builder_data.def
+file
+
+
+
+add
+
+xmlparser.cpp
+file
+
+
+
+add
+
+skin_parser.cpp
+file
+
+
+
+add
+
+expr_evaluator.cpp
+file
+
+
+
+add
+
+xmlparser.hpp
+file
+
+
+
+add
+
+interpreter.cpp
+file
+
+
+
+add
+
+builder_data.hpp
+file
+
+
+
+add
+

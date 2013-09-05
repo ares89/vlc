@@ -1,0 +1,93 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/live555/UsageEnvironment
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+strDup.cpp
+file
+
+
+
+add
+
+include
+dir
+
+
+
+add
+
+Makefile.tail
+file
+
+
+
+add
+
+COPYING
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+svn:special
+
+UsageEnvironment.cpp
+file
+
+
+
+add
+
+HashTable.cpp
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+Makefile.head
+file
+
+
+
+add
+

@@ -1,0 +1,301 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/skins2/commands
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+cmd_dummy.hpp
+file
+
+
+
+add
+
+cmd_muxer.cpp
+file
+
+
+
+add
+
+cmd_muxer.hpp
+file
+
+
+
+add
+
+cmd_add_item.cpp
+file
+
+
+
+add
+
+cmd_add_item.hpp
+file
+
+
+
+add
+
+cmd_dvd.cpp
+file
+
+
+
+add
+
+cmd_layout.cpp
+file
+
+
+
+add
+
+cmd_generic.hpp
+file
+
+
+
+add
+
+cmd_minimize.cpp
+file
+
+
+
+add
+
+cmd_dvd.hpp
+file
+
+
+
+add
+
+cmd_layout.hpp
+file
+
+
+
+add
+
+cmd_callbacks.hpp
+file
+
+
+
+add
+
+cmd_playtree.cpp
+file
+
+
+
+add
+
+cmd_minimize.hpp
+file
+
+
+
+add
+
+cmd_playtree.hpp
+file
+
+
+
+add
+
+async_queue.cpp
+file
+
+
+
+add
+
+cmd_on_top.cpp
+file
+
+
+
+add
+
+cmd_input.cpp
+file
+
+
+
+add
+
+cmd_snapshot.cpp
+file
+
+
+
+add
+
+cmd_audio.cpp
+file
+
+
+
+add
+
+cmd_playlist.cpp
+file
+
+
+
+add
+
+cmd_resize.cpp
+file
+
+
+
+add
+
+cmd_fullscreen.cpp
+file
+
+
+
+add
+
+cmd_on_top.hpp
+file
+
+
+
+add
+
+async_queue.hpp
+file
+
+
+
+add
+
+cmd_snapshot.hpp
+file
+
+
+
+add
+
+cmd_input.hpp
+file
+
+
+
+add
+
+cmd_playlist.hpp
+file
+
+
+
+add
+
+cmd_audio.hpp
+file
+
+
+
+add
+
+cmd_resize.hpp
+file
+
+
+
+add
+
+cmd_fullscreen.hpp
+file
+
+
+
+add
+
+cmd_change_skin.cpp
+file
+
+
+
+add
+
+cmd_vars.cpp
+file
+
+
+
+add
+
+cmd_show_window.hpp
+file
+
+
+
+add
+
+cmd_change_skin.hpp
+file
+
+
+
+add
+
+cmd_vars.hpp
+file
+
+
+
+add
+
+cmd_quit.cpp
+file
+
+
+
+add
+
+cmd_dialogs.hpp
+file
+
+
+
+add
+
+cmd_quit.hpp
+file
+
+
+
+add
+

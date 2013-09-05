@@ -1,0 +1,175 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/qt4/util
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+qmenuview.hpp
+file
+
+
+
+add
+
+qvlcframe.hpp
+file
+
+
+
+add
+
+searchlineedit.hpp
+file
+
+
+
+add
+
+searchlineedit_mac.mm
+file
+
+
+
+add
+
+input_slider.cpp
+file
+
+
+
+add
+
+customwidgets.cpp
+file
+
+
+
+add
+
+pictureflow.cpp
+file
+
+
+
+add
+
+qt_dirs.cpp
+file
+
+
+
+add
+
+customwidgets.hpp
+file
+
+
+
+add
+
+input_slider.hpp
+file
+
+
+
+add
+
+singleton.hpp
+file
+
+
+
+add
+
+pictureflow.hpp
+file
+
+
+
+add
+
+registry.cpp
+file
+
+
+
+add
+
+timetooltip.cpp
+file
+
+
+
+add
+
+qt_dirs.hpp
+file
+
+
+
+add
+
+qvlcapp.hpp
+file
+
+
+
+add
+
+registry.hpp
+file
+
+
+
+add
+
+buttons
+dir
+
+
+
+add
+
+timetooltip.hpp
+file
+
+
+
+add
+
+qmenuview.cpp
+file
+
+
+
+add
+
+searchlineedit.cpp
+file
+
+
+
+add
+

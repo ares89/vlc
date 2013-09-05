@@ -1,0 +1,231 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/share/lua/playlist
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+anevia_xml.lua
+file
+
+
+
+add
+
+break.lua
+file
+
+
+
+add
+
+pluzz.lua
+file
+
+
+
+add
+
+dailymotion.lua
+file
+
+
+
+add
+
+README.txt
+file
+
+
+
+add
+
+youtube.lua
+file
+
+
+
+add
+
+pinkbike.lua
+file
+
+
+
+add
+
+liveleak.lua
+file
+
+
+
+add
+
+rockbox_fm_presets.lua
+file
+
+
+
+add
+
+anevia_streams.lua
+file
+
+
+
+add
+
+youtube_homepage.lua
+file
+
+
+
+add
+
+zapiks.lua
+file
+
+
+
+add
+
+metachannels.lua
+file
+
+
+
+add
+
+googlevideo.lua
+file
+
+
+
+add
+
+metacafe.lua
+file
+
+
+
+add
+
+bbc_co_uk.lua
+file
+
+
+
+add
+
+appletrailers.lua
+file
+
+
+
+add
+
+koreus.lua
+file
+
+
+
+add
+
+extreme.lua
+file
+
+
+
+add
+
+cue.lua
+file
+
+
+
+add
+
+jamendo.lua
+file
+
+
+
+add
+
+katsomo.lua
+file
+
+
+
+add
+
+mpora.lua
+file
+
+
+
+add
+
+joox.lua
+file
+
+
+
+add
+
+vimeo.lua
+file
+
+
+
+add
+
+soundcloud.lua
+file
+
+
+
+add
+
+lelombrik.lua
+file
+
+
+
+add
+
+france2.lua
+file
+
+
+
+add
+
+canalplus.lua
+file
+
+
+
+add
+

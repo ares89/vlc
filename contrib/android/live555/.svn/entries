@@ -1,0 +1,630 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/live555
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+config.linux.orig
+file
+
+
+
+add
+
+config.iphone-simulator
+file
+
+
+
+add
+
+config.cygwin.orig
+file
+
+
+
+add
+
+genWindowsMakefiles
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+config.solaris-64bit
+file
+
+
+
+add
+
+mediaServer
+dir
+
+
+
+add
+
+genWindowsMakefiles.cmd
+file
+
+
+
+add
+
+config.sunos
+file
+
+
+
+add
+
+WindowsAudioInputDevice
+dir
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+Makefile.head
+file
+
+
+
+add
+
+config.linux-64bit.orig
+file
+
+
+
+add
+
+config.alpha.orig
+file
+
+
+
+add
+
+config.iphoneos
+file
+
+
+
+add
+
+config.alpha
+file
+
+
+
+add
+
+config.linux-with-shared-libraries.orig
+file
+
+
+
+add
+
+config.linux-64bit
+file
+
+
+
+add
+
+config.uClinux.orig
+file
+
+
+
+add
+
+genMakefiles
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+README
+file
+
+
+
+add
+
+config.macosx
+file
+
+
+
+add
+
+config.openbsd
+file
+
+
+
+add
+
+config.avr32-linux
+file
+
+
+
+add
+
+liveMedia
+dir
+
+
+
+add
+
+fix-makefile
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+config.linux.orig.orig
+file
+
+
+
+add
+
+config.armlinux.orig
+file
+
+
+
+add
+
+config.cygwin
+file
+
+
+
+add
+
+config.solaris-64bit.orig
+file
+
+
+
+add
+
+Makefile.tail
+file
+
+
+
+add
+
+config.bfin-uclinux
+file
+
+
+
+add
+
+config.cygwin-for-vlc
+file
+
+
+
+add
+
+config.freebsd
+file
+
+
+
+add
+
+config.macosx-32bit.orig
+file
+
+
+
+add
+
+config.irix
+file
+
+
+
+add
+
+win32config
+file
+
+
+
+add
+
+config.armeb-uclibc.orig
+file
+
+
+
+add
+
+UsageEnvironment
+dir
+
+
+
+add
+
+config.armeb-uclibc
+file
+
+
+
+add
+
+config.linux-gdb.orig
+file
+
+
+
+add
+
+config.macosx.orig.orig
+file
+
+
+
+add
+
+config.openbsd.orig
+file
+
+
+
+add
+
+config.avr32-linux.orig
+file
+
+
+
+add
+
+config.macosx.orig
+file
+
+
+
+add
+
+config.linux-gdb
+file
+
+
+
+add
+
+config.macosx-before-version-10.4.orig.orig
+file
+
+
+
+add
+
+config.solaris-32bit.orig
+file
+
+
+
+add
+
+config.solaris-32bit
+file
+
+
+
+add
+
+config.iphone-simulator.orig
+file
+
+
+
+add
+
+config.linux
+file
+
+
+
+add
+
+config.bsplinux.orig
+file
+
+
+
+add
+
+proxyServer
+dir
+
+
+
+add
+
+win32config.Borland
+file
+
+
+
+add
+
+config.cygwin-for-vlc.orig
+file
+
+
+
+add
+
+config.sunos.orig
+file
+
+
+
+add
+
+groupsock
+dir
+
+
+
+add
+
+config.freebsd.orig
+file
+
+
+
+add
+
+config.macosx-32bit.orig.orig
+file
+
+
+
+add
+
+config.bfin-linux-uclibc
+file
+
+
+
+add
+
+configure
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+config.cris-axis-linux-gnu
+file
+
+
+
+add
+
+testProgs
+dir
+
+
+
+add
+
+config.uClinux
+file
+
+
+
+add
+
+config.qnx4
+file
+
+
+
+add
+
+config.macosx-before-version-10.4.orig
+file
+
+
+
+add
+
+config.macosx-before-version-10.4
+file
+
+
+
+add
+
+config.armlinux
+file
+
+
+
+add
+
+config.bfin-uclinux.orig
+file
+
+
+
+add
+
+COPYING
+file
+
+
+
+add
+
+config.bsplinux
+file
+
+
+
+add
+
+config.bfin-linux-uclibc.orig
+file
+
+
+
+add
+
+config.irix.orig
+file
+
+
+
+add
+
+config.macosx-32bit
+file
+
+
+
+add
+
+config.aix.orig
+file
+
+
+
+add
+
+config.mingw.orig
+file
+
+
+
+add
+
+config.aix
+file
+
+
+
+add
+
+config.mingw
+file
+
+
+
+add
+
+config.iphoneos.orig
+file
+
+
+
+add
+
+config.cris-axis-linux-gnu.orig
+file
+
+
+
+add
+
+config.linux-with-shared-libraries
+file
+
+
+
+add
+
+BasicUsageEnvironment
+dir
+
+
+
+add
+
+config.qnx4.orig
+file
+
+
+
+add
+

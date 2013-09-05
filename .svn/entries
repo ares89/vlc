@@ -1,0 +1,308 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+aclocal.m4
+file
+
+
+
+add
+
+bootstrap
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+m4
+dir
+
+
+
+add
+
+include
+dir
+
+
+
+add
+
+THANKS
+file
+
+
+
+add
+
+bindings
+dir
+
+
+
+add
+
+.mailmap
+file
+
+
+
+add
+
+config.h.in
+file
+
+
+
+add
+
+contrib
+dir
+
+
+
+add
+
+.git
+dir
+
+
+
+add
+
+configure.ac
+file
+
+
+
+add
+
+make-alias
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+extras
+dir
+
+
+
+add
+
+.gitattributes
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+NEWS
+file
+
+
+
+add
+
+COPYING.LIB
+file
+
+
+
+add
+
+po
+dir
+
+
+
+add
+
+test
+dir
+
+
+
+add
+
+android
+dir
+
+
+
+add
+
+configure
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+Makefile.in
+file
+
+
+
+add
+
+compat
+dir
+
+
+
+add
+
+AUTHORS
+file
+
+
+
+add
+
+src
+dir
+
+
+
+add
+
+autotools
+dir
+
+
+
+add
+
+README
+file
+
+
+
+add
+
+share
+dir
+
+
+
+add
+
+ABOUT-NLS
+file
+
+
+
+add
+
+autom4te.cache
+dir
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+doc
+dir
+
+
+
+add
+
+INSTALL
+file
+
+
+
+add
+
+lib
+dir
+
+
+
+add
+
+COPYING
+file
+
+
+
+add
+
+modules
+dir
+
+
+
+add
+
+bin
+dir
+
+
+
+add
+

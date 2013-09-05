@@ -1,0 +1,119 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/libavcodec/alpha
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+hpeldsp_alpha.c
+file
+
+
+
+add
+
+hpeldsp_alpha_asm.S
+file
+
+
+
+add
+
+mpegvideo_alpha.c
+file
+
+
+
+add
+
+motion_est_alpha.c
+file
+
+
+
+add
+
+asm.h
+file
+
+
+
+add
+
+hpeldsp_alpha.h
+file
+
+
+
+add
+
+dsputil_alpha_asm.S
+file
+
+
+
+add
+
+dsputil_alpha.c
+file
+
+
+
+add
+
+motion_est_mvi_asm.S
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+dsputil_alpha.h
+file
+
+
+
+add
+
+regdef.h
+file
+
+
+
+add
+
+simple_idct_alpha.c
+file
+
+
+
+add
+

@@ -1,0 +1,273 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/presets
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+libx264-fast_firstpass.avpreset
+file
+
+
+
+add
+
+libx264-lossless_ultrafast.avpreset
+file
+
+
+
+add
+
+libx264-fast.avpreset
+file
+
+
+
+add
+
+libx264-veryfast_firstpass.avpreset
+file
+
+
+
+add
+
+libvpx-720p.avpreset
+file
+
+
+
+add
+
+libvpx-360p.avpreset
+file
+
+
+
+add
+
+libx264-lossless_slower.avpreset
+file
+
+
+
+add
+
+libx264-placebo_firstpass.avpreset
+file
+
+
+
+add
+
+libx264-ultrafast_firstpass.avpreset
+file
+
+
+
+add
+
+libx264-veryfast.avpreset
+file
+
+
+
+add
+
+libx264-ultrafast.avpreset
+file
+
+
+
+add
+
+libx264-placebo.avpreset
+file
+
+
+
+add
+
+libx264-medium_firstpass.avpreset
+file
+
+
+
+add
+
+libx264-medium.avpreset
+file
+
+
+
+add
+
+libx264-slow_firstpass.avpreset
+file
+
+
+
+add
+
+libx264-faster_firstpass.avpreset
+file
+
+
+
+add
+
+libx264-lossless_fast.avpreset
+file
+
+
+
+add
+
+libx264-slow.avpreset
+file
+
+
+
+add
+
+libx264-faster.avpreset
+file
+
+
+
+add
+
+libx264-ipod640.avpreset
+file
+
+
+
+add
+
+libx264-veryslow_firstpass.avpreset
+file
+
+
+
+add
+
+libx264-veryslow.avpreset
+file
+
+
+
+add
+
+libvpx-1080p50_60.avpreset
+file
+
+
+
+add
+
+libx264-lossless_medium.avpreset
+file
+
+
+
+add
+
+libx264-slower_firstpass.avpreset
+file
+
+
+
+add
+
+libx264-superfast_firstpass.avpreset
+file
+
+
+
+add
+
+libx264-slower.avpreset
+file
+
+
+
+add
+
+libx264-lossless_slow.avpreset
+file
+
+
+
+add
+
+libvpx-720p50_60.avpreset
+file
+
+
+
+add
+
+libx264-lossless_max.avpreset
+file
+
+
+
+add
+
+libx264-superfast.avpreset
+file
+
+
+
+add
+
+libx264-ipod320.avpreset
+file
+
+
+
+add
+
+libx264-baseline.avpreset
+file
+
+
+
+add
+
+libvpx-1080p.avpreset
+file
+
+
+
+add
+
+libx264-main.avpreset
+file
+
+
+
+add
+

@@ -1,0 +1,91 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/live555/groupsock/include
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+GroupsockHelper.hh
+file
+
+
+
+add
+
+Groupsock.hh
+file
+
+
+
+add
+
+NetAddress.hh
+file
+
+
+
+add
+
+GroupEId.hh
+file
+
+
+
+add
+
+TunnelEncaps.hh
+file
+
+
+
+add
+
+groupsock_version.hh
+file
+
+
+
+add
+
+NetInterface.hh
+file
+
+
+
+add
+
+NetCommon.h
+file
+
+
+
+add
+
+IOHandlers.hh
+file
+
+
+
+add
+

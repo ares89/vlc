@@ -1,0 +1,224 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/libavdevice
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+timefilter.c
+file
+
+
+
+add
+
+alsa-audio-common.c
+file
+
+
+
+add
+
+x11grab.c
+file
+
+
+
+add
+
+libcdio.c
+file
+
+
+
+add
+
+alsa-audio-dec.c
+file
+
+
+
+add
+
+timefilter.h
+file
+
+
+
+add
+
+alldevices.c
+file
+
+
+
+add
+
+alsa-audio-enc.c
+file
+
+
+
+add
+
+sndio_common.c
+file
+
+
+
+add
+
+alsa-audio.h
+file
+
+
+
+add
+
+oss_audio.c
+file
+
+
+
+add
+
+avdevice.c
+file
+
+
+
+add
+
+vfwcap.c
+file
+
+
+
+add
+
+fbdev.c
+file
+
+
+
+add
+
+v4l2.c
+file
+
+
+
+add
+
+sndio_dec.c
+file
+
+
+
+add
+
+pulse.c
+file
+
+
+
+add
+
+sndio_common.h
+file
+
+
+
+add
+
+jack_audio.c
+file
+
+
+
+add
+
+version.h
+file
+
+
+
+add
+
+dv1394.c
+file
+
+
+
+add
+
+avdevice.h
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+libdc1394.c
+file
+
+
+
+add
+
+dv1394.h
+file
+
+
+
+add
+
+libavdevice.v
+file
+
+
+
+add
+
+sndio_enc.c
+file
+
+
+
+add
+
+bktr.c
+file
+
+
+
+add
+

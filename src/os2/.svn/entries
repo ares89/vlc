@@ -1,0 +1,84 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/src/os2
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+netconf.c
+file
+
+
+
+add
+
+plugin.c
+file
+
+
+
+add
+
+dirs.c
+file
+
+
+
+add
+
+filesystem.c
+file
+
+
+
+add
+
+rand.c
+file
+
+
+
+add
+
+specific.c
+file
+
+
+
+add
+
+getaddrinfo.c
+file
+
+
+
+add
+
+thread.c
+file
+
+
+
+add
+

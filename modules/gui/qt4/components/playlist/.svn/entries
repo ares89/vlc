@@ -1,0 +1,161 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/qt4/components/playlist
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+playlist_model.cpp
+file
+
+
+
+add
+
+playlist_item.hpp
+file
+
+
+
+add
+
+selector.hpp
+file
+
+
+
+add
+
+standardpanel.hpp
+file
+
+
+
+add
+
+ml_item.cpp
+file
+
+
+
+add
+
+playlist_model.hpp
+file
+
+
+
+add
+
+ml_model.cpp
+file
+
+
+
+add
+
+sorting.h
+file
+
+
+
+add
+
+ml_item.hpp
+file
+
+
+
+add
+
+views.cpp
+file
+
+
+
+add
+
+ml_model.hpp
+file
+
+
+
+add
+
+playlist.cpp
+file
+
+
+
+add
+
+views.hpp
+file
+
+
+
+add
+
+vlc_model.cpp
+file
+
+
+
+add
+
+playlist.hpp
+file
+
+
+
+add
+
+vlc_model.hpp
+file
+
+
+
+add
+
+playlist_item.cpp
+file
+
+
+
+add
+
+selector.cpp
+file
+
+
+
+add
+
+standardpanel.cpp
+file
+
+
+
+add
+

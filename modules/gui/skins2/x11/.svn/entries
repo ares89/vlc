@@ -1,0 +1,154 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/skins2/x11
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+x11_factory.hpp
+file
+
+
+
+add
+
+x11_window.hpp
+file
+
+
+
+add
+
+x11_loop.hpp
+file
+
+
+
+add
+
+x11_timer.cpp
+file
+
+
+
+add
+
+x11_timer.hpp
+file
+
+
+
+add
+
+x11_tooltip.cpp
+file
+
+
+
+add
+
+x11_tooltip.hpp
+file
+
+
+
+add
+
+x11_graphics.cpp
+file
+
+
+
+add
+
+x11_dragdrop.cpp
+file
+
+
+
+add
+
+x11_popup.cpp
+file
+
+
+
+add
+
+x11_display.cpp
+file
+
+
+
+add
+
+x11_graphics.hpp
+file
+
+
+
+add
+
+x11_factory.cpp
+file
+
+
+
+add
+
+x11_dragdrop.hpp
+file
+
+
+
+add
+
+x11_window.cpp
+file
+
+
+
+add
+
+x11_popup.hpp
+file
+
+
+
+add
+
+x11_loop.cpp
+file
+
+
+
+add
+
+x11_display.hpp
+file
+
+
+
+add
+

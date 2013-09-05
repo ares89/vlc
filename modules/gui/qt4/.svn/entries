@@ -1,0 +1,245 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/qt4
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+adapters
+dir
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+HACKING
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+main_interface_win32.cpp
+file
+
+
+
+add
+
+menus.cpp
+file
+
+
+
+add
+
+vlc.qrc
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+extensions_manager.cpp
+file
+
+
+
+add
+
+input_manager.cpp
+file
+
+
+
+add
+
+actions_manager.cpp
+file
+
+
+
+add
+
+util
+dir
+
+
+
+add
+
+dialogs_provider.cpp
+file
+
+
+
+add
+
+menus.hpp
+file
+
+
+
+add
+
+ui
+dir
+
+
+
+add
+
+extensions_manager.hpp
+file
+
+
+
+add
+
+input_manager.hpp
+file
+
+
+
+add
+
+actions_manager.hpp
+file
+
+
+
+add
+
+pixmaps
+dir
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+dialogs_provider.hpp
+file
+
+
+
+add
+
+dialogs
+dir
+
+
+
+add
+
+styles
+dir
+
+
+
+add
+
+recents.cpp
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+components
+dir
+
+
+
+add
+
+main_interface.cpp
+file
+
+
+
+add
+
+qt4.cpp
+file
+
+
+
+add
+
+recents.hpp
+file
+
+
+
+add
+
+main_interface.hpp
+file
+
+
+
+add
+
+qt4.hpp
+file
+
+
+
+add
+

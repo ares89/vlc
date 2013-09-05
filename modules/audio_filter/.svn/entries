@@ -1,0 +1,161 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/audio_filter
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+spatializer
+dir
+
+
+
+add
+
+audiobargraph_a.c
+file
+
+
+
+add
+
+resampler
+dir
+
+
+
+add
+
+equalizer_presets.h
+file
+
+
+
+add
+
+karaoke.c
+file
+
+
+
+add
+
+gain.c
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+param_eq.c
+file
+
+
+
+add
+
+converter
+dir
+
+
+
+add
+
+stereo_widen.c
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+channel_mixer
+dir
+
+
+
+add
+
+scaletempo.c
+file
+
+
+
+add
+
+normvol.c
+file
+
+
+
+add
+
+compressor.c
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+equalizer.c
+file
+
+
+
+add
+
+chorus_flanger.c
+file
+
+
+
+add
+

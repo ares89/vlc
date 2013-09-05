@@ -1,0 +1,112 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/stream_filter/dash
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+DASHDownloader.h
+file
+
+
+
+add
+
+Helper.h
+file
+
+
+
+add
+
+buffer
+dir
+
+
+
+add
+
+DASHManager.cpp
+file
+
+
+
+add
+
+DASHDownloader.cpp
+file
+
+
+
+add
+
+http
+dir
+
+
+
+add
+
+mpd
+dir
+
+
+
+add
+
+Helper.cpp
+file
+
+
+
+add
+
+dash.cpp
+file
+
+
+
+add
+
+xml
+dir
+
+
+
+add
+
+DASHManager.h
+file
+
+
+
+add
+
+adaptationlogic
+dir
+
+
+
+add
+

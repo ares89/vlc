@@ -1,0 +1,18 @@
+
+
+
+
+@deftypefun {int} {gnutls_x509_trust_list_remove_trust_mem} (gnutls_x509_trust_list_t @var{list}, const gnutls_datum_t * @var{cas}, gnutls_x509_crt_fmt_t @var{type})
+@var{list}: The structure of the list
+
+@var{cas}: A buffer containing a list of CAs (optional)
+
+@var{type}: The format of the certificates
+
+This function will add the given certificate authorities
+to the trusted list. 
+
+@strong{Returns:} The number of added elements is returned.
+
+@strong{Since:} 3.1.10
+@end deftypefun

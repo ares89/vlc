@@ -1,0 +1,154 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/arm_neon
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+simple_channel_mixer.S
+file
+
+
+
+add
+
+volume.c
+file
+
+
+
+add
+
+i420_rv16.S
+file
+
+
+
+add
+
+chroma_yuv.c
+file
+
+
+
+add
+
+yuv_rgb.c
+file
+
+
+
+add
+
+amplify.S
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+simple_channel_mixer.c
+file
+
+
+
+add
+
+i420_rgb.S
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+i420_yuyv.S
+file
+
+
+
+add
+
+i422_yuyv.S
+file
+
+
+
+add
+
+yuyv_i422.S
+file
+
+
+
+add
+
+chroma_neon.h
+file
+
+
+
+add
+
+nv12_rgb.S
+file
+
+
+
+add
+
+nv21_rgb.S
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+

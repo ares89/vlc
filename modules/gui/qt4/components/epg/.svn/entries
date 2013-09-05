@@ -1,0 +1,98 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/qt4/components/epg
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+EPGWidget.hpp
+file
+
+
+
+add
+
+EPGRuler.cpp
+file
+
+
+
+add
+
+EPGView.cpp
+file
+
+
+
+add
+
+EPGChannels.cpp
+file
+
+
+
+add
+
+EPGRuler.hpp
+file
+
+
+
+add
+
+EPGItem.cpp
+file
+
+
+
+add
+
+EPGView.hpp
+file
+
+
+
+add
+
+EPGChannels.hpp
+file
+
+
+
+add
+
+EPGWidget.cpp
+file
+
+
+
+add
+
+EPGItem.hpp
+file
+
+
+
+add
+

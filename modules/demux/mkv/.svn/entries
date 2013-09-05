@@ -1,0 +1,161 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/demux/mkv
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+virtual_segment.hpp
+file
+
+
+
+add
+
+util.cpp
+file
+
+
+
+add
+
+chapters.hpp
+file
+
+
+
+add
+
+util.hpp
+file
+
+
+
+add
+
+demux.cpp
+file
+
+
+
+add
+
+chapter_command.cpp
+file
+
+
+
+add
+
+demux.hpp
+file
+
+
+
+add
+
+chapter_command.hpp
+file
+
+
+
+add
+
+Ebml_parser.cpp
+file
+
+
+
+add
+
+mkv.cpp
+file
+
+
+
+add
+
+matroska_segment_parse.cpp
+file
+
+
+
+add
+
+stream_io_callback.cpp
+file
+
+
+
+add
+
+Ebml_parser.hpp
+file
+
+
+
+add
+
+mkv.hpp
+file
+
+
+
+add
+
+matroska_segment.cpp
+file
+
+
+
+add
+
+stream_io_callback.hpp
+file
+
+
+
+add
+
+matroska_segment.hpp
+file
+
+
+
+add
+
+virtual_segment.cpp
+file
+
+
+
+add
+
+chapters.cpp
+file
+
+
+
+add
+

@@ -1,0 +1,259 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/src/misc
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+text_style.c
+file
+
+
+
+add
+
+probe.c
+file
+
+
+
+add
+
+variables.c
+file
+
+
+
+add
+
+exit.c
+file
+
+
+
+add
+
+picture.c
+file
+
+
+
+add
+
+variables.h
+file
+
+
+
+add
+
+fingerprinter.c
+file
+
+
+
+add
+
+fourcc.c
+file
+
+
+
+add
+
+subpicture.c
+file
+
+
+
+add
+
+filter_chain.c
+file
+
+
+
+add
+
+subpicture.h
+file
+
+
+
+add
+
+block.c
+file
+
+
+
+add
+
+xml.c
+file
+
+
+
+add
+
+http_auth.c
+file
+
+
+
+add
+
+events.c
+file
+
+
+
+add
+
+picture_pool.c
+file
+
+
+
+add
+
+messages.c
+file
+
+
+
+add
+
+mtime.c
+file
+
+
+
+add
+
+epg.c
+file
+
+
+
+add
+
+picture_fifo.c
+file
+
+
+
+add
+
+es_format.c
+file
+
+
+
+add
+
+update_crypto.c
+file
+
+
+
+add
+
+image.c
+file
+
+
+
+add
+
+update.c
+file
+
+
+
+add
+
+rand.c
+file
+
+
+
+add
+
+filter.c
+file
+
+
+
+add
+
+md5.c
+file
+
+
+
+add
+
+update.h
+file
+
+
+
+add
+
+cpu.c
+file
+
+
+
+add
+
+mime.c
+file
+
+
+
+add
+
+objects.c
+file
+
+
+
+add
+
+error.c
+file
+
+
+
+add
+
+threads.c
+file
+
+
+
+add
+

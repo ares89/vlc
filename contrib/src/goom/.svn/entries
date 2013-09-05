@@ -1,0 +1,91 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/src/goom
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+SHA512SUMS
+file
+
+
+
+add
+
+goom2k4-0-mmx.patch
+file
+
+
+
+add
+
+goom2k4-0-win32.patch
+file
+
+
+
+add
+
+rules.mak
+file
+
+
+
+add
+
+goom2k4-noxmmx.patch
+file
+
+
+
+add
+
+goom2k4-osx.patch
+file
+
+
+
+add
+
+goom2k4-autotools.patch
+file
+
+
+
+add
+
+goom2k4-xmmslibdir.patch
+file
+
+
+
+add
+
+goom2k4-0-memleaks.patch
+file
+
+
+
+add
+

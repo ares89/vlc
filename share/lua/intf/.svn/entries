@@ -1,0 +1,91 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/share/lua/intf
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+luac.lua
+file
+
+
+
+add
+
+cli.lua
+file
+
+
+
+add
+
+modules
+dir
+
+
+
+add
+
+telnet.lua
+file
+
+
+
+add
+
+dummy.lua
+file
+
+
+
+add
+
+README.txt
+file
+
+
+
+add
+
+dumpmeta.lua
+file
+
+
+
+add
+
+http.lua
+file
+
+
+
+add
+
+test.lua
+file
+
+
+
+add
+

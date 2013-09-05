@@ -1,0 +1,413 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/demux
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+subtitle.c
+file
+
+
+
+add
+
+ty.c
+file
+
+
+
+add
+
+wav.c
+file
+
+
+
+add
+
+cdg.c
+file
+
+
+
+add
+
+avi
+dir
+
+
+
+add
+
+vobsub.c
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+dvb-text.h
+file
+
+
+
+add
+
+mjpeg.c
+file
+
+
+
+add
+
+au.c
+file
+
+
+
+add
+
+flac.c
+file
+
+
+
+add
+
+aiff.c
+file
+
+
+
+add
+
+vobsub.h
+file
+
+
+
+add
+
+nsv.c
+file
+
+
+
+add
+
+demuxdump.c
+file
+
+
+
+add
+
+nuv.c
+file
+
+
+
+add
+
+xiph.h
+file
+
+
+
+add
+
+mp4
+dir
+
+
+
+add
+
+mpc.c
+file
+
+
+
+add
+
+sid.cpp
+file
+
+
+
+add
+
+image.c
+file
+
+
+
+add
+
+dirac.c
+file
+
+
+
+add
+
+real.c
+file
+
+
+
+add
+
+rawdv.c
+file
+
+
+
+add
+
+rawaud.c
+file
+
+
+
+add
+
+oggseek.c
+file
+
+
+
+add
+
+pva.c
+file
+
+
+
+add
+
+rawdv.h
+file
+
+
+
+add
+
+tta.c
+file
+
+
+
+add
+
+asf
+dir
+
+
+
+add
+
+oggseek.h
+file
+
+
+
+add
+
+rawvid.c
+file
+
+
+
+add
+
+avformat
+dir
+
+
+
+add
+
+stl.c
+file
+
+
+
+add
+
+mpeg
+dir
+
+
+
+add
+
+gme.c
+file
+
+
+
+add
+
+xa.c
+file
+
+
+
+add
+
+xiph_metadata.c
+file
+
+
+
+add
+
+mkv
+dir
+
+
+
+add
+
+ogg.c
+file
+
+
+
+add
+
+xiph_metadata.h
+file
+
+
+
+add
+
+mod.c
+file
+
+
+
+add
+
+playlist
+dir
+
+
+
+add
+
+ogg.h
+file
+
+
+
+add
+
+ps.c
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+nsc.c
+file
+
+
+
+add
+
+mxpeg_helper.h
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+smf.c
+file
+
+
+
+add
+
+ts.c
+file
+
+
+
+add
+
+ps.h
+file
+
+
+
+add
+
+voc.c
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+vc1.c
+file
+
+
+
+add
+

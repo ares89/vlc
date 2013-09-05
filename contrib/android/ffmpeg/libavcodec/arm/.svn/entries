@@ -1,0 +1,1183 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/libavcodec/arm
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+dcadsp_neon.S
+file
+
+
+
+add
+
+vp3dsp_init_arm.c
+file
+
+
+
+add
+
+vp3dsp_init_arm.d
+file
+
+
+
+add
+
+fmtconvert_vfp.d
+file
+
+
+
+add
+
+videodsp_init_armv5te.c
+file
+
+
+
+add
+
+videodsp_init_armv5te.d
+file
+
+
+
+add
+
+simple_idct_armv6.d
+file
+
+
+
+add
+
+h264dsp_neon.d
+file
+
+
+
+add
+
+simple_idct_arm.S
+file
+
+
+
+add
+
+dcadsp_neon.d
+file
+
+
+
+add
+
+dsputil_armv6.S
+file
+
+
+
+add
+
+fft_fixed_init_arm.c
+file
+
+
+
+add
+
+fft_fixed_init_arm.d
+file
+
+
+
+add
+
+dsputil_init_armv6.c
+file
+
+
+
+add
+
+dsputil_init_armv6.d
+file
+
+
+
+add
+
+mdct_neon.S
+file
+
+
+
+add
+
+rv34dsp_init_arm.c
+file
+
+
+
+add
+
+h264qpel_init_arm.c
+file
+
+
+
+add
+
+h264qpel_init_arm.d
+file
+
+
+
+add
+
+rv34dsp_init_arm.d
+file
+
+
+
+add
+
+simple_idct_neon.S
+file
+
+
+
+add
+
+flacdsp_arm.S
+file
+
+
+
+add
+
+simple_idct_arm.d
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+dsputil_armv6.d
+file
+
+
+
+add
+
+fft_init_arm.c
+file
+
+
+
+add
+
+fft_init_arm.d
+file
+
+
+
+add
+
+dsputil_arm.S
+file
+
+
+
+add
+
+vp56dsp_neon.S
+file
+
+
+
+add
+
+mdct_neon.d
+file
+
+
+
+add
+
+simple_idct_neon.d
+file
+
+
+
+add
+
+flacdsp_arm.d
+file
+
+
+
+add
+
+h264dsp_init_arm.c
+file
+
+
+
+add
+
+h264dsp_init_arm.d
+file
+
+
+
+add
+
+sbrdsp_init_arm.c
+file
+
+
+
+add
+
+mathops.h
+file
+
+
+
+add
+
+sbrdsp_init_arm.d
+file
+
+
+
+add
+
+dcadsp_init_arm.c
+file
+
+
+
+add
+
+dcadsp_init_arm.d
+file
+
+
+
+add
+
+vp8.h
+file
+
+
+
+add
+
+dsputil_neon.S
+file
+
+
+
+add
+
+dsputil_arm.d
+file
+
+
+
+add
+
+vp8dsp_init_neon.c
+file
+
+
+
+add
+
+vp56dsp_neon.d
+file
+
+
+
+add
+
+vp8dsp_init_neon.d
+file
+
+
+
+add
+
+dsputil_arm.h
+file
+
+
+
+add
+
+hpeldsp_neon.S
+file
+
+
+
+add
+
+dsputil_neon.d
+file
+
+
+
+add
+
+fmtconvert_init_arm.c
+file
+
+
+
+add
+
+fmtconvert_init_arm.d
+file
+
+
+
+add
+
+mpegvideo_neon.S
+file
+
+
+
+add
+
+vp3dsp_neon.S
+file
+
+
+
+add
+
+hpeldsp_neon.d
+file
+
+
+
+add
+
+neon.S
+file
+
+
+
+add
+
+mpegvideo_armv5te_s.S
+file
+
+
+
+add
+
+mpegaudiodsp_fixed_armv6.S
+file
+
+
+
+add
+
+asm-offsets.h
+file
+
+
+
+add
+
+h264pred_neon.S
+file
+
+
+
+add
+
+hpeldsp_init_armv6.c
+file
+
+
+
+add
+
+vorbisdsp_init_arm.c
+file
+
+
+
+add
+
+rdft_neon.S
+file
+
+
+
+add
+
+vorbisdsp_init_arm.d
+file
+
+
+
+add
+
+flacdsp_init_arm.c
+file
+
+
+
+add
+
+hpeldsp_init_armv6.d
+file
+
+
+
+add
+
+vp3dsp_neon.d
+file
+
+
+
+add
+
+flacdsp_init_arm.d
+file
+
+
+
+add
+
+mpegvideo_neon.d
+file
+
+
+
+add
+
+h264chroma_init_arm.c
+file
+
+
+
+add
+
+h264chroma_init_arm.d
+file
+
+
+
+add
+
+rv34dsp_neon.S
+file
+
+
+
+add
+
+h264qpel_neon.S
+file
+
+
+
+add
+
+mpegvideo_armv5te_s.d
+file
+
+
+
+add
+
+h264cmc_neon.S
+file
+
+
+
+add
+
+dsputil_init_arm.c
+file
+
+
+
+add
+
+dsputil_init_arm.d
+file
+
+
+
+add
+
+dsputil_init_armv5te.c
+file
+
+
+
+add
+
+dsputil_init_armv5te.d
+file
+
+
+
+add
+
+mpegaudiodsp_fixed_armv6.d
+file
+
+
+
+add
+
+h264pred_neon.d
+file
+
+
+
+add
+
+fft_neon.S
+file
+
+
+
+add
+
+vp8dsp_armv6.S
+file
+
+
+
+add
+
+rdft_neon.d
+file
+
+
+
+add
+
+vp8dsp_init_armv6.c
+file
+
+
+
+add
+
+vp8dsp_init_armv6.d
+file
+
+
+
+add
+
+rv34dsp_neon.d
+file
+
+
+
+add
+
+h264qpel_neon.d
+file
+
+
+
+add
+
+h264cmc_neon.d
+file
+
+
+
+add
+
+hpeldsp_armv6.S
+file
+
+
+
+add
+
+sbrdsp_neon.S
+file
+
+
+
+add
+
+ac3dsp_init_arm.c
+file
+
+
+
+add
+
+fft_neon.d
+file
+
+
+
+add
+
+videodsp_init_arm.c
+file
+
+
+
+add
+
+videodsp_init_arm.d
+file
+
+
+
+add
+
+vp8dsp_armv6.d
+file
+
+
+
+add
+
+ac3dsp_init_arm.d
+file
+
+
+
+add
+
+mdct_fixed_neon.S
+file
+
+
+
+add
+
+hpeldsp_armv6.d
+file
+
+
+
+add
+
+sbrdsp_neon.d
+file
+
+
+
+add
+
+simple_idct_armv5te.S
+file
+
+
+
+add
+
+h264pred_init_arm.c
+file
+
+
+
+add
+
+h264pred_init_arm.d
+file
+
+
+
+add
+
+vp8dsp_neon.S
+file
+
+
+
+add
+
+mdct_fixed_neon.d
+file
+
+
+
+add
+
+fmtconvert_neon.S
+file
+
+
+
+add
+
+vp8dsp.h
+file
+
+
+
+add
+
+vp56_arith.h
+file
+
+
+
+add
+
+ac3dsp_arm.S
+file
+
+
+
+add
+
+dca.h
+file
+
+
+
+add
+
+aacpsdsp_neon.S
+file
+
+
+
+add
+
+videodsp_armv5te.S
+file
+
+
+
+add
+
+simple_idct_armv5te.d
+file
+
+
+
+add
+
+vp8dsp_neon.d
+file
+
+
+
+add
+
+fmtconvert_neon.d
+file
+
+
+
+add
+
+synth_filter_neon.S
+file
+
+
+
+add
+
+vorbisdsp_neon.S
+file
+
+
+
+add
+
+ac3dsp_arm.d
+file
+
+
+
+add
+
+aacpsdsp_neon.d
+file
+
+
+
+add
+
+videodsp_armv5te.d
+file
+
+
+
+add
+
+videodsp_arm.h
+file
+
+
+
+add
+
+synth_filter_neon.d
+file
+
+
+
+add
+
+vorbisdsp_neon.d
+file
+
+
+
+add
+
+hpeldsp_init_neon.c
+file
+
+
+
+add
+
+rv40dsp_neon.S
+file
+
+
+
+add
+
+hpeldsp_init_neon.d
+file
+
+
+
+add
+
+mpegaudiodsp_init_arm.c
+file
+
+
+
+add
+
+mpegaudiodsp_init_arm.d
+file
+
+
+
+add
+
+vp8dsp_init_arm.c
+file
+
+
+
+add
+
+vp8dsp_init_arm.d
+file
+
+
+
+add
+
+vp8_armv6.S
+file
+
+
+
+add
+
+ac3dsp_armv6.S
+file
+
+
+
+add
+
+ac3dsp_neon.S
+file
+
+
+
+add
+
+hpeldsp_arm.S
+file
+
+
+
+add
+
+jrevdct_arm.S
+file
+
+
+
+add
+
+aacpsdsp_init_arm.c
+file
+
+
+
+add
+
+aacpsdsp_init_arm.d
+file
+
+
+
+add
+
+rv40dsp_neon.d
+file
+
+
+
+add
+
+dsputil_init_neon.c
+file
+
+
+
+add
+
+h264idct_neon.S
+file
+
+
+
+add
+
+dsputil_init_neon.d
+file
+
+
+
+add
+
+int_neon.S
+file
+
+
+
+add
+
+aac.h
+file
+
+
+
+add
+
+vp8_armv6.d
+file
+
+
+
+add
+
+vp56dsp_init_arm.c
+file
+
+
+
+add
+
+ac3dsp_armv6.d
+file
+
+
+
+add
+
+vp56dsp_init_arm.d
+file
+
+
+
+add
+
+ac3dsp_neon.d
+file
+
+
+
+add
+
+fft_fixed_neon.S
+file
+
+
+
+add
+
+hpeldsp_arm.d
+file
+
+
+
+add
+
+jrevdct_arm.d
+file
+
+
+
+add
+
+hpeldsp_arm.h
+file
+
+
+
+add
+
+h264idct_neon.d
+file
+
+
+
+add
+
+int_neon.d
+file
+
+
+
+add
+
+mpegvideo_arm.c
+file
+
+
+
+add
+
+fft_fixed_neon.d
+file
+
+
+
+add
+
+mpegvideo_arm.d
+file
+
+
+
+add
+
+hpeldsp_init_arm.c
+file
+
+
+
+add
+
+fmtconvert_vfp.S
+file
+
+
+
+add
+
+hpeldsp_init_arm.d
+file
+
+
+
+add
+
+mpegvideo_armv5te.c
+file
+
+
+
+add
+
+mpegvideo_armv5te.d
+file
+
+
+
+add
+
+mpegvideo_arm.h
+file
+
+
+
+add
+
+rv40dsp_init_arm.c
+file
+
+
+
+add
+
+rv40dsp_init_arm.d
+file
+
+
+
+add
+
+simple_idct_armv6.S
+file
+
+
+
+add
+
+h264dsp_neon.S
+file
+
+
+
+add
+

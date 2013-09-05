@@ -1,0 +1,364 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+README
+file
+
+
+
+add
+
+CREDITS
+file
+
+
+
+add
+
+avconv_opt.c
+file
+
+
+
+add
+
+common.mak
+file
+
+
+
+add
+
+tools
+dir
+
+
+
+add
+
+COPYING.GPLv2
+file
+
+
+
+add
+
+COPYING.GPLv3
+file
+
+
+
+add
+
+tests
+dir
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+doc
+dir
+
+
+
+add
+
+INSTALL
+file
+
+
+
+add
+
+library.mak
+file
+
+
+
+add
+
+config.mak
+file
+
+
+
+add
+
+libavdevice
+dir
+
+
+
+add
+
+COPYING.LGPLv3
+file
+
+
+
+add
+
+RELEASE
+file
+
+
+
+add
+
+LICENSE
+file
+
+
+
+add
+
+.config
+file
+
+
+
+add
+
+presets
+dir
+
+
+
+add
+
+config.log
+file
+
+
+
+add
+
+libavresample
+dir
+
+
+
+add
+
+libavcodec
+dir
+
+
+
+add
+
+config.h
+file
+
+
+
+add
+
+version.sh
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+.version
+file
+
+
+
+add
+
+libavfilter
+dir
+
+
+
+add
+
+cmdutils.c
+file
+
+
+
+add
+
+libavformat
+dir
+
+
+
+add
+
+cmdutils.h
+file
+
+
+
+add
+
+version.h
+file
+
+
+
+add
+
+COPYING.LGPLv2.1
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+avconv.c
+file
+
+
+
+add
+
+avplay.c
+file
+
+
+
+add
+
+avserver.c
+file
+
+
+
+add
+
+avprobe.c
+file
+
+
+
+add
+
+configure
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+avconv_filter.c
+file
+
+
+
+add
+
+avconv.h
+file
+
+
+
+add
+
+config.fate
+file
+
+
+
+add
+
+compat
+dir
+
+
+
+add
+
+arch.mak
+file
+
+
+
+add
+
+cmdutils_common_opts.h
+file
+
+
+
+add
+
+Changelog
+file
+
+
+
+add
+
+libswscale
+dir
+
+
+
+add
+
+libavutil
+dir
+
+
+
+add
+

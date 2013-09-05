@@ -1,0 +1,294 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/src/input
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+event.h
+file
+
+
+
+add
+
+demux.h
+file
+
+
+
+add
+
+var.c
+file
+
+
+
+add
+
+clock.c
+file
+
+
+
+add
+
+stream_demux.c
+file
+
+
+
+add
+
+item.c
+file
+
+
+
+add
+
+stats.c
+file
+
+
+
+add
+
+es_out.c
+file
+
+
+
+add
+
+vlm_event.c
+file
+
+
+
+add
+
+vlm_internal.h
+file
+
+
+
+add
+
+clock.h
+file
+
+
+
+add
+
+es_out.h
+file
+
+
+
+add
+
+item.h
+file
+
+
+
+add
+
+vlm_event.h
+file
+
+
+
+add
+
+decoder.c
+file
+
+
+
+add
+
+decoder_synchro.c
+file
+
+
+
+add
+
+es_out_timeshift.c
+file
+
+
+
+add
+
+decoder.h
+file
+
+
+
+add
+
+es_out_timeshift.h
+file
+
+
+
+add
+
+control.c
+file
+
+
+
+add
+
+stream_memory.c
+file
+
+
+
+add
+
+input_interface.h
+file
+
+
+
+add
+
+meta.c
+file
+
+
+
+add
+
+vlmshell.c
+file
+
+
+
+add
+
+resource.c
+file
+
+
+
+add
+
+stream.c
+file
+
+
+
+add
+
+resource.h
+file
+
+
+
+add
+
+vlm.c
+file
+
+
+
+add
+
+input.c
+file
+
+
+
+add
+
+stream.h
+file
+
+
+
+add
+
+input_internal.h
+file
+
+
+
+add
+
+info.h
+file
+
+
+
+add
+
+stream_filter.c
+file
+
+
+
+add
+
+access.c
+file
+
+
+
+add
+
+access.h
+file
+
+
+
+add
+
+subtitles.c
+file
+
+
+
+add
+
+event.c
+file
+
+
+
+add
+
+demux.c
+file
+
+
+
+add
+

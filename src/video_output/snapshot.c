@@ -153,7 +153,7 @@ int vout_snapshot_SaveImage(char **name, int *sequential,
         if (prefix)
             filename_sanitize(prefix);
         else {
-            prefix = strdup("vlcsnap-");
+            prefix = strdup("Homecare-");
             if (!prefix)
                 goto error;
         }

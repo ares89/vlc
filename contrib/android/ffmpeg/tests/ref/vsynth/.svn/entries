@@ -1,0 +1,770 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/tests/ref/vsynth
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+vsynth1-mpeg2-ivlc-qprd
+file
+
+
+
+add
+
+vsynth2-mpeg2-ivlc-qprd
+file
+
+
+
+add
+
+vsynth1-mpeg4-qpel
+file
+
+
+
+add
+
+vsynth2-mpeg2-thread-ivlc
+file
+
+
+
+add
+
+vsynth2-mpeg1b
+file
+
+
+
+add
+
+vsynth2-dv-411
+file
+
+
+
+add
+
+vsynth1-h261
+file
+
+
+
+add
+
+vsynth2-mpeg2-422
+file
+
+
+
+add
+
+vsynth2-mpeg2-thread
+file
+
+
+
+add
+
+vsynth2-mpeg4-qprd
+file
+
+
+
+add
+
+vsynth1-h263
+file
+
+
+
+add
+
+vsynth1-msmpeg4v2
+file
+
+
+
+add
+
+vsynth1-qtrle
+file
+
+
+
+add
+
+vsynth1-rv20
+file
+
+
+
+add
+
+vsynth2-rv10
+file
+
+
+
+add
+
+vsynth1-svq1
+file
+
+
+
+add
+
+vsynth2-wmv1
+file
+
+
+
+add
+
+vsynth2-wmv2
+file
+
+
+
+add
+
+vsynth2-dnxhd-720p-rd
+file
+
+
+
+add
+
+vsynth1-h263-obmc
+file
+
+
+
+add
+
+vsynth2-ljpeg
+file
+
+
+
+add
+
+vsynth2-mjpeg
+file
+
+
+
+add
+
+vsynth1-flashsv
+file
+
+
+
+add
+
+vsynth2-flashsv
+file
+
+
+
+add
+
+vsynth1-asv1
+file
+
+
+
+add
+
+vsynth2-mpeg1
+file
+
+
+
+add
+
+vsynth1-asv2
+file
+
+
+
+add
+
+vsynth1-mpeg1b
+file
+
+
+
+add
+
+vsynth2-mpeg2
+file
+
+
+
+add
+
+vsynth1-msmpeg4
+file
+
+
+
+add
+
+vsynth1-dv-411
+file
+
+
+
+add
+
+vsynth2-mpeg4
+file
+
+
+
+add
+
+vsynth2-msmpeg4
+file
+
+
+
+add
+
+vsynth1-mpeg4-rc
+file
+
+
+
+add
+
+vsynth1-mpeg4-qprd
+file
+
+
+
+add
+
+vsynth1-mpeg4-thread
+file
+
+
+
+add
+
+vsynth2-h261
+file
+
+
+
+add
+
+vsynth2-h263
+file
+
+
+
+add
+
+vsynth2-mpeg2-idct-int
+file
+
+
+
+add
+
+vsynth2-mpeg4-adv
+file
+
+
+
+add
+
+vsynth1-v210
+file
+
+
+
+add
+
+vsynth1-mpeg4-nr
+file
+
+
+
+add
+
+vsynth2-rv20
+file
+
+
+
+add
+
+vsynth2-svq1
+file
+
+
+
+add
+
+vsynth2-dv-50
+file
+
+
+
+add
+
+vsynth1-ffv1
+file
+
+
+
+add
+
+vsynth2-h263p
+file
+
+
+
+add
+
+vsynth1-dnxhd-720p-10bit
+file
+
+
+
+add
+
+vsynth2-dv
+file
+
+
+
+add
+
+vsynth1-mpeg2-thread-ivlc
+file
+
+
+
+add
+
+vsynth1-rgb
+file
+
+
+
+add
+
+vsynth2-rgb
+file
+
+
+
+add
+
+vsynth2-prores
+file
+
+
+
+add
+
+vsynth2-asv1
+file
+
+
+
+add
+
+vsynth2-asv2
+file
+
+
+
+add
+
+vsynth1-mpeg2-422
+file
+
+
+
+add
+
+vsynth2-mpeg4-rc
+file
+
+
+
+add
+
+vsynth2-mpeg4-adap
+file
+
+
+
+add
+
+vsynth2-mpeg4-thread
+file
+
+
+
+add
+
+vsynth1-mpeg2-idct-int
+file
+
+
+
+add
+
+vsynth1-mpeg2-ilace
+file
+
+
+
+add
+
+vsynth2-msmpeg4v2
+file
+
+
+
+add
+
+vsynth2-jpegls
+file
+
+
+
+add
+
+vsynth2-mpeg2-ilace
+file
+
+
+
+add
+
+vsynth2-qtrle
+file
+
+
+
+add
+
+vsynth1-roqvideo
+file
+
+
+
+add
+
+vsynth2-v210
+file
+
+
+
+add
+
+vsynth2-mpeg4-nr
+file
+
+
+
+add
+
+vsynth1-cljr
+file
+
+
+
+add
+
+vsynth1-ffvhuff
+file
+
+
+
+add
+
+vsynth2-ffvhuff
+file
+
+
+
+add
+
+vsynth2-dnxhd-720p
+file
+
+
+
+add
+
+vsynth1-dnxhd-720p-rd
+file
+
+
+
+add
+
+vsynth1-ljpeg
+file
+
+
+
+add
+
+vsynth2-h263-obmc
+file
+
+
+
+add
+
+vsynth1-mjpeg
+file
+
+
+
+add
+
+vsynth2-ffv1
+file
+
+
+
+add
+
+vsynth2-dnxhd-720p-10bit
+file
+
+
+
+add
+
+vsynth1-dv
+file
+
+
+
+add
+
+vsynth1-mpeg1
+file
+
+
+
+add
+
+vsynth1-mpeg2
+file
+
+
+
+add
+
+vsynth1-prores
+file
+
+
+
+add
+
+vsynth1-mpeg4
+file
+
+
+
+add
+
+vsynth2-mpeg4-qpel
+file
+
+
+
+add
+
+vsynth1-mpeg2-thread
+file
+
+
+
+add
+
+vsynth1-mpeg4-adap
+file
+
+
+
+add
+
+vsynth1-yuv
+file
+
+
+
+add
+
+vsynth1-jpegls
+file
+
+
+
+add
+
+vsynth2-yuv
+file
+
+
+
+add
+
+vsynth1-mpeg4-adv
+file
+
+
+
+add
+
+vsynth1-flv
+file
+
+
+
+add
+
+vsynth2-flv
+file
+
+
+
+add
+
+vsynth1-rv10
+file
+
+
+
+add
+
+vsynth2-roqvideo
+file
+
+
+
+add
+
+vsynth1-wmv1
+file
+
+
+
+add
+
+vsynth2-cljr
+file
+
+
+
+add
+
+vsynth1-dv-50
+file
+
+
+
+add
+
+vsynth1-wmv2
+file
+
+
+
+add
+
+vsynth1-dnxhd-720p
+file
+
+
+
+add
+
+vsynth1-huffyuv
+file
+
+
+
+add
+
+vsynth2-huffyuv
+file
+
+
+
+add
+
+vsynth1-h263p
+file
+
+
+
+add
+
+vsynth1-mpeg4-error
+file
+
+
+
+add
+
+vsynth1-dnxhd-1080i
+file
+
+
+
+add
+
+vsynth2-mpeg4-error
+file
+
+
+
+add
+
+vsynth2-dnxhd-1080i
+file
+
+
+
+add
+

@@ -1,0 +1,70 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/src/modules
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+entry.c
+file
+
+
+
+add
+
+cache.c
+file
+
+
+
+add
+
+modules.c
+file
+
+
+
+add
+
+bank.c
+file
+
+
+
+add
+
+textdomain.c
+file
+
+
+
+add
+
+modules.h
+file
+
+
+
+add
+

@@ -1,0 +1,119 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/skins2
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+vars
+dir
+
+
+
+add
+
+parser
+dir
+
+
+
+add
+
+utils
+dir
+
+
+
+add
+
+commands
+dir
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+win32
+dir
+
+
+
+add
+
+controls
+dir
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+events
+dir
+
+
+
+add
+
+src
+dir
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+x11
+dir
+
+
+
+add
+
+macosx
+dir
+
+
+
+add
+

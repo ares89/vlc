@@ -191,6 +191,8 @@ struct demux_sys_t
 {
     char            *p_sdp;    /* XXX mallocated */
     char            *psz_path; /* URL-encoded path */
+    int             udp_port;
+    int             audio_port;
     vlc_url_t       url;
 
     MediaSession     *ms;
@@ -551,6 +553,11 @@ static int Connect( demux_t *p_demux )
     int  i_ret        = VLC_SUCCESS;
     const int i_timeout = var_InheritInteger( p_demux, "ipv4-timeout" );
 
+    int rtpUDPPort=0;
+    int rtpAudioPort=0;
+    bool isUDP=false;
+    char* index=0;
+
     /* Get the user name and password */
     if( p_sys->url.psz_username || p_sys->url.psz_password )
     {
@@ -585,8 +592,55 @@ createnew:
     if( var_CreateGetBool( p_demux, "rtsp-http" ) )
         i_http_port = var_InheritInteger( p_demux, "rtsp-http-port" );
 
+
+    if((index=strstr(strdup(psz_url),"rtpport"))!=NULL)
+    {
+        index+=7;
+        if(*index=='=')
+        {
+            sscanf(++index,"%d",&rtpUDPPort);
+            if (rtpUDPPort < 1 || rtpUDPPort > 65535)
+            {
+                msg_Err( p_demux, "RTSPClient::createNew failed with rtp udp port(%d)",
+                         rtpUDPPort);
+            }
+            else
+            {
+                isUDP=true;
+            }
+        }
+    }
+if((index=strstr(strdup(psz_url),"audioport"))!=NULL)
+    {
+        index+=9;
+        if(*index=='=')
+        {
+            sscanf(++index,"%d",&rtpAudioPort);
+            if (rtpAudioPort < 1 || rtpAudioPort > 65535)
+            {
+                msg_Err( p_demux, "RTSPClient::createNew failed with rtp aduio port(%d)",
+                         rtpAudioPort);
+            }
+            else
+            {
+                isUDP=true;
+            }
+        }
+    }
+    p_sys->udp_port=0;
+    p_sys->audio_port=0;
+    if(isUDP)
+    {
+        var_SetInteger(p_demux, "rtp-client-port",rtpUDPPort);
+        p_sys->udp_port=rtpUDPPort;
+	p_sys->audio_port=rtpAudioPort;
+        msg_Dbg( p_demux, "rtp-video-port = %d", rtpUDPPort );
+	msg_Dbg( p_demux, "rtp-audio-port = %d", rtpAudioPort );
+    }
+
     p_sys->rtsp = new RTSPClientVlc( *p_sys->env, psz_url,
-                                     var_InheritInteger( p_demux, "verbose" ) > 1 ? 1 : 0,
+                                     1,
+                                     /*var_InheritInteger( p_demux, "verbose" ) > 1 ? 1 : 0,*/
                                      "LibVLC/"VERSION, i_http_port, p_sys );
     if( !p_sys->rtsp )
     {
@@ -697,6 +751,7 @@ static int SessionsSetup( demux_t *p_demux )
 
     /* Initialise each media subsession */
     iter = new MediaSubsessionIterator( *p_sys->ms );
+    int index=0;
     while( ( sub = iter->next() ) != NULL )
     {
         Boolean bInit;
@@ -721,13 +776,23 @@ static int SessionsSetup( demux_t *p_demux )
         else if( !strcmp( sub->mediumName(), "text" ) )
             ;
         else continue;
-
+		
+        if(index==0&&p_sys->udp_port!=0)
+            i_client_port=p_sys->udp_port;
+	if(index==1&&p_sys->audio_port!=0)
+            i_client_port=p_sys->audio_port;
+	index++;
         if( i_client_port != -1 )
         {
             sub->setClientPortNum( i_client_port );
             i_client_port += 2;
         }
-
+        msg_Dbg( p_demux, "the RTSPClientVlc use port %u", sub->clientPortNum());/*add by lshg for stun.port*/
+//  msg_Err( p_demux, "session setup 8");
+if(!p_sys->rtsp )
+msg_Dbg( p_demux, "p_sys->rtsp  is null 0");
+else 
+msg_Dbg( p_demux, "p_sys->rtsp  is not null 0");
         if( strcasestr( sub->codecName(), "REAL" ) )
         {
             msg_Info( p_demux, "real codec detected, using real-RTSP instead" );
@@ -739,6 +804,11 @@ static int SessionsSetup( demux_t *p_demux )
             bInit = sub->initiate( 0 );
         else
             bInit = sub->initiate();
+
+if(!p_sys->rtsp )
+msg_Dbg( p_demux, "p_sys->rtsp  is null 1");
+else 
+msg_Dbg( p_demux, "p_sys->rtsp  is not null 1");
 
         if( !bInit )
         {
@@ -761,6 +831,11 @@ static int SessionsSetup( demux_t *p_demux )
             }
             msg_Dbg( p_demux, "RTP subsession '%s/%s'", sub->mediumName(),
                      sub->codecName() );
+
+if(!p_sys->rtsp )
+msg_Dbg( p_demux, "p_sys->rtsp  is null 2");
+else 
+msg_Dbg( p_demux, "p_sys->rtsp  is not null 2");
 
             /* Issue the SETUP */
             if( p_sys->rtsp )

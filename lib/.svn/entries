@@ -1,0 +1,203 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/lib
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+media.c
+file
+
+
+
+add
+
+media_internal.h
+file
+
+
+
+add
+
+log.c
+file
+
+
+
+add
+
+event.c
+file
+
+
+
+add
+
+event_internal.h
+file
+
+
+
+add
+
+media_list_player.c
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+core.c
+file
+
+
+
+add
+
+error.c
+file
+
+
+
+add
+
+media_list_path.h
+file
+
+
+
+add
+
+media_player.c
+file
+
+
+
+add
+
+media_player_internal.h
+file
+
+
+
+add
+
+vlm.c
+file
+
+
+
+add
+
+libvlc.pc.in
+file
+
+
+
+add
+
+playlist.c
+file
+
+
+
+add
+
+audio.c
+file
+
+
+
+add
+
+libvlc.sym
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+media_library.c
+file
+
+
+
+add
+
+media_discoverer.c
+file
+
+
+
+add
+
+video.c
+file
+
+
+
+add
+
+media_list.c
+file
+
+
+
+add
+
+media_list_internal.h
+file
+
+
+
+add
+
+libvlc_internal.h
+file
+
+
+
+add
+
+event_async.c
+file
+
+
+
+add
+

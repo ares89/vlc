@@ -1,0 +1,350 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/qt4/dialogs
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+epg.cpp
+file
+
+
+
+add
+
+messages.hpp
+file
+
+
+
+add
+
+firstrun.cpp
+file
+
+
+
+add
+
+epg.hpp
+file
+
+
+
+add
+
+firstrun.hpp
+file
+
+
+
+add
+
+external.cpp
+file
+
+
+
+add
+
+openurl.cpp
+file
+
+
+
+add
+
+external.hpp
+file
+
+
+
+add
+
+gototime.cpp
+file
+
+
+
+add
+
+help.cpp
+file
+
+
+
+add
+
+bookmarks.cpp
+file
+
+
+
+add
+
+openurl.hpp
+file
+
+
+
+add
+
+mediainfo.cpp
+file
+
+
+
+add
+
+gototime.hpp
+file
+
+
+
+add
+
+bookmarks.hpp
+file
+
+
+
+add
+
+help.hpp
+file
+
+
+
+add
+
+vlm.cpp
+file
+
+
+
+add
+
+mediainfo.hpp
+file
+
+
+
+add
+
+playlist.cpp
+file
+
+
+
+add
+
+open.cpp
+file
+
+
+
+add
+
+vlm.hpp
+file
+
+
+
+add
+
+open.hpp
+file
+
+
+
+add
+
+playlist.hpp
+file
+
+
+
+add
+
+fingerprintdialog.cpp
+file
+
+
+
+add
+
+fingerprintdialog.hpp
+file
+
+
+
+add
+
+errors.cpp
+file
+
+
+
+add
+
+convert.cpp
+file
+
+
+
+add
+
+plugins.cpp
+file
+
+
+
+add
+
+errors.hpp
+file
+
+
+
+add
+
+podcast_configuration.cpp
+file
+
+
+
+add
+
+convert.hpp
+file
+
+
+
+add
+
+plugins.hpp
+file
+
+
+
+add
+
+podcast_configuration.hpp
+file
+
+
+
+add
+
+sout.cpp
+file
+
+
+
+add
+
+sout.hpp
+file
+
+
+
+add
+
+ml_configuration.cpp
+file
+
+
+
+add
+
+extensions.cpp
+file
+
+
+
+add
+
+extended.cpp
+file
+
+
+
+add
+
+preferences.cpp
+file
+
+
+
+add
+
+toolbar.cpp
+file
+
+
+
+add
+
+ml_configuration.hpp
+file
+
+
+
+add
+
+extensions.hpp
+file
+
+
+
+add
+
+extended.hpp
+file
+
+
+
+add
+
+preferences.hpp
+file
+
+
+
+add
+
+messages.cpp
+file
+
+
+
+add
+
+toolbar.hpp
+file
+
+
+
+add
+

@@ -1,0 +1,189 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/qt4/components
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+preferences_widgets.hpp
+file
+
+
+
+add
+
+info_panels.cpp
+file
+
+
+
+add
+
+complete_preferences.hpp
+file
+
+
+
+add
+
+extended_panels.cpp
+file
+
+
+
+add
+
+info_panels.hpp
+file
+
+
+
+add
+
+open_panels.cpp
+file
+
+
+
+add
+
+extended_panels.hpp
+file
+
+
+
+add
+
+open_panels.hpp
+file
+
+
+
+add
+
+sout
+dir
+
+
+
+add
+
+simple_preferences.cpp
+file
+
+
+
+add
+
+simple_preferences.hpp
+file
+
+
+
+add
+
+playlist
+dir
+
+
+
+add
+
+info_widgets.cpp
+file
+
+
+
+add
+
+controller.cpp
+file
+
+
+
+add
+
+interface_widgets.cpp
+file
+
+
+
+add
+
+info_widgets.hpp
+file
+
+
+
+add
+
+controller_widget.cpp
+file
+
+
+
+add
+
+preferences_widgets.cpp
+file
+
+
+
+add
+
+controller.hpp
+file
+
+
+
+add
+
+complete_preferences.cpp
+file
+
+
+
+add
+
+epg
+dir
+
+
+
+add
+
+controller_widget.hpp
+file
+
+
+
+add
+
+interface_widgets.hpp
+file
+
+
+
+add
+

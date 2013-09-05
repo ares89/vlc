@@ -1,0 +1,203 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/skins2/controls
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+ctrl_list.hpp
+file
+
+
+
+add
+
+ctrl_button.hpp
+file
+
+
+
+add
+
+ctrl_generic.hpp
+file
+
+
+
+add
+
+ctrl_image.cpp
+file
+
+
+
+add
+
+ctrl_slider.cpp
+file
+
+
+
+add
+
+ctrl_text.cpp
+file
+
+
+
+add
+
+ctrl_checkbox.cpp
+file
+
+
+
+add
+
+ctrl_image.hpp
+file
+
+
+
+add
+
+ctrl_slider.hpp
+file
+
+
+
+add
+
+ctrl_text.hpp
+file
+
+
+
+add
+
+ctrl_flat.hpp
+file
+
+
+
+add
+
+ctrl_checkbox.hpp
+file
+
+
+
+add
+
+ctrl_radialslider.cpp
+file
+
+
+
+add
+
+ctrl_tree.cpp
+file
+
+
+
+add
+
+ctrl_resize.cpp
+file
+
+
+
+add
+
+ctrl_tree.hpp
+file
+
+
+
+add
+
+ctrl_radialslider.hpp
+file
+
+
+
+add
+
+ctrl_move.cpp
+file
+
+
+
+add
+
+ctrl_video.cpp
+file
+
+
+
+add
+
+ctrl_resize.hpp
+file
+
+
+
+add
+
+ctrl_video.hpp
+file
+
+
+
+add
+
+ctrl_move.hpp
+file
+
+
+
+add
+
+ctrl_list.cpp
+file
+
+
+
+add
+
+ctrl_button.cpp
+file
+
+
+
+add
+
+ctrl_generic.cpp
+file
+
+
+
+add
+

@@ -1,0 +1,175 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/codec/omxil
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+vout.c
+file
+
+
+
+add
+
+omxil.h
+file
+
+
+
+add
+
+OMX_Video.h
+file
+
+
+
+add
+
+OMX_Index.h
+file
+
+
+
+add
+
+qcom.c
+file
+
+
+
+add
+
+omxil_core.c
+file
+
+
+
+add
+
+utils.c
+file
+
+
+
+add
+
+qcom.h
+file
+
+
+
+add
+
+omxil_core.h
+file
+
+
+
+add
+
+OMX_Other.h
+file
+
+
+
+add
+
+OMX_Image.h
+file
+
+
+
+add
+
+iomx.cpp
+file
+
+
+
+add
+
+android_mediacodec.c
+file
+
+
+
+add
+
+omxil_utils.h
+file
+
+
+
+add
+
+OMX_Broadcom.h
+file
+
+
+
+add
+
+OMX_IVCommon.h
+file
+
+
+
+add
+
+OMX_Core.h
+file
+
+
+
+add
+
+omxil.c
+file
+
+
+
+add
+
+OMX_Audio.h
+file
+
+
+
+add
+
+OMX_Component.h
+file
+
+
+
+add
+
+OMX_Types.h
+file
+
+
+
+add
+

@@ -1,0 +1,154 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/skins2/events
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+evt_key.hpp
+file
+
+
+
+add
+
+evt_mouse.hpp
+file
+
+
+
+add
+
+evt_scroll.cpp
+file
+
+
+
+add
+
+evt_input.cpp
+file
+
+
+
+add
+
+evt_leave.hpp
+file
+
+
+
+add
+
+evt_scroll.hpp
+file
+
+
+
+add
+
+evt_refresh.hpp
+file
+
+
+
+add
+
+evt_input.hpp
+file
+
+
+
+add
+
+evt_menu.hpp
+file
+
+
+
+add
+
+evt_motion.hpp
+file
+
+
+
+add
+
+evt_special.cpp
+file
+
+
+
+add
+
+evt_generic.hpp
+file
+
+
+
+add
+
+evt_enter.hpp
+file
+
+
+
+add
+
+evt_focus.hpp
+file
+
+
+
+add
+
+evt_special.hpp
+file
+
+
+
+add
+
+evt_dragndrop.hpp
+file
+
+
+
+add
+
+evt_mouse.cpp
+file
+
+
+
+add
+
+evt_key.cpp
+file
+
+
+
+add
+

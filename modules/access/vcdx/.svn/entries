@@ -1,0 +1,84 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/access/vcdx
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+access.h
+file
+
+
+
+add
+
+vcdplayer.c
+file
+
+
+
+add
+
+info.c
+file
+
+
+
+add
+
+vcd.c
+file
+
+
+
+add
+
+vcdplayer.h
+file
+
+
+
+add
+
+info.h
+file
+
+
+
+add
+
+access.c
+file
+
+
+
+add
+
+vcd.h
+file
+
+
+
+add
+

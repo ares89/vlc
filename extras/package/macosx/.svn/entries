@@ -1,0 +1,175 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/extras/package/macosx
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+Info.plist.in
+file
+
+
+
+add
+
+configure.sh
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+VLC.entitlements
+file
+
+
+
+add
+
+dmg_setup.scpt
+file
+
+
+
+add
+
+build-package.sh
+file
+
+
+
+add
+
+Delete_Preferences.app
+dir
+
+
+
+add
+
+package.mak
+file
+
+
+
+add
+
+codesign.sh
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+codesign-dp.sh
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+.gitignore
+file
+
+
+
+add
+
+build.sh
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+Resources
+dir
+
+
+
+add
+
+eyetvplugin
+dir
+
+
+
+add
+
+fullscreen_panel.svg
+file
+
+
+
+add
+
+ub.sh
+file
+
+
+
+add
+
+README.MacOSX.rtf
+file
+
+
+
+add
+
+vlc.xcodeproj
+dir
+
+
+
+add
+

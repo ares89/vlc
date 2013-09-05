@@ -1,0 +1,343 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/tests/ref/lavf
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+rso
+file
+
+
+
+add
+
+au
+file
+
+
+
+add
+
+aiff
+file
+
+
+
+add
+
+nut
+file
+
+
+
+add
+
+pixfmt
+file
+
+
+
+add
+
+ffm
+file
+
+
+
+add
+
+sox
+file
+
+
+
+add
+
+ppmpipe
+file
+
+
+
+add
+
+dv_fmt
+file
+
+
+
+add
+
+avi
+file
+
+
+
+add
+
+jpg
+file
+
+
+
+add
+
+mpg
+file
+
+
+
+add
+
+png
+file
+
+
+
+add
+
+gxf
+file
+
+
+
+add
+
+mxf
+file
+
+
+
+add
+
+dpx
+file
+
+
+
+add
+
+ppm
+file
+
+
+
+add
+
+sunrast
+file
+
+
+
+add
+
+pgmpipe
+file
+
+
+
+add
+
+gif
+file
+
+
+
+add
+
+asf
+file
+
+
+
+add
+
+tga
+file
+
+
+
+add
+
+ogg
+file
+
+
+
+add
+
+pam
+file
+
+
+
+add
+
+rm
+file
+
+
+
+add
+
+bmp
+file
+
+
+
+add
+
+mmf
+file
+
+
+
+add
+
+yuv4mpeg
+file
+
+
+
+add
+
+voc_s16
+file
+
+
+
+add
+
+sgi
+file
+
+
+
+add
+
+pgm
+file
+
+
+
+add
+
+alaw
+file
+
+
+
+add
+
+mulaw
+file
+
+
+
+add
+
+ts
+file
+
+
+
+add
+
+voc
+file
+
+
+
+add
+
+tiff
+file
+
+
+
+add
+
+pcx
+file
+
+
+
+add
+
+pbmpipe
+file
+
+
+
+add
+
+flv_fmt
+file
+
+
+
+add
+
+mkv
+file
+
+
+
+add
+
+wav
+file
+
+
+
+add
+
+mxf_d10
+file
+
+
+
+add
+
+swf
+file
+
+
+
+add
+
+mov
+file
+
+
+
+add
+
+xwd
+file
+
+
+
+add
+

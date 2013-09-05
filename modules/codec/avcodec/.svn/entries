@@ -1,0 +1,161 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/codec/avcodec
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+dxva2.c
+file
+
+
+
+add
+
+avcommon.h
+file
+
+
+
+add
+
+cpu.c
+file
+
+
+
+add
+
+avcommon_compat.h
+file
+
+
+
+add
+
+subtitle.c
+file
+
+
+
+add
+
+vaapi.c
+file
+
+
+
+add
+
+audio.c
+file
+
+
+
+add
+
+avcodec.c
+file
+
+
+
+add
+
+video.c
+file
+
+
+
+add
+
+avcodec.h
+file
+
+
+
+add
+
+chroma.c
+file
+
+
+
+add
+
+copy.c
+file
+
+
+
+add
+
+vda.c
+file
+
+
+
+add
+
+va.h
+file
+
+
+
+add
+
+chroma.h
+file
+
+
+
+add
+
+vdpau.c
+file
+
+
+
+add
+
+encoder.c
+file
+
+
+
+add
+
+copy.h
+file
+
+
+
+add
+
+fourcc.c
+file
+
+
+
+add
+

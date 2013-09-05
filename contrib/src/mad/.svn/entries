@@ -1,0 +1,70 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/src/mad
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+rules.mak
+file
+
+
+
+add
+
+mad-ios-asm.patch
+file
+
+
+
+add
+
+SHA512SUMS
+file
+
+
+
+add
+
+mad-noopt.patch
+file
+
+
+
+add
+
+Provide-Thumb-2-alternative-code-for-MAD_F_MLN.diff
+file
+
+
+
+add
+
+mad-mips-h-constraint-removal.patch
+file
+
+
+
+add
+

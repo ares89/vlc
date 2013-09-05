@@ -1,0 +1,63 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/visualization/visual
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+visual.h
+file
+
+
+
+add
+
+effects.c
+file
+
+
+
+add
+
+fft.c
+file
+
+
+
+add
+
+visual.c
+file
+
+
+
+add
+
+fft.h
+file
+
+
+
+add
+

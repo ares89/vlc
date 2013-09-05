@@ -1,0 +1,147 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/src/playlist
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+engine.c
+file
+
+
+
+add
+
+search.c
+file
+
+
+
+add
+
+thread.c
+file
+
+
+
+add
+
+preparser.h
+file
+
+
+
+add
+
+aout.c
+file
+
+
+
+add
+
+services_discovery.c
+file
+
+
+
+add
+
+control.c
+file
+
+
+
+add
+
+fetcher.c
+file
+
+
+
+add
+
+fetcher.h
+file
+
+
+
+add
+
+art.c
+file
+
+
+
+add
+
+sort.c
+file
+
+
+
+add
+
+art.h
+file
+
+
+
+add
+
+item.c
+file
+
+
+
+add
+
+loadsave.c
+file
+
+
+
+add
+
+tree.c
+file
+
+
+
+add
+
+playlist_internal.h
+file
+
+
+
+add
+
+preparser.c
+file
+
+
+
+add
+

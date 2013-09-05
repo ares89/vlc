@@ -1,0 +1,231 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/audio_output
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+Makefile.in
+file
+
+
+
+add
+
+vlcpulse.h
+file
+
+
+
+add
+
+TPCircularBuffer.c
+file
+
+
+
+add
+
+directx.c
+file
+
+
+
+add
+
+kai.c
+file
+
+
+
+add
+
+oss.c
+file
+
+
+
+add
+
+audioqueue.c
+file
+
+
+
+add
+
+TPCircularBuffer.h
+file
+
+
+
+add
+
+jack.c
+file
+
+
+
+add
+
+audiounit_ios.c
+file
+
+
+
+add
+
+sndio.c
+file
+
+
+
+add
+
+volume.h
+file
+
+
+
+add
+
+amem.c
+file
+
+
+
+add
+
+file.c
+file
+
+
+
+add
+
+alsa.c
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+wasapi.c
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+audiotrack.c
+file
+
+
+
+add
+
+opensles_android.c
+file
+
+
+
+add
+
+pulse.c
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+windows_audio_common.h
+file
+
+
+
+add
+
+mmdevice.c
+file
+
+
+
+add
+
+auhal.c
+file
+
+
+
+add
+
+waveout.c
+file
+
+
+
+add
+
+adummy.c
+file
+
+
+
+add
+
+vlcpulse.c
+file
+
+
+
+add
+
+mmdevice.h
+file
+
+
+
+add
+

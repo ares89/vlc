@@ -1,0 +1,84 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/libavresample/x86
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+util.asm
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+audio_mix.asm
+file
+
+
+
+add
+
+dither.asm
+file
+
+
+
+add
+
+audio_convert.asm
+file
+
+
+
+add
+
+audio_mix_init.c
+file
+
+
+
+add
+
+dither_init.c
+file
+
+
+
+add
+
+audio_convert_init.c
+file
+
+
+
+add
+

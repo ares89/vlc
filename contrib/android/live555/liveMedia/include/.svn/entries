@@ -1,0 +1,938 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/live555/liveMedia/include
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+MPEG2TransportStreamIndexFile.hh
+file
+
+
+
+add
+
+MPEG4VideoStreamDiscreteFramer.hh
+file
+
+
+
+add
+
+ByteStreamFileSource.hh
+file
+
+
+
+add
+
+WAVAudioFileSource.hh
+file
+
+
+
+add
+
+MP3ADUinterleaving.hh
+file
+
+
+
+add
+
+MPEG4ESVideoRTPSource.hh
+file
+
+
+
+add
+
+AMRAudioFileServerMediaSubsession.hh
+file
+
+
+
+add
+
+MPEG2TransportStreamMultiplexor.hh
+file
+
+
+
+add
+
+VP8VideoRTPSource.hh
+file
+
+
+
+add
+
+MPEG1or2VideoStreamDiscreteFramer.hh
+file
+
+
+
+add
+
+DarwinInjector.hh
+file
+
+
+
+add
+
+ByteStreamMemoryBufferSource.hh
+file
+
+
+
+add
+
+MPEG1or2AudioRTPSource.hh
+file
+
+
+
+add
+
+AMRAudioFileSink.hh
+file
+
+
+
+add
+
+MPEG4LATMAudioRTPSink.hh
+file
+
+
+
+add
+
+RTPSink.hh
+file
+
+
+
+add
+
+MPEG1or2VideoRTPSource.hh
+file
+
+
+
+add
+
+JPEGVideoSource.hh
+file
+
+
+
+add
+
+AC3AudioRTPSource.hh
+file
+
+
+
+add
+
+SimpleRTPSource.hh
+file
+
+
+
+add
+
+FileSink.hh
+file
+
+
+
+add
+
+FramedFileSource.hh
+file
+
+
+
+add
+
+Media.hh
+file
+
+
+
+add
+
+FramedSource.hh
+file
+
+
+
+add
+
+DeviceSource.hh
+file
+
+
+
+add
+
+MultiFramedRTPSource.hh
+file
+
+
+
+add
+
+H264VideoStreamFramer.hh
+file
+
+
+
+add
+
+GSMAudioRTPSink.hh
+file
+
+
+
+add
+
+Base64.hh
+file
+
+
+
+add
+
+H264VideoRTPSink.hh
+file
+
+
+
+add
+
+RTPInterface.hh
+file
+
+
+
+add
+
+MPEGVideoStreamFramer.hh
+file
+
+
+
+add
+
+MPEG2TransportFileServerMediaSubsession.hh
+file
+
+
+
+add
+
+AC3AudioStreamFramer.hh
+file
+
+
+
+add
+
+RTSPCommon.hh
+file
+
+
+
+add
+
+FramedFilter.hh
+file
+
+
+
+add
+
+AVIFileSink.hh
+file
+
+
+
+add
+
+SimpleRTPSink.hh
+file
+
+
+
+add
+
+ServerMediaSession.hh
+file
+
+
+
+add
+
+MPEG4VideoStreamFramer.hh
+file
+
+
+
+add
+
+MP3FileSource.hh
+file
+
+
+
+add
+
+H264VideoRTPSource.hh
+file
+
+
+
+add
+
+MP3Transcoder.hh
+file
+
+
+
+add
+
+MultiFramedRTPSink.hh
+file
+
+
+
+add
+
+MP3AudioFileServerMediaSubsession.hh
+file
+
+
+
+add
+
+JPEGVideoRTPSink.hh
+file
+
+
+
+add
+
+RTSPClient.hh
+file
+
+
+
+add
+
+SIPClient.hh
+file
+
+
+
+add
+
+MPEG1or2VideoStreamFramer.hh
+file
+
+
+
+add
+
+liveMedia.hh
+file
+
+
+
+add
+
+uLawAudioFilter.hh
+file
+
+
+
+add
+
+MPEG4VideoFileServerMediaSubsession.hh
+file
+
+
+
+add
+
+MPEG1or2DemuxedElementaryStream.hh
+file
+
+
+
+add
+
+MPEG2TransportStreamTrickModeFilter.hh
+file
+
+
+
+add
+
+BasicUDPSource.hh
+file
+
+
+
+add
+
+MP3ADUTranscoder.hh
+file
+
+
+
+add
+
+RTSPServer.hh
+file
+
+
+
+add
+
+VP8VideoRTPSink.hh
+file
+
+
+
+add
+
+MPEG4GenericRTPSource.hh
+file
+
+
+
+add
+
+AMRAudioFileSource.hh
+file
+
+
+
+add
+
+RTPSource.hh
+file
+
+
+
+add
+
+MPEG1or2FileServerDemux.hh
+file
+
+
+
+add
+
+MPEG1or2AudioStreamFramer.hh
+file
+
+
+
+add
+
+MPEG1or2VideoFileServerMediaSubsession.hh
+file
+
+
+
+add
+
+AC3AudioFileServerMediaSubsession.hh
+file
+
+
+
+add
+
+ADTSAudioFileSource.hh
+file
+
+
+
+add
+
+QuickTimeGenericRTPSource.hh
+file
+
+
+
+add
+
+MPEG1or2Demux.hh
+file
+
+
+
+add
+
+OutputFile.hh
+file
+
+
+
+add
+
+AC3AudioRTPSink.hh
+file
+
+
+
+add
+
+DVVideoRTPSource.hh
+file
+
+
+
+add
+
+MatroskaFileServerDemux.hh
+file
+
+
+
+add
+
+ByteStreamMultiFileSource.hh
+file
+
+
+
+add
+
+MPEG2IndexFromTransportStream.hh
+file
+
+
+
+add
+
+StreamReplicator.hh
+file
+
+
+
+add
+
+VideoRTPSink.hh
+file
+
+
+
+add
+
+ADTSAudioFileServerMediaSubsession.hh
+file
+
+
+
+add
+
+H263plusVideoRTPSource.hh
+file
+
+
+
+add
+
+MPEG4GenericRTPSink.hh
+file
+
+
+
+add
+
+H263plusVideoStreamFramer.hh
+file
+
+
+
+add
+
+H264VideoFileSink.hh
+file
+
+
+
+add
+
+MPEG2TransportStreamFramer.hh
+file
+
+
+
+add
+
+MediaSource.hh
+file
+
+
+
+add
+
+MP3ADURTPSource.hh
+file
+
+
+
+add
+
+AudioInputDevice.hh
+file
+
+
+
+add
+
+liveMedia_version.hh
+file
+
+
+
+add
+
+MPEG2TransportUDPServerMediaSubsession.hh
+file
+
+
+
+add
+
+MPEG4ESVideoRTPSink.hh
+file
+
+
+
+add
+
+T140TextRTPSink.hh
+file
+
+
+
+add
+
+AMRAudioRTPSource.hh
+file
+
+
+
+add
+
+DVVideoStreamFramer.hh
+file
+
+
+
+add
+
+MPEG1or2DemuxedServerMediaSubsession.hh
+file
+
+
+
+add
+
+PassiveServerMediaSubsession.hh
+file
+
+
+
+add
+
+H264VideoFileServerMediaSubsession.hh
+file
+
+
+
+add
+
+MPEG4LATMAudioRTPSource.hh
+file
+
+
+
+add
+
+H263plusVideoRTPSink.hh
+file
+
+
+
+add
+
+MPEG1or2VideoRTPSink.hh
+file
+
+
+
+add
+
+InputFile.hh
+file
+
+
+
+add
+
+TextRTPSink.hh
+file
+
+
+
+add
+
+Locale.hh
+file
+
+
+
+add
+
+MPEG2TransportStreamFromESSource.hh
+file
+
+
+
+add
+
+VorbisAudioRTPSink.hh
+file
+
+
+
+add
+
+MediaSink.hh
+file
+
+
+
+add
+
+MP3ADURTPSink.hh
+file
+
+
+
+add
+
+RTCP.hh
+file
+
+
+
+add
+
+AMRAudioRTPSink.hh
+file
+
+
+
+add
+
+AudioRTPSink.hh
+file
+
+
+
+add
+
+BasicUDPSink.hh
+file
+
+
+
+add
+
+QuickTimeFileSink.hh
+file
+
+
+
+add
+
+MPEG2TransportStreamFromPESSource.hh
+file
+
+
+
+add
+
+FileServerMediaSubsession.hh
+file
+
+
+
+add
+
+WAVAudioFileServerMediaSubsession.hh
+file
+
+
+
+add
+
+RTSPServerSupportingHTTPStreaming.hh
+file
+
+
+
+add
+
+OnDemandServerMediaSubsession.hh
+file
+
+
+
+add
+
+VorbisAudioRTPSource.hh
+file
+
+
+
+add
+
+QCELPAudioRTPSource.hh
+file
+
+
+
+add
+
+DVVideoFileServerMediaSubsession.hh
+file
+
+
+
+add
+
+H264VideoStreamDiscreteFramer.hh
+file
+
+
+
+add
+
+DVVideoRTPSink.hh
+file
+
+
+
+add
+
+ProxyServerMediaSession.hh
+file
+
+
+
+add
+
+H261VideoRTPSource.hh
+file
+
+
+
+add
+
+DigestAuthentication.hh
+file
+
+
+
+add
+
+MatroskaFile.hh
+file
+
+
+
+add
+
+AMRAudioSource.hh
+file
+
+
+
+add
+
+H263plusVideoFileServerMediaSubsession.hh
+file
+
+
+
+add
+
+MediaSession.hh
+file
+
+
+
+add
+
+JPEGVideoRTPSource.hh
+file
+
+
+
+add
+
+TCPStreamSink.hh
+file
+
+
+
+add
+
+MP3ADU.hh
+file
+
+
+
+add
+
+MPEG1or2AudioRTPSink.hh
+file
+
+
+
+add
+

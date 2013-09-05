@@ -1,0 +1,63 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/doc/libvlc/QtPlayer
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+player.h
+file
+
+
+
+add
+
+LICENSE
+file
+
+
+
+add
+
+main.cpp
+file
+
+
+
+add
+
+QtVLC.pro
+file
+
+
+
+add
+
+player.cpp
+file
+
+
+
+add
+

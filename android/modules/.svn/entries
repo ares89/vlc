@@ -1,0 +1,224 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/android/modules
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+arm_neon
+dir
+
+
+
+add
+
+video_chroma
+dir
+
+
+
+add
+
+stream_filter
+dir
+
+
+
+add
+
+packetizer
+dir
+
+
+
+add
+
+mmx
+dir
+
+
+
+add
+
+access
+dir
+
+
+
+add
+
+visualization
+dir
+
+
+
+add
+
+audio_mixer
+dir
+
+
+
+add
+
+audio_filter
+dir
+
+
+
+add
+
+notify
+dir
+
+
+
+add
+
+mux
+dir
+
+
+
+add
+
+text_renderer
+dir
+
+
+
+add
+
+services_discovery
+dir
+
+
+
+add
+
+video_filter
+dir
+
+
+
+add
+
+meta_engine
+dir
+
+
+
+add
+
+sse2
+dir
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+codec
+dir
+
+
+
+add
+
+control
+dir
+
+
+
+add
+
+access_output
+dir
+
+
+
+add
+
+lua
+dir
+
+
+
+add
+
+audio_output
+dir
+
+
+
+add
+
+stream_out
+dir
+
+
+
+add
+
+demux
+dir
+
+
+
+add
+
+gui
+dir
+
+
+
+add
+
+video_output
+dir
+
+
+
+add
+
+altivec
+dir
+
+
+
+add
+
+misc
+dir
+
+
+
+add
+

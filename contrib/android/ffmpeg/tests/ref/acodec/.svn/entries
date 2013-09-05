@@ -1,0 +1,189 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/tests/ref/acodec
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+pcm-f32le
+file
+
+
+
+add
+
+pcm-s32be
+file
+
+
+
+add
+
+adpcm-ima_qt
+file
+
+
+
+add
+
+pcm-s24be
+file
+
+
+
+add
+
+pcm-f64le
+file
+
+
+
+add
+
+pcm-s16be
+file
+
+
+
+add
+
+mp2
+file
+
+
+
+add
+
+adpcm-adx
+file
+
+
+
+add
+
+alac
+file
+
+
+
+add
+
+pcm-alaw
+file
+
+
+
+add
+
+adpcm-ms
+file
+
+
+
+add
+
+pcm-mulaw
+file
+
+
+
+add
+
+flac
+file
+
+
+
+add
+
+adpcm-ima_wav
+file
+
+
+
+add
+
+pcm-s32le
+file
+
+
+
+add
+
+pcm-s24le
+file
+
+
+
+add
+
+pcm-s8
+file
+
+
+
+add
+
+pcm-s16le
+file
+
+
+
+add
+
+pcm-u8
+file
+
+
+
+add
+
+pcm-f32be
+file
+
+
+
+add
+
+adpcm-swf
+file
+
+
+
+add
+
+adpcm-yamaha
+file
+
+
+
+add
+
+pcm-f64be
+file
+
+
+
+add
+

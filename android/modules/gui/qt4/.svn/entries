@@ -1,0 +1,77 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/android/modules/gui/qt4
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+Makefile
+file
+
+
+
+add
+
+util
+dir
+
+
+
+add
+
+dialogs
+dir
+
+
+
+add
+
+styles
+dir
+
+
+
+add
+
+adapters
+dir
+
+
+
+add
+
+components
+dir
+
+
+
+add
+
+.deps
+dir
+
+
+
+add
+

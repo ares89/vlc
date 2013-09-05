@@ -1,0 +1,63 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/libavcodec/sh4
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+dsputil_sh4.h
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+idct_sh4.c
+file
+
+
+
+add
+
+dsputil_sh4.c
+file
+
+
+
+add
+
+sh4.h
+file
+
+
+
+add
+

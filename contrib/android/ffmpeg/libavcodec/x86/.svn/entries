@@ -1,0 +1,658 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/libavcodec/x86
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+imdct36.asm
+file
+
+
+
+add
+
+videodsp.asm
+file
+
+
+
+add
+
+ac3dsp.asm
+file
+
+
+
+add
+
+h264dsp_init.c
+file
+
+
+
+add
+
+pngdsp_init.c
+file
+
+
+
+add
+
+mpegvideo.c
+file
+
+
+
+add
+
+dsputil.asm
+file
+
+
+
+add
+
+fmtconvert.asm
+file
+
+
+
+add
+
+h264_intrapred_10bit.asm
+file
+
+
+
+add
+
+h264_qpel_8bit.asm
+file
+
+
+
+add
+
+h264_weight.asm
+file
+
+
+
+add
+
+h264_intrapred.asm
+file
+
+
+
+add
+
+cabac.h
+file
+
+
+
+add
+
+ac3dsp_init.c
+file
+
+
+
+add
+
+videodsp_init.c
+file
+
+
+
+add
+
+mpegvideoenc_template.c
+file
+
+
+
+add
+
+vp3dsp_init.c
+file
+
+
+
+add
+
+rnd_mmx.c
+file
+
+
+
+add
+
+dsputilenc.asm
+file
+
+
+
+add
+
+idct_sse2_xvid.c
+file
+
+
+
+add
+
+constants.c
+file
+
+
+
+add
+
+fft.asm
+file
+
+
+
+add
+
+lpc.c
+file
+
+
+
+add
+
+motion_est.c
+file
+
+
+
+add
+
+fdct.c
+file
+
+
+
+add
+
+constants.h
+file
+
+
+
+add
+
+vc1dsp_mmx.c
+file
+
+
+
+add
+
+vp8dsp.asm
+file
+
+
+
+add
+
+vc1dsp_init.c
+file
+
+
+
+add
+
+fft.h
+file
+
+
+
+add
+
+h264_idct.asm
+file
+
+
+
+add
+
+fpel.asm
+file
+
+
+
+add
+
+pngdsp.asm
+file
+
+
+
+add
+
+vp56dsp_init.c
+file
+
+
+
+add
+
+h264_chromamc.asm
+file
+
+
+
+add
+
+sbrdsp.asm
+file
+
+
+
+add
+
+simple_idct.c
+file
+
+
+
+add
+
+hpeldsp_rnd_template.c
+file
+
+
+
+add
+
+vorbisdsp_init.c
+file
+
+
+
+add
+
+mlpdsp.c
+file
+
+
+
+add
+
+dsputil_qns_template.c
+file
+
+
+
+add
+
+h264_qpel_10bit.asm
+file
+
+
+
+add
+
+h264_i386.h
+file
+
+
+
+add
+
+h264_deblock_10bit.asm
+file
+
+
+
+add
+
+h264_qpel.c
+file
+
+
+
+add
+
+mpegvideoenc.c
+file
+
+
+
+add
+
+vc1dsp.h
+file
+
+
+
+add
+
+dsputil_mmx.c
+file
+
+
+
+add
+
+dsputil_init.c
+file
+
+
+
+add
+
+vp3dsp.asm
+file
+
+
+
+add
+
+deinterlace.asm
+file
+
+
+
+add
+
+dct32.asm
+file
+
+
+
+add
+
+rnd_template.c
+file
+
+
+
+add
+
+proresdsp.asm
+file
+
+
+
+add
+
+sbrdsp_init.c
+file
+
+
+
+add
+
+mathops.h
+file
+
+
+
+add
+
+mpegaudiodsp.c
+file
+
+
+
+add
+
+hpeldsp_init.c
+file
+
+
+
+add
+
+idct_xvid.h
+file
+
+
+
+add
+
+rv40dsp_init.c
+file
+
+
+
+add
+
+h264_weight_10bit.asm
+file
+
+
+
+add
+
+dsputilenc_mmx.c
+file
+
+
+
+add
+
+mpeg4qpel.asm
+file
+
+
+
+add
+
+idct_mmx_xvid.c
+file
+
+
+
+add
+
+qpel.asm
+file
+
+
+
+add
+
+rv40dsp.asm
+file
+
+
+
+add
+
+rv34dsp.asm
+file
+
+
+
+add
+
+proresdsp_init.c
+file
+
+
+
+add
+
+vp56dsp.asm
+file
+
+
+
+add
+
+fpel_mmx.c
+file
+
+
+
+add
+
+vp8dsp_init.c
+file
+
+
+
+add
+
+vorbisdsp.asm
+file
+
+
+
+add
+
+fmtconvert_init.c
+file
+
+
+
+add
+
+h264_intrapred_init.c
+file
+
+
+
+add
+
+h263_loopfilter.asm
+file
+
+
+
+add
+
+hpeldsp_mmx.c
+file
+
+
+
+add
+
+h264_idct_10bit.asm
+file
+
+
+
+add
+
+rv34dsp_init.c
+file
+
+
+
+add
+
+h264_chromamc_10bit.asm
+file
+
+
+
+add
+
+dnxhdenc.c
+file
+
+
+
+add
+
+vp56_arith.h
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+hpeldsp.asm
+file
+
+
+
+add
+
+dsputil_x86.h
+file
+
+
+
+add
+
+vc1dsp.asm
+file
+
+
+
+add
+
+h264chroma_init.c
+file
+
+
+
+add
+
+fft_init.c
+file
+
+
+
+add
+
+w64xmmtest.c
+file
+
+
+
+add
+
+cavsdsp.c
+file
+
+
+
+add
+
+h264_deblock.asm
+file
+
+
+
+add
+

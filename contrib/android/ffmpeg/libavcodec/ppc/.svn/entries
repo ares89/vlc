@@ -1,0 +1,210 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/libavcodec/ppc
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+vorbisdsp_altivec.c
+file
+
+
+
+add
+
+dsputil_ppc.c
+file
+
+
+
+add
+
+vp3dsp_altivec.c
+file
+
+
+
+add
+
+mpegvideo_altivec.c
+file
+
+
+
+add
+
+fft_altivec.c
+file
+
+
+
+add
+
+fdct_altivec.c
+file
+
+
+
+add
+
+mpegaudiodsp_altivec.c
+file
+
+
+
+add
+
+fft_altivec_s.S
+file
+
+
+
+add
+
+idct_altivec.c
+file
+
+
+
+add
+
+h264dsp.c
+file
+
+
+
+add
+
+vp8dsp_altivec.c
+file
+
+
+
+add
+
+dsputil_altivec.c
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+fmtconvert_altivec.c
+file
+
+
+
+add
+
+h264chroma_init.c
+file
+
+
+
+add
+
+h264qpel_template.c
+file
+
+
+
+add
+
+dsputil_altivec.h
+file
+
+
+
+add
+
+asm.S
+file
+
+
+
+add
+
+int_altivec.c
+file
+
+
+
+add
+
+h264qpel.c
+file
+
+
+
+add
+
+hpeldsp_altivec.c
+file
+
+
+
+add
+
+vc1dsp_altivec.c
+file
+
+
+
+add
+
+h264chroma_template.c
+file
+
+
+
+add
+
+gmc_altivec.c
+file
+
+
+
+add
+
+videodsp_ppc.c
+file
+
+
+
+add
+
+mathops.h
+file
+
+
+
+add
+

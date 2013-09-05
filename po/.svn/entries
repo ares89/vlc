@@ -1,0 +1,693 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/po
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+bg.po
+file
+
+
+
+add
+
+zh_TW.po
+file
+
+
+
+add
+
+cgg.po
+file
+
+
+
+add
+
+oc.po
+file
+
+
+
+add
+
+zh_CN.po
+file
+
+
+
+add
+
+co.po
+file
+
+
+
+add
+
+lg.po
+file
+
+
+
+add
+
+cs.po
+file
+
+
+
+add
+
+kk.po
+file
+
+
+
+add
+
+mk.po
+file
+
+
+
+add
+
+es.po
+file
+
+
+
+add
+
+ko.po
+file
+
+
+
+add
+
+remove-potcdate.sin
+file
+
+
+
+add
+
+en_GB.po
+file
+
+
+
+add
+
+Makefile.in.in
+file
+
+
+
+add
+
+is.po
+file
+
+
+
+add
+
+sk.po
+file
+
+
+
+add
+
+POTFILES.in
+file
+
+
+
+add
+
+uk.po
+file
+
+
+
+add
+
+ms.po
+file
+
+
+
+add
+
+ro.po
+file
+
+
+
+add
+
+ps.po
+file
+
+
+
+add
+
+quot.sed
+file
+
+
+
+add
+
+af.po
+file
+
+
+
+add
+
+pt_PT.po
+file
+
+
+
+add
+
+ff.po
+file
+
+
+
+add
+
+ach.po
+file
+
+
+
+add
+
+tet.po
+file
+
+
+
+add
+
+fur.po
+file
+
+
+
+add
+
+bn.po
+file
+
+
+
+add
+
+ckb.po
+file
+
+
+
+add
+
+nb.po
+file
+
+
+
+add
+
+ar.po
+file
+
+
+
+add
+
+Rules-quot
+file
+
+
+
+add
+
+br.po
+file
+
+
+
+add
+
+makefile-qt4.patch
+file
+
+
+
+add
+
+insert-header.sin
+file
+
+
+
+add
+
+fr.po
+file
+
+
+
+add
+
+hr.po
+file
+
+
+
+add
+
+mn.po
+file
+
+
+
+add
+
+nn.po
+file
+
+
+
+add
+
+lv.po
+file
+
+
+
+add
+
+ca.po
+file
+
+
+
+add
+
+da.po
+file
+
+
+
+add
+
+sr.po
+file
+
+
+
+add
+
+LINGUAS
+file
+
+
+
+add
+
+en@quot.header
+file
+
+
+
+add
+
+tr.po
+file
+
+
+
+add
+
+be.po
+file
+
+
+
+add
+
+fa.po
+file
+
+
+
+add
+
+boldquot.sed
+file
+
+
+
+add
+
+en@boldquot.header
+file
+
+
+
+add
+
+ast.po
+file
+
+
+
+add
+
+ga.po
+file
+
+
+
+add
+
+de.po
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+sv.po
+file
+
+
+
+add
+
+ja.po
+file
+
+
+
+add
+
+ka.po
+file
+
+
+
+add
+
+he.po
+file
+
+
+
+add
+
+Makevars
+file
+
+
+
+add
+
+am.po
+file
+
+
+
+add
+
+fi.po
+file
+
+
+
+add
+
+hi.po
+file
+
+
+
+add
+
+pa.po
+file
+
+
+
+add
+
+kur.po
+file
+
+
+
+add
+
+ne.po
+file
+
+
+
+add
+
+ta.po
+file
+
+
+
+add
+
+pt_BR.po
+file
+
+
+
+add
+
+wa.po
+file
+
+
+
+add
+
+km.po
+file
+
+
+
+add
+
+te.po
+file
+
+
+
+add
+
+eu.po
+file
+
+
+
+add
+
+si.po
+file
+
+
+
+add
+
+hu.po
+file
+
+
+
+add
+
+POTFILES.skip
+file
+
+
+
+add
+
+vi.po
+file
+
+
+
+add
+
+hy.po
+file
+
+
+
+add
+
+sq.po
+file
+
+
+
+add
+
+my.po
+file
+
+
+
+add
+
+ru.po
+file
+
+
+
+add
+
+id.po
+file
+
+
+
+add
+
+zu.po
+file
+
+
+
+add
+
+el.po
+file
+
+
+
+add
+
+gl.po
+file
+
+
+
+add
+
+ml.po
+file
+
+
+
+add
+
+vlc.pot
+file
+
+
+
+add
+
+et.po
+file
+
+
+
+add
+
+nl.po
+file
+
+
+
+add
+
+th.po
+file
+
+
+
+add
+
+pl.po
+file
+
+
+
+add
+
+it.po
+file
+
+
+
+add
+
+sl.po
+file
+
+
+
+add
+
+lt.po
+file
+
+
+
+add
+
+tl.po
+file
+
+
+
+add
+

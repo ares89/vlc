@@ -1,0 +1,112 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/access_output
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+bonjour.c
+file
+
+
+
+add
+
+http.c
+file
+
+
+
+add
+
+livehttp.c
+file
+
+
+
+add
+
+file.c
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+shout.c
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+bonjour.h
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+udp.c
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+dummy.c
+file
+
+
+
+add
+

@@ -1,0 +1,119 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/extras/package/macosx/Resources
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+icons
+dir
+
+
+
+add
+
+mainwindow
+dir
+
+
+
+add
+
+mainwindow_dark
+dir
+
+
+
+add
+
+README
+file
+
+
+
+add
+
+dsa_pub.pem
+file
+
+
+
+add
+
+English.lproj
+dir
+
+
+
+add
+
+prefs
+dir
+
+
+
+add
+
+vlc.scriptTerminology
+file
+
+
+
+add
+
+vlc.scriptSuite
+file
+
+
+
+add
+
+sidebar-icons
+dir
+
+
+
+add
+
+noart.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+fspanel
+dir
+
+
+
+add
+

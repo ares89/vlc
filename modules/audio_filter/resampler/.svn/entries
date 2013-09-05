@@ -1,0 +1,63 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/audio_filter/resampler
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+bandlimited.c
+file
+
+
+
+add
+
+ugly.c
+file
+
+
+
+add
+
+bandlimited.h
+file
+
+
+
+add
+
+speex.c
+file
+
+
+
+add
+
+src.c
+file
+
+
+
+add
+

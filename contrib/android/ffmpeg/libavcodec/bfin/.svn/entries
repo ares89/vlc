@@ -1,0 +1,133 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/libavcodec/bfin
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+vp3_bfin.h
+file
+
+
+
+add
+
+mpegvideo_bfin.c
+file
+
+
+
+add
+
+mathops.h
+file
+
+
+
+add
+
+dsputil_bfin.c
+file
+
+
+
+add
+
+pixels_bfin.S
+file
+
+
+
+add
+
+dsputil_bfin.h
+file
+
+
+
+add
+
+vp3_idct_bfin.S
+file
+
+
+
+add
+
+hpel_pixels_bfin.S
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+hpeldsp_bfin.c
+file
+
+
+
+add
+
+fdct_bfin.S
+file
+
+
+
+add
+
+idct_bfin.S
+file
+
+
+
+add
+
+hpeldsp_bfin.h
+file
+
+
+
+add
+
+vp3_bfin.c
+file
+
+
+
+add
+
+config_bfin.h
+file
+
+
+
+add
+

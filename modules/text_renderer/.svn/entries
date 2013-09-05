@@ -1,0 +1,91 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/text_renderer
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+Makefile.in
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+freetype.c
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+win32text.c
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+quartztext.c
+file
+
+
+
+add
+
+tdummy.c
+file
+
+
+
+add
+
+svg.c
+file
+
+
+
+add
+

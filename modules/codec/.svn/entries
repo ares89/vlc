@@ -1,0 +1,469 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/codec
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+substext.h
+file
+
+
+
+add
+
+araw.c
+file
+
+
+
+add
+
+subsusf.c
+file
+
+
+
+add
+
+aes3.c
+file
+
+
+
+add
+
+cdg.c
+file
+
+
+
+add
+
+opus_header.c
+file
+
+
+
+add
+
+xwd.c
+file
+
+
+
+add
+
+opus_header.h
+file
+
+
+
+add
+
+vorbis.c
+file
+
+
+
+add
+
+flac.c
+file
+
+
+
+add
+
+uleaddvaudio.c
+file
+
+
+
+add
+
+scte27.c
+file
+
+
+
+add
+
+twolame.c
+file
+
+
+
+add
+
+zvbi.c
+file
+
+
+
+add
+
+g711.c
+file
+
+
+
+add
+
+rawvideo.c
+file
+
+
+
+add
+
+wmafixed
+dir
+
+
+
+add
+
+cvdsub.c
+file
+
+
+
+add
+
+t140.c
+file
+
+
+
+add
+
+fluidsynth.c
+file
+
+
+
+add
+
+dts.c
+file
+
+
+
+add
+
+lpcm.c
+file
+
+
+
+add
+
+crystalhd.c
+file
+
+
+
+add
+
+dmo
+dir
+
+
+
+add
+
+spudec
+dir
+
+
+
+add
+
+fdkaac.c
+file
+
+
+
+add
+
+schroedinger.c
+file
+
+
+
+add
+
+h264_nal.h
+file
+
+
+
+add
+
+theora.c
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+adpcm.c
+file
+
+
+
+add
+
+cc.c
+file
+
+
+
+add
+
+dvbsub.c
+file
+
+
+
+add
+
+a52.c
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+cc.h
+file
+
+
+
+add
+
+faad.c
+file
+
+
+
+add
+
+quicktime.c
+file
+
+
+
+add
+
+a52.h
+file
+
+
+
+add
+
+edummy.c
+file
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+libmpeg2.c
+file
+
+
+
+add
+
+dts_header.c
+file
+
+
+
+add
+
+dts_header.h
+file
+
+
+
+add
+
+mpeg_audio.c
+file
+
+
+
+add
+
+telx.c
+file
+
+
+
+add
+
+dirac.c
+file
+
+
+
+add
+
+avcodec
+dir
+
+
+
+add
+
+sdl_image.c
+file
+
+
+
+add
+
+png.c
+file
+
+
+
+add
+
+kate.c
+file
+
+
+
+add
+
+speex.c
+file
+
+
+
+add
+
+shine
+dir
+
+
+
+add
+
+opus.c
+file
+
+
+
+add
+
+mash.cpp
+file
+
+
+
+add
+
+subsdec.c
+file
+
+
+
+add
+
+ddummy.c
+file
+
+
+
+add
+
+stl.c
+file
+
+
+
+add
+
+x264.c
+file
+
+
+
+add
+
+omxil
+dir
+
+
+
+add
+
+svcdsub.c
+file
+
+
+
+add
+
+libass.c
+file
+
+
+
+add
+

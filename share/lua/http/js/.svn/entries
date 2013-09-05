@@ -1,0 +1,70 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/share/lua/http/js
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+jquery.jstree.js
+file
+
+
+
+add
+
+controlers.js
+file
+
+
+
+add
+
+jquery-ui-1.8.13.custom.min.js
+file
+
+
+
+add
+
+ui.js
+file
+
+
+
+add
+
+jquery-1.5.1.min.js
+file
+
+
+
+add
+
+common.js
+file
+
+
+
+add
+

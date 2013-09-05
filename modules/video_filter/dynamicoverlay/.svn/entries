@@ -1,0 +1,70 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/video_filter/dynamicoverlay
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+dynamicoverlay.c
+file
+
+
+
+add
+
+dynamicoverlay_commands.c
+file
+
+
+
+add
+
+dynamicoverlay_queue.c
+file
+
+
+
+add
+
+dynamicoverlay.h
+file
+
+
+
+add
+
+dynamicoverlay_buffer.c
+file
+
+
+
+add
+
+dynamicoverlay_list.c
+file
+
+
+
+add
+

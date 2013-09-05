@@ -1,0 +1,245 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/libswscale
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+utils.c
+file
+
+
+
+add
+
+output.c
+file
+
+
+
+add
+
+swscale.c
+file
+
+
+
+add
+
+output.d
+file
+
+
+
+add
+
+utils.d
+file
+
+
+
+add
+
+ppc
+dir
+
+
+
+add
+
+swscale.d
+file
+
+
+
+add
+
+swscale_internal.h
+file
+
+
+
+add
+
+swscale.h
+file
+
+
+
+add
+
+libswscale.pc
+file
+
+
+
+add
+
+libswscale.v
+file
+
+
+
+add
+
+swscale-test.c
+file
+
+
+
+add
+
+rgb2rgb_template.c
+file
+
+
+
+add
+
+sparc
+dir
+
+
+
+add
+
+libswscale-uninstalled.pc
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+input.c
+file
+
+
+
+add
+
+yuv2rgb.c
+file
+
+
+
+add
+
+input.d
+file
+
+
+
+add
+
+yuv2rgb.d
+file
+
+
+
+add
+
+x86
+dir
+
+
+
+add
+
+colorspace-test.c
+file
+
+
+
+add
+
+swscale_unscaled.c
+file
+
+
+
+add
+
+swscale_unscaled.d
+file
+
+
+
+add
+
+rgb2rgb.c
+file
+
+
+
+add
+
+rgb2rgb.d
+file
+
+
+
+add
+
+version.h
+file
+
+
+
+add
+
+options.c
+file
+
+
+
+add
+
+rgb2rgb.h
+file
+
+
+
+add
+
+options.d
+file
+
+
+
+add
+
+bfin
+dir
+
+
+
+add
+

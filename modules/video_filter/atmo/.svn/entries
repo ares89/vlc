@@ -1,0 +1,322 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/video_filter/atmo
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+AtmoTools.h
+file
+
+
+
+add
+
+AtmoChannelAssignment.h
+file
+
+
+
+add
+
+AtmoClassicConnection.h
+file
+
+
+
+add
+
+AtmoThread.cpp
+file
+
+
+
+add
+
+AtmoDmxSerialConnection.cpp
+file
+
+
+
+add
+
+README.txt
+file
+
+
+
+add
+
+AtmoMultiConnection.cpp
+file
+
+
+
+add
+
+AtmoConfig.h
+file
+
+
+
+add
+
+AtmoOutputFilter.h
+file
+
+
+
+add
+
+MoMoConnection.h
+file
+
+
+
+add
+
+AtmoPacketQueue.cpp
+file
+
+
+
+add
+
+AtmoZoneDefinition.cpp
+file
+
+
+
+add
+
+AtmoCalculations.h
+file
+
+
+
+add
+
+DmxTools.cpp
+file
+
+
+
+add
+
+AtmoDynData.h
+file
+
+
+
+add
+
+AtmoLiveView.cpp
+file
+
+
+
+add
+
+AtmoExternalCaptureInput.h
+file
+
+
+
+add
+
+AtmoInput.cpp
+file
+
+
+
+add
+
+FnordlichtConnection.h
+file
+
+
+
+add
+
+AtmoTools.cpp
+file
+
+
+
+add
+
+AtmoClassicConnection.cpp
+file
+
+
+
+add
+
+AtmoChannelAssignment.cpp
+file
+
+
+
+add
+
+AtmoConnection.h
+file
+
+
+
+add
+
+AtmoConfig.cpp
+file
+
+
+
+add
+
+MoMoConnection.cpp
+file
+
+
+
+add
+
+AtmoOutputFilter.cpp
+file
+
+
+
+add
+
+AtmoThread.h
+file
+
+
+
+add
+
+AtmoDmxSerialConnection.h
+file
+
+
+
+add
+
+AtmoMultiConnection.h
+file
+
+
+
+add
+
+atmo.cpp
+file
+
+
+
+add
+
+AtmoCalculations.cpp
+file
+
+
+
+add
+
+AtmoPacketQueue.h
+file
+
+
+
+add
+
+AtmoDynData.cpp
+file
+
+
+
+add
+
+COPYING.txt
+file
+
+
+
+add
+
+AtmoDefs.h
+file
+
+
+
+add
+
+AtmoExternalCaptureInput.cpp
+file
+
+
+
+add
+
+AtmoZoneDefinition.h
+file
+
+
+
+add
+
+FnordlichtConnection.cpp
+file
+
+
+
+add
+
+DmxTools.h
+file
+
+
+
+add
+
+AtmoConnection.cpp
+file
+
+
+
+add
+
+AtmoLiveView.h
+file
+
+
+
+add
+
+AtmoInput.h
+file
+
+
+
+add
+

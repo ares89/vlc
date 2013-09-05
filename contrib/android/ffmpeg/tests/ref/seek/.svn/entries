@@ -1,0 +1,749 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/tests/ref/seek
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+acodec-mp2
+file
+
+
+
+add
+
+vsynth2-ljpeg
+file
+
+
+
+add
+
+lavf-voc
+file
+
+
+
+add
+
+acodec-adpcm-ms
+file
+
+
+
+add
+
+vsynth2-mjpeg
+file
+
+
+
+add
+
+vsynth2-ffv1
+file
+
+
+
+add
+
+acodec-pcm-mulaw
+file
+
+
+
+add
+
+lavf-pcx
+file
+
+
+
+add
+
+vsynth2-flashsv
+file
+
+
+
+add
+
+lavf-flv_fmt
+file
+
+
+
+add
+
+lavf-wav
+file
+
+
+
+add
+
+vsynth2-mpeg1
+file
+
+
+
+add
+
+vsynth2-mpeg4-qpel
+file
+
+
+
+add
+
+vsynth2-mpeg4
+file
+
+
+
+add
+
+vsynth2-msmpeg4
+file
+
+
+
+add
+
+vsynth2-mpeg4-adv
+file
+
+
+
+add
+
+lavf-ppmpipe
+file
+
+
+
+add
+
+vsynth2-roqvideo
+file
+
+
+
+add
+
+lavf-rm
+file
+
+
+
+add
+
+acodec-pcm-f32le
+file
+
+
+
+add
+
+lavf-avi
+file
+
+
+
+add
+
+vsynth2-dv-50
+file
+
+
+
+add
+
+lavf-jpg
+file
+
+
+
+add
+
+acodec-pcm-s16be
+file
+
+
+
+add
+
+vsynth2-h263p
+file
+
+
+
+add
+
+acodec-adpcm-ima_wav
+file
+
+
+
+add
+
+acodec-pcm-s32le
+file
+
+
+
+add
+
+lavf-ppm
+file
+
+
+
+add
+
+acodec-pcm-s8
+file
+
+
+
+add
+
+vsynth2-rgb
+file
+
+
+
+add
+
+vsynth2-mpeg1b
+file
+
+
+
+add
+
+vsynth2-dv-411
+file
+
+
+
+add
+
+vsynth2-mpeg2-thread
+file
+
+
+
+add
+
+vsynth2-mpeg4-qprd
+file
+
+
+
+add
+
+lavf-aiff
+file
+
+
+
+add
+
+acodec-adpcm-yamaha
+file
+
+
+
+add
+
+lavf-asf
+file
+
+
+
+add
+
+vsynth2-msmpeg4v2
+file
+
+
+
+add
+
+vsynth2-mpeg2-ilace
+file
+
+
+
+add
+
+lavf-ogg
+file
+
+
+
+add
+
+vsynth2-rv10
+file
+
+
+
+add
+
+lavf-bmp
+file
+
+
+
+add
+
+vsynth2-wmv1
+file
+
+
+
+add
+
+lavf-dv_fmt
+file
+
+
+
+add
+
+vsynth2-wmv2
+file
+
+
+
+add
+
+lavf-sgi
+file
+
+
+
+add
+
+acodec-pcm-f64le
+file
+
+
+
+add
+
+lavf-mulaw
+file
+
+
+
+add
+
+acodec-pcm-alaw
+file
+
+
+
+add
+
+acodec-flac
+file
+
+
+
+add
+
+lavf-pbmpipe
+file
+
+
+
+add
+
+acodec-pcm-s24le
+file
+
+
+
+add
+
+lavf-mkv
+file
+
+
+
+add
+
+lavf-mxf_d10
+file
+
+
+
+add
+
+lavf-swf
+file
+
+
+
+add
+
+lavf-mov
+file
+
+
+
+add
+
+acodec-pcm-f32be
+file
+
+
+
+add
+
+vsynth2-h261
+file
+
+
+
+add
+
+lavf-nut
+file
+
+
+
+add
+
+acodec-adpcm-swf
+file
+
+
+
+add
+
+vsynth2-h263
+file
+
+
+
+add
+
+lavf-ffm
+file
+
+
+
+add
+
+vsynth2-yuv
+file
+
+
+
+add
+
+vsynth2-mpeg2-idct-int
+file
+
+
+
+add
+
+vsynth2-flv
+file
+
+
+
+add
+
+vsynth2-rv20
+file
+
+
+
+add
+
+vsynth2-svq1
+file
+
+
+
+add
+
+lavf-yuv4mpeg
+file
+
+
+
+add
+
+vsynth2-huffyuv
+file
+
+
+
+add
+
+acodec-pcm-s32be
+file
+
+
+
+add
+
+acodec-adpcm-ima_qt
+file
+
+
+
+add
+
+lavf-mpg
+file
+
+
+
+add
+
+lavf-alaw
+file
+
+
+
+add
+
+lavf-gxf
+file
+
+
+
+add
+
+lavf-ts
+file
+
+
+
+add
+
+acodec-alac
+file
+
+
+
+add
+
+vsynth2-mpeg4-error
+file
+
+
+
+add
+
+lavf-tiff
+file
+
+
+
+add
+
+vsynth2-dnxhd-1080i
+file
+
+
+
+add
+
+lavf-mxf
+file
+
+
+
+add
+
+acodec-pcm-s16le
+file
+
+
+
+add
+
+vsynth2-dv
+file
+
+
+
+add
+
+vsynth2-mpeg2-ivlc-qprd
+file
+
+
+
+add
+
+vsynth2-mpeg2-thread-ivlc
+file
+
+
+
+add
+
+acodec-pcm-u8
+file
+
+
+
+add
+
+vsynth2-asv1
+file
+
+
+
+add
+
+vsynth2-asv2
+file
+
+
+
+add
+
+lavf-pgmpipe
+file
+
+
+
+add
+
+vsynth2-mpeg4-rc
+file
+
+
+
+add
+
+vsynth2-mpeg4-adap
+file
+
+
+
+add
+
+vsynth2-mpeg2-422
+file
+
+
+
+add
+
+lavf-au
+file
+
+
+
+add
+
+lavf-gif
+file
+
+
+
+add
+
+vsynth2-mpeg4-thread
+file
+
+
+
+add
+
+vsynth2-jpegls
+file
+
+
+
+add
+
+acodec-pcm-f64be
+file
+
+
+
+add
+
+lavf-tga
+file
+
+
+
+add
+
+vsynth2-mpeg4-nr
+file
+
+
+
+add
+
+lavf-mmf
+file
+
+
+
+add
+
+vsynth2-dnxhd-720p
+file
+
+
+
+add
+
+acodec-pcm-s24be
+file
+
+
+
+add
+
+lavf-pgm
+file
+
+
+
+add
+
+vsynth2-dnxhd-720p-rd
+file
+
+
+
+add
+

@@ -1,0 +1,483 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/skins2/src
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+dialogs.cpp
+file
+
+
+
+add
+
+os_timer.hpp
+file
+
+
+
+add
+
+ft2_font.hpp
+file
+
+
+
+add
+
+var_manager.hpp
+file
+
+
+
+add
+
+theme_loader.cpp
+file
+
+
+
+add
+
+vout_window.hpp
+file
+
+
+
+add
+
+vout_manager.hpp
+file
+
+
+
+add
+
+ft2_err.c
+file
+
+
+
+add
+
+theme_repository.hpp
+file
+
+
+
+add
+
+theme.hpp
+file
+
+
+
+add
+
+ft2_err.h
+file
+
+
+
+add
+
+popup.hpp
+file
+
+
+
+add
+
+os_popup.hpp
+file
+
+
+
+add
+
+ini_file.cpp
+file
+
+
+
+add
+
+art_manager.cpp
+file
+
+
+
+add
+
+anim_bitmap.cpp
+file
+
+
+
+add
+
+logger.hpp
+file
+
+
+
+add
+
+ft2_bitmap.cpp
+file
+
+
+
+add
+
+scaled_bitmap.hpp
+file
+
+
+
+add
+
+top_window.hpp
+file
+
+
+
+add
+
+tooltip.hpp
+file
+
+
+
+add
+
+fsc_window.cpp
+file
+
+
+
+add
+
+generic_window.cpp
+file
+
+
+
+add
+
+os_graphics.hpp
+file
+
+
+
+add
+
+window_manager.hpp
+file
+
+
+
+add
+
+bitmap_font.hpp
+file
+
+
+
+add
+
+os_factory.cpp
+file
+
+
+
+add
+
+vlcproc.cpp
+file
+
+
+
+add
+
+generic_bitmap.cpp
+file
+
+
+
+add
+
+file_bitmap.cpp
+file
+
+
+
+add
+
+generic_layout.hpp
+file
+
+
+
+add
+
+anchor.hpp
+file
+
+
+
+add
+
+skin_common.hpp
+file
+
+
+
+add
+
+ft2_font.cpp
+file
+
+
+
+add
+
+var_manager.cpp
+file
+
+
+
+add
+
+vout_window.cpp
+file
+
+
+
+add
+
+vout_manager.cpp
+file
+
+
+
+add
+
+dialogs.hpp
+file
+
+
+
+add
+
+theme_loader.hpp
+file
+
+
+
+add
+
+theme_repository.cpp
+file
+
+
+
+add
+
+theme.cpp
+file
+
+
+
+add
+
+popup.cpp
+file
+
+
+
+add
+
+generic_font.hpp
+file
+
+
+
+add
+
+os_window.hpp
+file
+
+
+
+add
+
+logger.cpp
+file
+
+
+
+add
+
+os_loop.hpp
+file
+
+
+
+add
+
+ini_file.hpp
+file
+
+
+
+add
+
+art_manager.hpp
+file
+
+
+
+add
+
+anim_bitmap.hpp
+file
+
+
+
+add
+
+scaled_bitmap.cpp
+file
+
+
+
+add
+
+top_window.cpp
+file
+
+
+
+add
+
+tooltip.cpp
+file
+
+
+
+add
+
+ft2_bitmap.hpp
+file
+
+
+
+add
+
+os_tooltip.hpp
+file
+
+
+
+add
+
+window_manager.cpp
+file
+
+
+
+add
+
+bitmap_font.cpp
+file
+
+
+
+add
+
+fsc_window.hpp
+file
+
+
+
+add
+
+generic_window.hpp
+file
+
+
+
+add
+
+skin_main.cpp
+file
+
+
+
+add
+
+generic_layout.cpp
+file
+
+
+
+add
+
+anchor.cpp
+file
+
+
+
+add
+
+generic_bitmap.hpp
+file
+
+
+
+add
+
+vlcproc.hpp
+file
+
+
+
+add
+
+os_factory.hpp
+file
+
+
+
+add
+
+file_bitmap.hpp
+file
+
+
+
+add
+

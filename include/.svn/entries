@@ -1,0 +1,644 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/include
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+vlc_cpu.h
+file
+
+
+
+add
+
+vlc_strings.h
+file
+
+
+
+add
+
+vlc_objects.h
+file
+
+
+
+add
+
+vlc_es_out.h
+file
+
+
+
+add
+
+vlc_vlm.h
+file
+
+
+
+add
+
+vlc_pgpkey.h
+file
+
+
+
+add
+
+vlc_bits.h
+file
+
+
+
+add
+
+vlc_playlist.h
+file
+
+
+
+add
+
+vlc_url.h
+file
+
+
+
+add
+
+vlc_tls.h
+file
+
+
+
+add
+
+vlc_media_library.h
+file
+
+
+
+add
+
+vlc_es.h
+file
+
+
+
+add
+
+vlc_probe.h
+file
+
+
+
+add
+
+vlc_spu.h
+file
+
+
+
+add
+
+vlc_variables.h
+file
+
+
+
+add
+
+vlc_aout.h
+file
+
+
+
+add
+
+vlc_picture.h
+file
+
+
+
+add
+
+vlc_keys.h
+file
+
+
+
+add
+
+vlc_fingerprinter.h
+file
+
+
+
+add
+
+vlc_http.h
+file
+
+
+
+add
+
+vlc_fourcc.h
+file
+
+
+
+add
+
+vlc_vout_window.h
+file
+
+
+
+add
+
+vlc_subpicture.h
+file
+
+
+
+add
+
+vlc_inhibit.h
+file
+
+
+
+add
+
+vlc_block.h
+file
+
+
+
+add
+
+vlc_iso_lang.h
+file
+
+
+
+add
+
+vlc_stream.h
+file
+
+
+
+add
+
+vlc_config_cat.h
+file
+
+
+
+add
+
+vlc_plugin.h
+file
+
+
+
+add
+
+vlc_aout_volume.h
+file
+
+
+
+add
+
+vlc_xml.h
+file
+
+
+
+add
+
+vlc_mtime.h
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+vlc_art_finder.h
+file
+
+
+
+add
+
+vlc_input_item.h
+file
+
+
+
+add
+
+vlc_update.h
+file
+
+
+
+add
+
+vlc_vout_display.h
+file
+
+
+
+add
+
+vlc_md5.h
+file
+
+
+
+add
+
+vlc_mime.h
+file
+
+
+
+add
+
+vlc_common.h
+file
+
+
+
+add
+
+vlc_network.h
+file
+
+
+
+add
+
+vlc_charset.h
+file
+
+
+
+add
+
+vlc_threads.h
+file
+
+
+
+add
+
+vlc_vout.h
+file
+
+
+
+add
+
+vlc_input.h
+file
+
+
+
+add
+
+vlc_dialog.h
+file
+
+
+
+add
+
+vlc_codecs.h
+file
+
+
+
+add
+
+vlc_avcodec.h
+file
+
+
+
+add
+
+vlc_text_style.h
+file
+
+
+
+add
+
+vlc_config.h
+file
+
+
+
+add
+
+vlc_configuration.h
+file
+
+
+
+add
+
+vlc_modules.h
+file
+
+
+
+add
+
+vlc_gcrypt.h
+file
+
+
+
+add
+
+vlc_demux.h
+file
+
+
+
+add
+
+vlc_httpd.h
+file
+
+
+
+add
+
+vlc_meta.h
+file
+
+
+
+add
+
+vlc_vod.h
+file
+
+
+
+add
+
+vlc_mouse.h
+file
+
+
+
+add
+
+vlc_block_helper.h
+file
+
+
+
+add
+
+vlc_sout.h
+file
+
+
+
+add
+
+vlc
+dir
+
+
+
+add
+
+vlc_video_splitter.h
+file
+
+
+
+add
+
+vlc_windows_interfaces.h
+file
+
+
+
+add
+
+vlc_vout_wrapper.h
+file
+
+
+
+add
+
+vlc_xlib.h
+file
+
+
+
+add
+
+vlc_extensions.h
+file
+
+
+
+add
+
+vlc_interface.h
+file
+
+
+
+add
+
+vlc_arrays.h
+file
+
+
+
+add
+
+vlc_access.h
+file
+
+
+
+add
+
+vlc_vout_osd.h
+file
+
+
+
+add
+
+vlc_picture_pool.h
+file
+
+
+
+add
+
+vlc_events.h
+file
+
+
+
+add
+
+vlc_messages.h
+file
+
+
+
+add
+
+vlc_memory.h
+file
+
+
+
+add
+
+vlc_fs.h
+file
+
+
+
+add
+
+vlc_intf_strings.h
+file
+
+
+
+add
+
+vlc_services_discovery.h
+file
+
+
+
+add
+
+vlc_epg.h
+file
+
+
+
+add
+
+vlc_atomic.h
+file
+
+
+
+add
+
+vlc_codec.h
+file
+
+
+
+add
+
+vlc_picture_fifo.h
+file
+
+
+
+add
+
+vlc_fixups.h
+file
+
+
+
+add
+
+vlc_image.h
+file
+
+
+
+add
+
+vlc_codec_synchro.h
+file
+
+
+
+add
+
+vlc_opengl.h
+file
+
+
+
+add
+
+vlc_main.h
+file
+
+
+
+add
+
+vlc_rand.h
+file
+
+
+
+add
+
+vlc_filter.h
+file
+
+
+
+add
+

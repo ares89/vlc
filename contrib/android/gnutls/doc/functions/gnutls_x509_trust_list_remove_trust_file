@@ -1,0 +1,19 @@
+
+
+
+
+@deftypefun {int} {gnutls_x509_trust_list_remove_trust_file} (gnutls_x509_trust_list_t @var{list}, const char* @var{ca_file}, gnutls_x509_crt_fmt_t @var{type})
+@var{list}: The structure of the list
+
+@var{ca_file}: A file containing a list of CAs
+
+@var{type}: The format of the certificates
+
+This function will add the given certificate authorities
+to the trusted list. pkcs11 URLs are also accepted, instead
+of files, by this function.
+
+@strong{Returns:} The number of added elements is returned.
+
+@strong{Since:} 3.1.10
+@end deftypefun

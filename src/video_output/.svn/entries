@@ -1,0 +1,196 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/src/video_output
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+window.c
+file
+
+
+
+add
+
+display.h
+file
+
+
+
+add
+
+video_text.c
+file
+
+
+
+add
+
+statistic.h
+file
+
+
+
+add
+
+vout_intf.c
+file
+
+
+
+add
+
+control.c
+file
+
+
+
+add
+
+opengl.c
+file
+
+
+
+add
+
+control.h
+file
+
+
+
+add
+
+vout_subpictures.c
+file
+
+
+
+add
+
+event.h
+file
+
+
+
+add
+
+inhibit.c
+file
+
+
+
+add
+
+video_output.c
+file
+
+
+
+add
+
+inhibit.h
+file
+
+
+
+add
+
+video_widgets.c
+file
+
+
+
+add
+
+chrono.h
+file
+
+
+
+add
+
+vout_wrapper.c
+file
+
+
+
+add
+
+vout_internal.h
+file
+
+
+
+add
+
+snapshot.c
+file
+
+
+
+add
+
+interlacing.c
+file
+
+
+
+add
+
+video_epg.c
+file
+
+
+
+add
+
+vout_control.h
+file
+
+
+
+add
+
+interlacing.h
+file
+
+
+
+add
+
+snapshot.h
+file
+
+
+
+add
+
+display.c
+file
+
+
+
+add
+

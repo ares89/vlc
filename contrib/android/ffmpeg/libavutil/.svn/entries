@@ -1,0 +1,1141 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android/ffmpeg/libavutil
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+float_dsp.c
+file
+
+
+
+add
+
+atomic_suncc.h
+file
+
+
+
+add
+
+float_dsp.d
+file
+
+
+
+add
+
+pixfmt.h
+file
+
+
+
+add
+
+aes.h
+file
+
+
+
+add
+
+float_dsp.h
+file
+
+
+
+add
+
+timer.h
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+mathematics.c
+file
+
+
+
+add
+
+mathematics.d
+file
+
+
+
+add
+
+mathematics.h
+file
+
+
+
+add
+
+audio_fifo.c
+file
+
+
+
+add
+
+channel_layout.c
+file
+
+
+
+add
+
+audio_fifo.d
+file
+
+
+
+add
+
+channel_layout.d
+file
+
+
+
+add
+
+audio_fifo.h
+file
+
+
+
+add
+
+rational.c
+file
+
+
+
+add
+
+channel_layout.h
+file
+
+
+
+add
+
+rational.d
+file
+
+
+
+add
+
+atomic.c
+file
+
+
+
+add
+
+atomic.d
+file
+
+
+
+add
+
+rational.h
+file
+
+
+
+add
+
+atomic.h
+file
+
+
+
+add
+
+eval.c
+file
+
+
+
+add
+
+eval.d
+file
+
+
+
+add
+
+lls.c
+file
+
+
+
+add
+
+lls.d
+file
+
+
+
+add
+
+eval.h
+file
+
+
+
+add
+
+imgutils.c
+file
+
+
+
+add
+
+imgutils.d
+file
+
+
+
+add
+
+lls.h
+file
+
+
+
+add
+
+imgutils.h
+file
+
+
+
+add
+
+hmac.c
+file
+
+
+
+add
+
+hmac.d
+file
+
+
+
+add
+
+avutil.h
+file
+
+
+
+add
+
+hmac.h
+file
+
+
+
+add
+
+log.c
+file
+
+
+
+add
+
+log.d
+file
+
+
+
+add
+
+log.h
+file
+
+
+
+add
+
+avassert.h
+file
+
+
+
+add
+
+arm
+dir
+
+
+
+add
+
+tree.c
+file
+
+
+
+add
+
+tree.d
+file
+
+
+
+add
+
+tree.h
+file
+
+
+
+add
+
+sh4
+dir
+
+
+
+add
+
+random_seed.c
+file
+
+
+
+add
+
+random_seed.d
+file
+
+
+
+add
+
+random_seed.h
+file
+
+
+
+add
+
+intfloat.h
+file
+
+
+
+add
+
+parseutils.c
+file
+
+
+
+add
+
+old_pix_fmts.h
+file
+
+
+
+add
+
+parseutils.d
+file
+
+
+
+add
+
+atomic_gcc.h
+file
+
+
+
+add
+
+avstring.c
+file
+
+
+
+add
+
+avstring.d
+file
+
+
+
+add
+
+parseutils.h
+file
+
+
+
+add
+
+avstring.h
+file
+
+
+
+add
+
+opt.c
+file
+
+
+
+add
+
+opt.d
+file
+
+
+
+add
+
+x86
+dir
+
+
+
+add
+
+lzo.c
+file
+
+
+
+add
+
+intmath.c
+file
+
+
+
+add
+
+lzo.d
+file
+
+
+
+add
+
+intmath.d
+file
+
+
+
+add
+
+audioconvert.h
+file
+
+
+
+add
+
+opt.h
+file
+
+
+
+add
+
+lzo.h
+file
+
+
+
+add
+
+intmath.h
+file
+
+
+
+add
+
+des.c
+file
+
+
+
+add
+
+des.d
+file
+
+
+
+add
+
+mem.c
+file
+
+
+
+add
+
+mem.d
+file
+
+
+
+add
+
+des.h
+file
+
+
+
+add
+
+mem.h
+file
+
+
+
+add
+
+intfloat_readwrite.c
+file
+
+
+
+add
+
+tomi
+dir
+
+
+
+add
+
+intfloat_readwrite.d
+file
+
+
+
+add
+
+samplefmt.c
+file
+
+
+
+add
+
+samplefmt.d
+file
+
+
+
+add
+
+version.h
+file
+
+
+
+add
+
+libavutil-uninstalled.pc
+file
+
+
+
+add
+
+intfloat_readwrite.h
+file
+
+
+
+add
+
+attributes.h
+file
+
+
+
+add
+
+samplefmt.h
+file
+
+
+
+add
+
+utils.c
+file
+
+
+
+add
+
+utils.d
+file
+
+
+
+add
+
+intreadwrite.h
+file
+
+
+
+add
+
+sha.c
+file
+
+
+
+add
+
+avr32
+dir
+
+
+
+add
+
+sha.d
+file
+
+
+
+add
+
+file.c
+file
+
+
+
+add
+
+file.d
+file
+
+
+
+add
+
+sha.h
+file
+
+
+
+add
+
+file.h
+file
+
+
+
+add
+
+cpu.c
+file
+
+
+
+add
+
+libm.h
+file
+
+
+
+add
+
+cpu.d
+file
+
+
+
+add
+
+error.c
+file
+
+
+
+add
+
+error.d
+file
+
+
+
+add
+
+cpu.h
+file
+
+
+
+add
+
+error.h
+file
+
+
+
+add
+
+colorspace.h
+file
+
+
+
+add
+
+avconfig.h
+file
+
+
+
+add
+
+libavutil.pc
+file
+
+
+
+add
+
+libavutil.v
+file
+
+
+
+add
+
+bswap.h
+file
+
+
+
+add
+
+dict.c
+file
+
+
+
+add
+
+dict.d
+file
+
+
+
+add
+
+mips
+dir
+
+
+
+add
+
+dict.h
+file
+
+
+
+add
+
+rc4.c
+file
+
+
+
+add
+
+rc4.d
+file
+
+
+
+add
+
+frame.c
+file
+
+
+
+add
+
+frame.d
+file
+
+
+
+add
+
+adler32.c
+file
+
+
+
+add
+
+adler32.d
+file
+
+
+
+add
+
+rc4.h
+file
+
+
+
+add
+
+time.c
+file
+
+
+
+add
+
+frame.h
+file
+
+
+
+add
+
+pixdesc.c
+file
+
+
+
+add
+
+time.d
+file
+
+
+
+add
+
+pixdesc.d
+file
+
+
+
+add
+
+ppc
+dir
+
+
+
+add
+
+adler32.h
+file
+
+
+
+add
+
+xtea.c
+file
+
+
+
+add
+
+xtea.d
+file
+
+
+
+add
+
+time.h
+file
+
+
+
+add
+
+atomic_win32.h
+file
+
+
+
+add
+
+pixdesc.h
+file
+
+
+
+add
+
+xtea.h
+file
+
+
+
+add
+
+crc.c
+file
+
+
+
+add
+
+lfg.c
+file
+
+
+
+add
+
+crc.d
+file
+
+
+
+add
+
+buffer.c
+file
+
+
+
+add
+
+lfg.d
+file
+
+
+
+add
+
+buffer.d
+file
+
+
+
+add
+
+crc.h
+file
+
+
+
+add
+
+lfg.h
+file
+
+
+
+add
+
+blowfish.c
+file
+
+
+
+add
+
+buffer.h
+file
+
+
+
+add
+
+blowfish.d
+file
+
+
+
+add
+
+internal.h
+file
+
+
+
+add
+
+blowfish.h
+file
+
+
+
+add
+
+fifo.c
+file
+
+
+
+add
+
+fifo.d
+file
+
+
+
+add
+
+base64.c
+file
+
+
+
+add
+
+base64.d
+file
+
+
+
+add
+
+md5.c
+file
+
+
+
+add
+
+md5.d
+file
+
+
+
+add
+
+fifo.h
+file
+
+
+
+add
+
+log2_tab.c
+file
+
+
+
+add
+
+base64.h
+file
+
+
+
+add
+
+md5.h
+file
+
+
+
+add
+
+log2_tab.d
+file
+
+
+
+add
+
+common.h
+file
+
+
+
+add
+
+bfin
+dir
+
+
+
+add
+
+aes.c
+file
+
+
+
+add
+
+aes.d
+file
+
+
+
+add
+
+buffer_internal.h
+file
+
+
+
+add
+

@@ -1,0 +1,427 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/access
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+gnomevfs.c
+file
+
+
+
+add
+
+rtp
+dir
+
+
+
+add
+
+decklink.cpp
+file
+
+
+
+add
+
+rdp.c
+file
+
+
+
+add
+
+sdp.c
+file
+
+
+
+add
+
+vnc.c
+file
+
+
+
+add
+
+shm.c
+file
+
+
+
+add
+
+attachment.c
+file
+
+
+
+add
+
+udp.c
+file
+
+
+
+add
+
+timecode.c
+file
+
+
+
+add
+
+ftp.c
+file
+
+
+
+add
+
+vdr.c
+file
+
+
+
+add
+
+vcd
+dir
+
+
+
+add
+
+bluray.c
+file
+
+
+
+add
+
+live555.cpp
+file
+
+
+
+add
+
+mtp.c
+file
+
+
+
+add
+
+dshow
+dir
+
+
+
+add
+
+rar
+dir
+
+
+
+add
+
+directory.c
+file
+
+
+
+add
+
+eyetv.m
+file
+
+
+
+add
+
+rtsp
+dir
+
+
+
+add
+
+dc1394.c
+file
+
+
+
+add
+
+fs.c
+file
+
+
+
+add
+
+dv.c
+file
+
+
+
+add
+
+mms
+dir
+
+
+
+add
+
+sftp.c
+file
+
+
+
+add
+
+fs.h
+file
+
+
+
+add
+
+file.c
+file
+
+
+
+add
+
+alsa.c
+file
+
+
+
+add
+
+zip
+dir
+
+
+
+add
+
+smb.c
+file
+
+
+
+add
+
+dvdnav.c
+file
+
+
+
+add
+
+vcdx
+dir
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+tcp.c
+file
+
+
+
+add
+
+imem.c
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+pulse.c
+file
+
+
+
+add
+
+dvb
+dir
+
+
+
+add
+
+cdda.c
+file
+
+
+
+add
+
+avio.c
+file
+
+
+
+add
+
+screen
+dir
+
+
+
+add
+
+linsys
+dir
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+avio.h
+file
+
+
+
+add
+
+oss.c
+file
+
+
+
+add
+
+idummy.c
+file
+
+
+
+add
+
+avcapture.m
+file
+
+
+
+add
+
+bd
+dir
+
+
+
+add
+
+v4l2
+dir
+
+
+
+add
+
+qtsound.m
+file
+
+
+
+add
+
+jack.c
+file
+
+
+
+add
+
+dvdread.c
+file
+
+
+
+add
+
+dtv
+dir
+
+
+
+add
+
+http.c
+file
+
+
+
+add
+
+qtcapture.m
+file
+
+
+
+add
+

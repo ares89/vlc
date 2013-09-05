@@ -1,0 +1,140 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/skins2/macosx
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+macosx_factory.hpp
+file
+
+
+
+add
+
+macosx_window.hpp
+file
+
+
+
+add
+
+macosx_loop.hpp
+file
+
+
+
+add
+
+macosx_timer.cpp
+file
+
+
+
+add
+
+macosx_timer.hpp
+file
+
+
+
+add
+
+macosx_tooltip.cpp
+file
+
+
+
+add
+
+macosx_tooltip.hpp
+file
+
+
+
+add
+
+macosx_graphics.cpp
+file
+
+
+
+add
+
+macosx_dragdrop.cpp
+file
+
+
+
+add
+
+macosx_popup.cpp
+file
+
+
+
+add
+
+macosx_graphics.hpp
+file
+
+
+
+add
+
+macosx_dragdrop.hpp
+file
+
+
+
+add
+
+macosx_factory.cpp
+file
+
+
+
+add
+
+macosx_window.cpp
+file
+
+
+
+add
+
+macosx_popup.hpp
+file
+
+
+
+add
+
+macosx_loop.cpp
+file
+
+
+
+add
+

@@ -1,0 +1,105 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/share/lua/sd
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+metachannels.lua
+file
+
+
+
+add
+
+fmc.lua
+file
+
+
+
+add
+
+appletrailers.lua
+file
+
+
+
+add
+
+assembleenationale.lua
+file
+
+
+
+add
+
+icecast.lua
+file
+
+
+
+add
+
+README.txt
+file
+
+
+
+add
+
+katsomo.lua
+file
+
+
+
+add
+
+jamendo.lua
+file
+
+
+
+add
+
+librivox.lua
+file
+
+
+
+add
+
+frenchtv.lua
+file
+
+
+
+add
+
+magnatune.lua
+file
+
+
+
+add
+

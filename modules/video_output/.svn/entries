@@ -1,0 +1,210 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/video_output
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+Makefile.in
+file
+
+
+
+add
+
+gl.c
+file
+
+
+
+add
+
+vmem.c
+file
+
+
+
+add
+
+ios.m
+file
+
+
+
+add
+
+macosx.m
+file
+
+
+
+add
+
+egl.c
+file
+
+
+
+add
+
+aa.c
+file
+
+
+
+add
+
+kva.c
+file
+
+
+
+add
+
+drawable.c
+file
+
+
+
+add
+
+vdummy.c
+file
+
+
+
+add
+
+directfb.c
+file
+
+
+
+add
+
+sdl.c
+file
+
+
+
+add
+
+yuv.c
+file
+
+
+
+add
+
+Modules.am
+file
+
+
+
+add
+
+opengl.c
+file
+
+
+
+add
+
+decklink.cpp
+file
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+msw
+dir
+
+
+
+add
+
+ios2.m
+file
+
+
+
+add
+
+fb.c
+file
+
+
+
+add
+
+caca.c
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+androidsurface.c
+file
+
+
+
+add
+
+opengl.h
+file
+
+
+
+add
+
+glx.c
+file
+
+
+
+add
+
+xcb
+dir
+
+
+
+add
+

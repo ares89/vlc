@@ -1,0 +1,119 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/share
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+vlc512x512.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+utils
+dir
+
+
+
+add
+
+vlc.desktop.in
+file
+
+
+
+add
+
+visualization
+dir
+
+
+
+add
+
+lua
+dir
+
+
+
+add
+
+Makefile.in
+file
+
+
+
+add
+
+profiles
+dir
+
+
+
+add
+
+.gitignore
+file
+
+
+
+add
+
+Makefile.am
+file
+
+
+
+add
+
+skins2
+dir
+
+
+
+add
+
+solid
+dir
+
+
+
+add
+
+icons
+dir
+
+
+
+add
+

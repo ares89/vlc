@@ -1,0 +1,175 @@
+10
+
+dir
+0
+http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/modules/gui/qt4/ui
+http://10.45.30.64:18080/svn/Homecare
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bd917ebd-ac02-4420-88a5-1ce1c9e2025b
+
+sout.ui
+file
+
+
+
+add
+
+vlm.ui
+file
+
+
+
+add
+
+sprefs_subtitles.ui
+file
+
+
+
+add
+
+open_file.ui
+file
+
+
+
+add
+
+equalizer.ui
+file
+
+
+
+add
+
+open.ui
+file
+
+
+
+add
+
+video_effects.ui
+file
+
+
+
+add
+
+open_net.ui
+file
+
+
+
+add
+
+fingerprintdialog.ui
+file
+
+
+
+add
+
+about.ui
+file
+
+
+
+add
+
+streampanel.ui
+file
+
+
+
+add
+
+open_disk.ui
+file
+
+
+
+add
+
+sprefs_input.ui
+file
+
+
+
+add
+
+update.ui
+file
+
+
+
+add
+
+sprefs_interface.ui
+file
+
+
+
+add
+
+profiles.ui
+file
+
+
+
+add
+
+sprefs_audio.ui
+file
+
+
+
+add
+
+open_capture.ui
+file
+
+
+
+add
+
+podcast_configuration.ui
+file
+
+
+
+add
+
+messages_panel.ui
+file
+
+
+
+add
+
+sprefs_video.ui
+file
+
+
+
+add
+
