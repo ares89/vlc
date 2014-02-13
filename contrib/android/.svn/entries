@@ -1,786 +1,0 @@
-10
-
-dir
-0
-http://10.45.30.64:18080/svn/Homecare/homecareclient/trunk/vlc_android/android/vlc/contrib/android
-http://10.45.30.64:18080/svn/Homecare
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-bd917ebd-ac02-4420-88a5-1ce1c9e2025b
-
-.libxml2
-file
-
-
-
-add
-
-libmad
-dir
-
-
-
-add
-
-.dep-ffmpeg
-file
-
-
-
-add
-
-.dep-freetype2
-file
-
-
-
-add
-
-.gnutls
-file
-
-
-
-add
-
-.sum-ogg
-file
-
-
-
-add
-
-.sum-gnutls
-file
-
-
-
-add
-
-libgcrypt
-dir
-
-
-
-add
-
-.theora
-file
-
-
-
-add
-
-zlib
-dir
-
-
-
-add
-
-.gmp
-file
-
-
-
-add
-
-.sum-theora
-file
-
-
-
-add
-
-.a52
-file
-
-
-
-add
-
-.sum-gsm
-file
-
-
-
-add
-
-.sum-ass
-file
-
-
-
-add
-
-libmatroska
-dir
-
-
-
-add
-
-fribidi
-dir
-
-
-
-add
-
-libxml2
-dir
-
-
-
-add
-
-.live555
-file
-
-
-
-add
-
-Makefile
-file
-
-
-
-add
-
-
-
-
-
-has-props
-has-prop-mods
-
-svn:special
-
-.dep-nettle
-file
-
-
-
-add
-
-gmp
-dir
-
-
-
-add
-
-.flac
-file
-
-
-
-add
-
-.freetype2
-file
-
-
-
-add
-
-.openjpeg
-file
-
-
-
-add
-
-.sum-flac
-file
-
-
-
-add
-
-.modplug
-file
-
-
-
-add
-
-.gcrypt
-file
-
-
-
-add
-
-.postproc
-file
-
-
-
-add
-
-.sum-openjpeg
-file
-
-
-
-add
-
-.sum-gcrypt
-file
-
-
-
-add
-
-.sum-postproc
-file
-
-
-
-add
-
-.iconv
-file
-
-
-
-add
-
-libmodplug
-dir
-
-
-
-add
-
-live555
-dir
-
-
-
-add
-
-toolchain.cmake
-file
-
-
-
-add
-
-.dep-ogg
-file
-
-
-
-add
-
-libmpeg2
-dir
-
-
-
-add
-
-taglib
-dir
-
-
-
-add
-
-.opus
-file
-
-
-
-add
-
-.sum-speex
-file
-
-
-
-add
-
-.sum-png
-file
-
-
-
-add
-
-ffmpeg
-dir
-
-
-
-add
-
-.sum-opus
-file
-
-
-
-add
-
-.speexdsp
-file
-
-
-
-add
-
-.dep-gsm
-file
-
-
-
-add
-
-.sum-speexdsp
-file
-
-
-
-add
-
-config.mak
-file
-
-
-
-add
-
-.zlib
-file
-
-
-
-add
-
-iconv
-dir
-
-
-
-add
-
-libdvbpsi
-dir
-
-
-
-add
-
-.sum-zlib
-file
-
-
-
-add
-
-.sum-mad
-file
-
-
-
-add
-
-.sum-gpg-error
-file
-
-
-
-add
-
-.sum-fribidi
-file
-
-
-
-add
-
-.sum-libxml2
-file
-
-
-
-add
-
-.ogg
-file
-
-
-
-add
-
-nettle
-dir
-
-
-
-add
-
-libgpg-error
-dir
-
-
-
-add
-
-.dep-openjpeg
-file
-
-
-
-add
-
-.ebml
-file
-
-
-
-add
-
-.sum-ebml
-file
-
-
-
-add
-
-libogg
-dir
-
-
-
-add
-
-.sum-gmp
-file
-
-
-
-add
-
-.gsm
-file
-
-
-
-add
-
-.ass
-file
-
-
-
-add
-
-.dvbpsi
-file
-
-
-
-add
-
-.sum-a52
-file
-
-
-
-add
-
-.sum-dvbpsi
-file
-
-
-
-add
-
-.dep-speex
-file
-
-
-
-add
-
-gnutls
-dir
-
-
-
-add
-
-libass
-dir
-
-
-
-add
-
-.sum-live555
-file
-
-
-
-add
-
-.libmpeg2
-file
-
-
-
-add
-
-.taglib
-file
-
-
-
-add
-
-.sum-libmpeg2
-file
-
-
-
-add
-
-.ffmpeg
-file
-
-
-
-add
-
-.sum-taglib
-file
-
-
-
-add
-
-.dep-zlib
-file
-
-
-
-add
-
-.sum-ffmpeg
-file
-
-
-
-add
-
-.sum-freetype2
-file
-
-
-
-add
-
-gsm
-dir
-
-
-
-add
-
-.sum-modplug
-file
-
-
-
-add
-
-.dep-gpg-error
-file
-
-
-
-add
-
-.dep-fribidi
-file
-
-
-
-add
-
-.sum-iconv
-file
-
-
-
-add
-
-.matroska
-file
-
-
-
-add
-
-.sum-matroska
-file
-
-
-
-add
-
-.png
-file
-
-
-
-add
-
-.speex
-file
-
-
-
-add
-
-a52dec
-dir
-
-
-
-add
-
-.dep-ebml
-file
-
-
-
-add
-
-flac
-dir
-
-
-
-add
-
-libebml
-dir
-
-
-
-add
-
-.dep-gmp
-file
-
-
-
-add
-
-openjpeg
-dir
-
-
-
-add
-
-postproc
-dir
-
-
-
-add
-
-libtheora
-dir
-
-
-
-add
-
-.nettle
-file
-
-
-
-add
-
-.sum-nettle
-file
-
-
-
-add
-
-.mad
-file
-
-
-
-add
-
-.gpg-error
-file
-
-
-
-add
-
-freetype
-dir
-
-
-
-add
-
-png
-dir
-
-
-
-add
-
-speex
-dir
-
-
-
-add
-
-opus
-dir
-
-
-
-add
-
-.fribidi
-file
-
-
-
-add
-
